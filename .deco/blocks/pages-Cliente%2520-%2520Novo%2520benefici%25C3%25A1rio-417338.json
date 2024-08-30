@@ -1,0 +1,267 @@
+{
+  "name": "Cliente - Novo beneficiário",
+  "path": "/sou-novo-beneficiario",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/1af738fc-cd3f-4465-87b1-9d333145f590"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9a1cd540-0412-46c0-912b-f25b7c3bfd45"
+            },
+            "alt": "Banner"
+          },
+          "desktopTitle": "Primeiro acesso?<br/ > Saiba o que fazer.",
+          "mobileTitle": "Primeiro acesso?<br/ > Saiba o que fazer.",
+          "textColor": "Branco",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/IAmANewBeneficiary.tsx",
+      "sections": [
+        {
+          "sectionName": "Como acessar sua conta no App Aurora Saúde",
+          "sectionText": "<p>Texto da seção 1</p>",
+          "topics": [
+            {
+              "topicTitle": "Como acessar sua conta no App Aurora Saúde",
+              "topicText": "<ol><li><p>Baixe gratuitamente o App Aurora Saúde na sua loja de aplicativos; </p></li><li><p>Clique em “Meu primeiro acesso”; </p></li><li><p>Preencha as informações solicitadas; </p></li><li><p>Clique em “Enviar e acessar”; </p></li><li><p>Pronto! Acesse todas as funcionalidades da Aurora.</p></li></ol>"
+            }
+          ]
+        },
+        {
+          "sectionName": "Como acessar a sua rede credenciada",
+          "sectionText": "<p>Texto da seção 2</p>",
+          "topics": [
+            {
+              "topicTitle": "Como acessar a sua rede credenciada",
+              "topicText": "<ol><li><p><span>Acesse o App Aurora Saúde;</span></p></li><li><p><span>Clique em “Serviços”;</span></p></li><li><p><span>Clique em “Rede credenciada”;</span></p></li><li><p><span>Selecione sua região;</span></p></li><li><p><span>Selecione um prestador e/ou especialidade;</span></p></li><li><p><span>Clique em “Pesquisar”;</span></p></li><li><p><span>Pronto! Agora é só agendar a sua consulta ou procedimento.</span></p></li></ol>"
+            }
+          ]
+        },
+        {
+          "topics": [
+            {
+              "topicTitle": "Como solicitar autorização de procedimentos",
+              "topicText": "<ol><li><p><span>Acesse o App Aurora Saúde;</span></p></li><li><p><span>Clique em “Serviços”;</span></p></li><li><p><span>Clique em “Solicitação de Autorização”;</span></p></li><li><p><span>Clique em “Nova Solicitação”;</span></p></li><li><p><span>Preencha as informações solicitadas;</span></p></li><li><p><span>Pronto! Agora é só aguardar que em breve a nossa equipe entrará em contato.</span></p></li></ol>"
+            }
+          ],
+          "sectionName": "Como solicitar autorização de procedimentos"
+        },
+        {
+          "topics": [
+            {
+              "topicTitle": "Como usar o Token nas  suas consultas",
+              "topicText": "<p><span>O Token da Aurora Saúde é uma tecnologia de segurança desenvolvida para garantir a proteção dos nossos beneficiários. Funcionando como um código de identificação exclusivo, ele é solicitado pelos prestadores de serviços durante consultas, exames e atendimentos hospitalares. Esse código é essencial, pois representa a sua autorização para receber atendimento na sua rede credenciada.<br><br>Existem duas formas para você acessá-lo:&nbsp;<br><br>1. Pelo SMS que enviaremos no seu celular cadastrado.</span></p><ol start=\"2\"><li><p><span>No App Aurora Saúde (na aba de “Serviços” - “Token”).</span></p></li></ol><p><span><br>Caso não consiga acessar o seu Token, entre em contato com a nossa equipe.</span></p>"
+            }
+          ],
+          "sectionName": "Como usar o Token nas  suas consultas"
+        },
+        {
+          "topics": [
+            {
+              "topicTitle": "Telemedicina 24x7",
+              "topicText": "<p><span>Com a Telemedicina da Aurora, você conta com atendimento médico online todos os dias da semana, 24 horas por dia. Você pode acessar a plataforma pelo App Aurora Saúde ou clicando aqui.</span></p>"
+            },
+            {
+              "topicTitle": "Quais são meus prazos para liberação de procedimento?",
+              "topicText": "<p><span>Os prazos máximos para liberação dos seus procedimentos médicos são feitos conforme estabelecido pela Agência Nacional de Saúde Suplementar (ANS). Confira:</span></p>"
+            }
+          ],
+          "sectionName": "Telemedicina 24x7"
+        },
+        {
+          "topics": [
+            {
+              "topicTitle": "Atendimento de urgência e emergência nacional via Abramge",
+              "topicText": "<p><span>O Atendimento de Urgência e Emergência Nacional via Abramge oferece serviços de urgência e emergência mesmo fora do local de residência do beneficiário. Ou seja, mesmo durante suas viagens, garantimos que você esteja protegido e bem cuidado.</span></p>"
+            }
+          ],
+          "sectionName": "Atendimento de urgência e emergência nacional via Abramge"
+        },
+        {
+          "topics": [
+            {
+              "topicTitle": "Nossos canais de atendimento",
+              "topicText": "<p><span>Sempre que tiver dúvidas ou precisar de apoio para suas demandas ou solicitações, você pode contar com o suporte do nosso time nos canais:&nbsp;<br><br>WhatsApp: envie uma mensagem com “Olá” para o número 4000-2105 para sanar suas dúvidas sobre o funcionamento do plano, pagamentos e muito mais.&nbsp;<br><br>Chat Aurora Saúde: ferramenta simples e rápida para que possamos te ajudar sempre que necessário. Acesse aqui pelo site ou App da Aurora Saúde.<br><br>Central de Atendimento: você também pode ligar para a nossa central de atendimento no número 4000-2105, de segunda a sexta-feira, das 08h às 18h.<br></span></p>"
+            }
+          ],
+          "sectionName": "Nossos canais de atendimento"
+        }
+      ],
+      "segments": [
+        {
+          "topics": [
+            {
+              "topicTitle": "Como acessar sua conta no App Aurora Saúde",
+              "topicText": "<p><span>Baixe gratuitamente o App Aurora Saúde na sua loja de aplicativos;<br>Clique em “Meu primeiro acesso”;<br>Preencha as informações solicitadas;<br>Clique em “Enviar e acessar”;<br>Pronto! Acesse todas as funcionalidades da Aurora.</span></p>",
+              "childrenComponent": {
+                "__resolveType": "site/sections/Site/AboutAurora.tsx"
+              }
+            }
+          ],
+          "segmentName": "Como acessar sua conta no App Aurora Saúde"
+        },
+        {
+          "topics": [
+            {
+              "table": {
+                "line": []
+              },
+              "topicTitle": "Como acessar a sua rede credenciada",
+              "topicText": "<p><span>Acesse o App Aurora Saúde;<br>Clique em “Serviços”;<br>Clique em “Rede credenciada”;<br>Selecione sua região;<br>Selecione um prestador e/ou especialidade;<br>Clique em “Pesquisar”;<br>Pronto! Agora é só agendar a sua consulta ou procedimento.</span></p>"
+            }
+          ],
+          "segmentName": "Como acessar a sua rede credenciada"
+        },
+        {
+          "topics": [
+            {
+              "table": {
+                "line": []
+              },
+              "topicTitle": "Como solicitar autorização de procedimentos",
+              "topicText": "<p><span>Acesse o App Aurora Saúde;<br>Clique em “Serviços”;<br>Clique em “Solicitação de Autorização”;<br>Clique em “Nova Solicitação”;<br>Preencha as informações solicitadas;<br>Pronto! Agora é só aguardar que em breve a nossa equipe entrará em contato.</span></p>"
+            }
+          ],
+          "segmentName": "Como solicitar autorização de procedimentos"
+        },
+        {
+          "topics": [
+            {
+              "table": {
+                "line": []
+              },
+              "topicTitle": "Como usar o Token nas  suas consultas",
+              "topicText": "<p><span>O Token da Aurora Saúde é uma tecnologia de segurança desenvolvida para garantir a proteção dos nossos beneficiários. Funcionando como um código de identificação exclusivo, ele é solicitado pelos prestadores de serviços durante consultas, exames e atendimentos hospitalares. Esse código é essencial, pois representa a sua autorização para receber atendimento na sua rede credenciada.<br><br>Existem duas formas para você acessá-lo:&nbsp;<br><br>Pelo SMS que enviaremos no seu celular cadastrado.<br>No App Aurora Saúde (na aba de “Serviços” - “Token”).<br><br>Caso não consiga acessar o seu Token, entre em contato com a nossa equipe.</span></p>"
+            }
+          ],
+          "segmentName": "Como usar o Token nas  suas consultas"
+        },
+        {
+          "topics": [
+            {
+              "table": {
+                "line": []
+              },
+              "topicTitle": "Telemedicina 24x7",
+              "topicText": "<p><span>Com a Telemedicina da Aurora, você conta com atendimento médico online todos os dias da semana, 24 horas por dia. Você pode acessar a plataforma pelo App Aurora Saúde ou clicando aqui.</span></p>"
+            },
+            {
+              "table": {
+                "line": [
+                  {
+                    "dataCel1": "Consulta básica - pediatria, clínica médica, cirurgia geral, ginecologia e obstetrícia",
+                    "dataCel2": "07 (sete)"
+                  },
+                  {
+                    "dataCel1": "Consulta nas demais especialidades",
+                    "dataCel2": "14 (catorze)"
+                  },
+                  {
+                    "dataCel1": "Consulta/ sessão com fonoaudiólogo",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Consulta/ sessão com nutricionista",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Consulta/ sessão com psicólogo",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Consulta/ sessão com terapeuta ocupacional",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Consulta/ sessão com fisioterapeuta",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Consulta e procedimentos realizados em consultório/ clínica com cirurgião-dentista",
+                    "dataCel2": "07 (sete)"
+                  },
+                  {
+                    "dataCel1": "Serviços de diagnóstico por laboratório de análises clínicas em regime ambulatorial",
+                    "dataCel2": "03 (três)"
+                  },
+                  {
+                    "dataCel1": "Demais serviços de diagnóstico e terapia em regime ambulatorial",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Procedimentos de alta complexidade (PAC)",
+                    "dataCel2": "21 (vinte e um)"
+                  },
+                  {
+                    "dataCel1": "Atendimento em regime de hospital-dia",
+                    "dataCel2": "10 (dez)"
+                  },
+                  {
+                    "dataCel1": "Atendimento em regime de internação eletiva",
+                    "dataCel2": "21 (vinte e um)"
+                  },
+                  {
+                    "dataCel1": "Urgência e emergência",
+                    "dataCel2": "Imediato"
+                  }
+                ],
+                "column1Name": "Serviços",
+                "column2Name": "Prazos máximos de atendimento (em dias úteis)",
+                "textBehindTable": "Vale lembrar também que esses prazos começam a ser considerados após o período de carência do seu plano de saúde. Caso tenha dúvida sobre a sua carência, entre com a nossa equipe!"
+              },
+              "topicTitle": "Quais são meus prazos para liberação de procedimento?",
+              "topicText": "<p><span>Os prazos máximos para liberação dos seus procedimentos médicos são feitos conforme estabelecido pela Agência Nacional de Saúde Suplementar (ANS). Confira:</span></p>",
+              "hasTable": true
+            }
+          ],
+          "segmentName": "Telemedicina 24x7"
+        },
+        {
+          "topics": [
+            {
+              "table": {
+                "line": []
+              },
+              "topicTitle": "Atendimento de urgência e emergência nacional via Abramge",
+              "topicText": "<p><span>O Atendimento de Urgência e Emergência Nacional via Abramge oferece serviços de urgência e emergência mesmo fora do local de residência do beneficiário. Ou seja, mesmo durante suas viagens, garantimos que você esteja protegido e bem cuidado.</span></p>"
+            }
+          ],
+          "segmentName": "Atendimento de urgência e emergência nacional via Abramge"
+        },
+        {
+          "topics": [
+            {
+              "table": {
+                "line": []
+              },
+              "topicTitle": "Nossos canais de atendimento",
+              "topicText": "<p><span>Sempre que tiver dúvidas ou precisar de apoio para suas demandas ou solicitações, você pode contar com o suporte do nosso time nos canais:&nbsp;<br><br>WhatsApp: envie uma mensagem com “Olá” para o número 4000-2105 para sanar suas dúvidas sobre o funcionamento do plano, pagamentos e muito mais.&nbsp;<br><br>Chat Aurora Saúde: ferramenta simples e rápida para que possamos te ajudar sempre que necessário. Acesse aqui pelo site ou App da Aurora Saúde.<br><br>Central de Atendimento: você também pode ligar para a nossa central de atendimento no número 4000-2105, de segunda a sexta-feira, das 08h às 18h.<br></span></p>"
+            }
+          ],
+          "segmentName": "Nossos canais de atendimento"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

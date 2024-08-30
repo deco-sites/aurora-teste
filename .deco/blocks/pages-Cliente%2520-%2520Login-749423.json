@@ -1,0 +1,26 @@
+{
+  "name": "Cliente - Login",
+  "path": "/cliente-login",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        }
+      ],
+      "bgColor": "Laranja"
+    },
+    {
+      "__resolveType": "site/sections/Site/ClientLoginForm.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

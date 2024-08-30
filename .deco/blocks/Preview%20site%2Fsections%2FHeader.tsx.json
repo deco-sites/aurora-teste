@@ -1,0 +1,17 @@
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "logo": {
+    "alt": "Logo",
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7b00098d-2053-46b0-9c7b-6ea862bb2058",
+    "width": 300
+  },
+  "buttonReceiveContact": {
+    "text": "<p>Receber contato de um especialista</p>",
+    "link": "#",
+    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9d3a490a-b10f-4b73-9656-153924e0fe4b"
+  },
+  "buttonBackToSite": {
+    "link": "#",
+    "text": "<p>voltar para o <strong>site</strong></p>"
+  }
+}

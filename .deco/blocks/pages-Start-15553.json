@@ -1,0 +1,274 @@
+{
+  "name": "Cliente - Início",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerCarrousel.tsx",
+          "images": [
+            {
+              "desktop": {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/09a32ccb-a8c6-431c-aa5b-57cd116b59cf"
+              },
+              "mobile": {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/10fea2fe-0735-4be8-a894-ec6ab35f3d5d"
+              },
+              "alt": "Banner1",
+              "link": "#"
+            },
+            {
+              "desktop": {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/d7f8d236-e461-49e3-845c-5ac7a51ba716"
+              },
+              "mobile": {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3b46e01f-ffcd-4842-95f8-c8af5ebe68cd"
+              },
+              "alt": "Banner2",
+              "link": "#"
+            }
+          ],
+          "interval": 5
+        }
+      ],
+      "from": "#FA7651",
+      "to": "#FF50A4"
+    },
+    {
+      "__resolveType": "site/sections/Site/MainServices.tsx",
+      "photo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/bd2ee3f6-204e-41c2-9d82-7b2d3d2cba78",
+        "alt": "Banner"
+      },
+      "alt": "Banner",
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/bfbe6b92-135b-41dd-bd2a-2668e936940c"
+    },
+    {
+      "__resolveType": "site/sections/Site/CareJourney.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/MeetAurora.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/DiscoverOurPlans.tsx",
+      "sectionTitle": "Conheça nossos planos",
+      "plans": [
+        {
+          "benefits": [
+            {
+              "phrase": "Cobertura ambulatorial"
+            },
+            {
+              "phrase": "Consultas médicas ilimitadas"
+            },
+            {
+              "phrase": "Rede médica de alta qualidade"
+            },
+            {
+              "phrase": "Telemedicina de urgência 24h"
+            },
+            {
+              "phrase": "1º check-up gratuito*"
+            }
+          ],
+          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7da32d42-0867-4add-85ee-5b961655b6b4",
+          "planName": "a100",
+          "basePrice": "50,52",
+          "bgColor": "Laranja",
+          "textColor": "Branco",
+          "titleColor": "Amarelo",
+          "buttonTextColor": "Laranja",
+          "buttonBgColor": "Amarelo"
+        },
+        {
+          "benefits": [
+            {
+              "phrase": "Cobertura ambulatorial e hospitalar"
+            },
+            {
+              "phrase": "Consultas médicas ilimitadas"
+            },
+            {
+              "phrase": "Rede médica completa e de alta qualidade"
+            },
+            {
+              "phrase": "Telemedicina de urgência 24h"
+            },
+            {
+              "phrase": "1º check-up gratuito*"
+            }
+          ],
+          "planName": "a300",
+          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f1bf2519-0225-4396-bd1b-c2f46f19a1eb",
+          "basePrice": "104,67",
+          "bgColor": "Verde",
+          "textColor": "Branco",
+          "titleColor": "Amarelo",
+          "buttonBgColor": "Amarelo",
+          "buttonTextColor": "Verde"
+        },
+        {
+          "benefits": [
+            {
+              "phrase": "Cobertura ambulatorial, hospitalar e obstetrícia"
+            },
+            {
+              "phrase": "A melhor e mais completa rede médica"
+            },
+            {
+              "phrase": "Consultas médicas ilimitadas"
+            },
+            {
+              "phrase": "Telemedicina de urgência 24h"
+            },
+            {
+              "phrase": "1º check-up gratuito*"
+            }
+          ],
+          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/b13817a7-cfab-4f61-96ea-9cac52a4d54c",
+          "planName": "a500",
+          "basePrice": "120,54",
+          "bgColor": "Amarelo",
+          "textColor": "Laranja",
+          "buttonBgColor": "Laranja",
+          "buttonTextColor": "Amarelo",
+          "titleColor": "Rosa"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/ProvidersSection.tsx",
+      "title": "Rede médica<br /> altamente<br /> qualificada",
+      "description": "Confira quais são os prestadores<br /> médico-hospitalares do seu plano.",
+      "buttonText": "Ver rede completa",
+      "section": {
+        "__resolveType": "site/sections/Site/WhiteBannerCarrousel.tsx",
+        "images": [
+          {
+            "alt": "Hospital Belo Horizonte",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7e720cb1-621a-4a35-a0da-89588e28c981",
+            "width": 322,
+            "height": 173
+          },
+          {
+            "alt": "Hospital Felício Rocha",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3c733030-b896-4c63-9231-1920d122cbc2",
+            "height": 126,
+            "width": 322
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/d323fdc9-25d9-4e0b-8c04-ea265483fbc1",
+            "alt": "Hospital Evangélico de Belo Horizonte",
+            "width": 116,
+            "height": 116
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9ae12c2c-3b55-4c16-8cb6-d616e8091599",
+            "alt": "Hospital Evangélico de Belo Horizonte 2",
+            "width": 190,
+            "height": 77
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/4e6959db-9494-45c7-9475-a993cb8729e6",
+            "alt": "Hospital São Lucas",
+            "width": 208,
+            "height": 85
+          },
+          {
+            "alt": "Fundação Hospitalar",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/58322336-35e5-4b5f-8cf6-f79c4d86eb83",
+            "width": 186,
+            "height": 77
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9feb7fee-3d1b-43e5-be9e-0ca91856f476",
+            "alt": "Instituto de Otorrino",
+            "width": 188,
+            "height": 60
+          },
+          {
+            "alt": "Hermes Pardini",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3644614b-8d40-406d-9ae3-2266f9706689",
+            "width": 338,
+            "height": 154
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/70575829-93c9-4632-adc9-99b2b125f8ee",
+            "alt": "Lindouro Avelar",
+            "width": 177,
+            "height": 80
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a246b845-51c7-4932-842b-4a764cfe014e",
+            "alt": "Santa Casa Sabará",
+            "width": 184,
+            "height": 63
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/8c6bc6ab-1360-4ff2-bd84-264c27131386",
+            "alt": "Hospital Socor",
+            "width": 389,
+            "height": 124
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/0473c81a-f4f6-42a0-911f-b9fea6d62ba2",
+            "alt": "LabClass",
+            "width": 240,
+            "height": 155
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/395b1966-de77-450d-8fe3-871a68b0e578",
+            "alt": "Ecoar",
+            "width": 129,
+            "height": 119
+          },
+          {
+            "alt": "São Marcos",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/8adb3641-1d88-4382-8c5d-f0f216cf89ad",
+            "width": 198,
+            "height": 48
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/380ff235-9bec-415e-94f5-249fb02a3f8f",
+            "alt": "Laboratório Lustosa",
+            "width": 366,
+            "height": 108
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a86342bc-d471-44e4-8a81-9edf46cf3dd9",
+            "alt": "Hospital São José",
+            "width": 196,
+            "height": 50
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3e2e25d1-81d0-4288-8430-fdd5763a157b",
+            "alt": "Oculare",
+            "width": 360,
+            "height": 104
+          },
+          {
+            "alt": "Empremed",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/908dfb54-ab0b-4b59-bc1a-03d267c6ac99",
+            "width": 199,
+            "height": 86
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/Site/VideoSection.tsx"
+    },
+    {
+      "__resolveType": "LatestNews"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

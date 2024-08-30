@@ -1,0 +1,47 @@
+{
+  "name": "Cliente - Fale com a gente",
+  "path": "/fale-com-a-gente",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/33d005b9-e5b5-4e22-8e8e-164f9d607d9c"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/11338209-4ff5-4d43-86f9-07489c1f487e"
+            },
+            "alt": "Banner"
+          },
+          "textColor": "Laranja",
+          "fontSize": "26",
+          "fontWeight": "semi-bold",
+          "textFontWeight": "semi-bold",
+          "desktopTitle": "Dúvidas, reclamações<br />ou sugestões? Envie <br />uma mensagem.",
+          "mobileTitle": "Dúvidas,<br /> reclamações<br />ou sugestões? <br />Envie uma <br />mensagem.",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/TalkToUsForm.tsx",
+      "recipientsEmail": "erick.nascimento@simbioseventures.com",
+      "subject": "Aurora Saúde - Formulário Fale Conosco"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

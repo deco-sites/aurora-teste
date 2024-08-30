@@ -1,0 +1,46 @@
+{
+  "name": "Cliente - Simulador | Solicitar Cotação",
+  "path": "/solicitar-cotacao",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a6062319-f5be-44da-8000-2f5853a672a4"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/82103b52-1722-43a1-900b-2679abca5bcb"
+            },
+            "alt": "Banner"
+          },
+          "textColor": "Amarelo",
+          "fontWeight": "semi-bold",
+          "fontSize": "30",
+          "desktopTitle": "Solicite uma cotação <br />e descubra os planos<br /> disponíveis para você",
+          "mobileTitle": "Solicite uma cotação <br />e descubra os planos<br /> disponíveis para você",
+          "titleFontSize": "30",
+          "titleFontWeight": "semi-bold"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/RequestQuoteForm.tsx",
+      "recipientsEmail": "erick.nascimento@simbioseventures.com",
+      "subject": "Aurora Saúde - Formulário de Cotação"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

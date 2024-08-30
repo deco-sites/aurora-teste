@@ -1,0 +1,47 @@
+{
+  "name": "Corretor - Seja um corretor",
+  "path": "/seja-um-corretor",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "corretor"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/de9699cd-20e3-4815-917e-cdf7fe07d9b8"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/2a3d98bb-9d15-4401-a5be-740ba9f5a6cb"
+            },
+            "alt": "Banner"
+          },
+          "textColor": "Branco",
+          "fontSize": "26",
+          "fontWeight": "semi-bold",
+          "desktopTitle": "Faça parte do plano de<br /> saúde que está sempre<br /> junto.",
+          "mobileTitle": "Faça parte do<br /> plano de<br /> saúde que está<br /> sempre junto.",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold"
+        }
+      ],
+      "bgColor": "Rosa"
+    },
+    {
+      "__resolveType": "site/sections/Site/BeABrokerForm.tsx",
+      "subject": "Aurora Saúde - Seja um corretor parceiro",
+      "recipientsEmail": "erick.nascim3nto@gmail.com"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

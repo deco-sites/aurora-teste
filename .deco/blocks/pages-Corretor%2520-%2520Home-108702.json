@@ -1,0 +1,344 @@
+{
+  "name": "Corretor - Início",
+  "path": "/corretor",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "corretor"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/81096489-1048-4ca1-be7e-c4129504888a"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/5b785974-9857-4a9c-87cc-ce7caa313ec6"
+            },
+            "alt": "Banner"
+          },
+          "title": "Bem-vindo. Somos o plano<br /> de saúde que está junto. ",
+          "desktopText": "Conte com a Aurora Saúde para realizar suas vendas<br /> e aumentar os seus rendimentos. Vamos começar?",
+          "mobileText": "Conte com a Aurora Saúde<br /> para realizar suas vendas e<br /> aumentar os seus<br /> rendimentos. Vamos começar?",
+          "textColor": "Branco",
+          "fontSize": "26",
+          "fontWeight": "semi-bold",
+          "desktopTitle": "Bem-vindo. Somos o plano <br /> de saúde que está junto. ",
+          "titleFontSize": "26",
+          "textFontSize": "16",
+          "titleFontWeight": "semi-bold",
+          "textFontWeight": "regular",
+          "mobileTitle": "Bem-vindos.<br /> Somos o plano<br /> de saúde que<br /> está junto. "
+        },
+        {
+          "__resolveType": "site/sections/Site/Spacer.tsx",
+          "desktopHeight": 90,
+          "mobileHeight": 18
+        }
+      ],
+      "bgColor": "Rosa"
+    },
+    {
+      "__resolveType": "site/sections/Site/BrokersHomeDivisor.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/WhiteBannerCarrousel.tsx",
+        "images": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7e720cb1-621a-4a35-a0da-89588e28c981",
+            "alt": "Hospital Belo Horizonte",
+            "width": 322,
+            "height": 173
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3c733030-b896-4c63-9231-1920d122cbc2",
+            "alt": "Hospital Felício Rocho",
+            "width": 322,
+            "height": 126
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/d323fdc9-25d9-4e0b-8c04-ea265483fbc1",
+            "alt": "Hospital Evangélico de Belo Horizonte",
+            "width": 116,
+            "height": 116
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9ae12c2c-3b55-4c16-8cb6-d616e8091599",
+            "alt": "Hospital Evangélico de Belo Horizonte",
+            "width": 190,
+            "height": 77
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/4e6959db-9494-45c7-9475-a993cb8729e6",
+            "alt": "São Lucas",
+            "width": 208,
+            "height": 85
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/58322336-35e5-4b5f-8cf6-f79c4d86eb83",
+            "alt": "Fundação Hospitalar Nossa Senhora de Lourdes",
+            "width": 186,
+            "height": 77
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9feb7fee-3d1b-43e5-be9e-0ca91856f476",
+            "alt": "Instituto de Otorrino",
+            "width": 188,
+            "height": 60
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3644614b-8d40-406d-9ae3-2266f9706689",
+            "alt": "Hermes Pardini",
+            "width": 338,
+            "height": 154
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/70575829-93c9-4632-adc9-99b2b125f8ee",
+            "alt": "Hospital Lindouro Avelar",
+            "width": 177,
+            "height": 80
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a246b845-51c7-4932-842b-4a764cfe014e",
+            "alt": "Santa Casa de Misericórdia de Sabará",
+            "width": 184,
+            "height": 63
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/8c6bc6ab-1360-4ff2-bd84-264c27131386",
+            "alt": "Hospital Socor",
+            "width": 389,
+            "height": 124
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/0473c81a-f4f6-42a0-911f-b9fea6d62ba2",
+            "alt": "Labclass",
+            "width": 240,
+            "height": 155
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/395b1966-de77-450d-8fe3-871a68b0e578",
+            "alt": "Ecoar",
+            "width": 129,
+            "height": 119
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/8adb3641-1d88-4382-8c5d-f0f216cf89ad",
+            "alt": "São Marcos",
+            "width": 198,
+            "height": 48
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/380ff235-9bec-415e-94f5-249fb02a3f8f",
+            "alt": "Laboratório Lustosa",
+            "width": 366,
+            "height": 108
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a86342bc-d471-44e4-8a81-9edf46cf3dd9",
+            "alt": "Hospital São José",
+            "width": 196,
+            "height": 50
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3e2e25d1-81d0-4288-8430-fdd5763a157b",
+            "alt": "Oculare",
+            "width": 360,
+            "height": 104
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/908dfb54-ab0b-4b59-bc1a-03d267c6ac99",
+            "alt": "Empremed",
+            "width": 199,
+            "height": 86
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/Site/DiscoverOurPlans.tsx",
+      "sectionTitle": "Conheça os nossos planos",
+      "plans": [
+        {
+          "benefits": [
+            {
+              "phrase": "Cobertura ambulatorial"
+            },
+            {
+              "phrase": "Consultas médicas ilimitadas"
+            },
+            {
+              "phrase": "Rede médica de alta qualidade"
+            },
+            {
+              "phrase": "Telemedicina de urgência 24h"
+            },
+            {
+              "phrase": "1º check-up gratuito*"
+            }
+          ],
+          "bgColor": "Laranja",
+          "textColor": "Branco",
+          "titleColor": "Amarelo",
+          "buttonTextColor": "Laranja",
+          "buttonBgColor": "Amarelo",
+          "planName": "a100",
+          "basePrice": "50,52",
+          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7da32d42-0867-4add-85ee-5b961655b6b4"
+        },
+        {
+          "benefits": [
+            {
+              "phrase": "Cobertura ambulatorial e hospitalar"
+            },
+            {
+              "phrase": "Consultas médicas ilimitadas"
+            },
+            {
+              "phrase": "Rede médica completa e de alta qualidade"
+            },
+            {
+              "phrase": "Telemedicina de urgência 24h"
+            },
+            {
+              "phrase": "1º check-up gratuito*"
+            }
+          ],
+          "bgColor": "Verde",
+          "textColor": "Branco",
+          "titleColor": "Amarelo",
+          "buttonTextColor": "Verde",
+          "buttonBgColor": "Amarelo",
+          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f1bf2519-0225-4396-bd1b-c2f46f19a1eb",
+          "planName": "a300",
+          "basePrice": "104,67"
+        },
+        {
+          "benefits": [
+            {
+              "phrase": "Cobertura ambulatorial, hospitalar e obstetrícia"
+            },
+            {
+              "phrase": "A melhor e mais completa rede médica"
+            },
+            {
+              "phrase": "Consultas médicas ilimitadas"
+            },
+            {
+              "phrase": "Telemedicina de urgência 24h"
+            },
+            {
+              "phrase": "1º check-up gratuito*"
+            }
+          ],
+          "bgColor": "Amarelo",
+          "textColor": "Laranja",
+          "titleColor": "Rosa",
+          "buttonTextColor": "Amarelo",
+          "buttonBgColor": "Laranja",
+          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/b13817a7-cfab-4f61-96ea-9cac52a4d54c",
+          "planName": "a500",
+          "basePrice": "120,54"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/BrokerLoginSection.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/e73697bd-27dc-429f-9587-f58e5f97067d"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c46fba62-4969-4a9b-a71c-9a8ac0acdbb4"
+            },
+            "alt": "Banner"
+          },
+          "desktopTitle": "Materiais de Apoio",
+          "desktopText": "Acesse nosso portal de materiais de apoio<br /> e fique por dentro das campanhas de<br /> vendas, baixe documentos de apoio e<br /> muito mais.",
+          "mobileTitle": "Materiais<br /> de Apoio",
+          "mobileText": "Acesse nosso portal de materiais de<br /> apoio e fique por dentro das<br /> campanhas de vendas, baixe<br /> documentos de apoio e muito mais.",
+          "textColor": "Branco",
+          "titleFontSize": "26",
+          "textFontSize": "16",
+          "titleFontWeight": "semi-bold",
+          "textFontWeight": "regular",
+          "hasButton": true,
+          "buttonColor": "Rosa",
+          "buttonText": "Entrar",
+          "buttonLink": "#"
+        }
+      ],
+      "bgColor": "Cinza"
+    },
+    {
+      "__resolveType": "LatestNews",
+      "news": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a6edd630-d3cc-46e2-946a-71c89cb26486",
+          "altImage": "Fundadoras da aurora saúde",
+          "date": "22 de agosto",
+          "title": "Minas Gerais ganha operadora de saúde fundada por mulheres",
+          "link": "/noticias-noticia"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c36300cf-4ac7-46a3-b754-d4703f8f5dbc",
+          "date": "1 de setembro",
+          "title": "Um novo jeito de cuidar da saúde",
+          "altImage": "Equipe Aurora Saúde",
+          "link": "/noticias-noticia5"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/03d08a14-ce1e-44d9-a9e7-044c50f18dc5",
+          "altImage": "MV Sistemas",
+          "title": "Aurora Saúde fecha parceria com MV Sistemas",
+          "date": "25 de setembro",
+          "link": "/noticias-noticia6"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/FrequentlyAskedQuestions.tsx",
+      "questions": [
+        {
+          "questionTitle": "Como o corretor pode fazer seu cadastro na Aurora Saúde?",
+          "questionText": "Para se cadastrar como corretor na Aurora Saúde, é necessário estar vinculado a uma corretora e que o cadastro seja feito por ela."
+        },
+        {
+          "questionTitle": "Para comercializar como corretor é obrigatório estar cadastrado em corretoras?",
+          "questionText": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        },
+        {
+          "questionTitle": "Para comercializar contratos da Aurora Saúde é obrigatório estar habilitado na SUSEP?",
+          "questionText": "Resposta"
+        },
+        {
+          "questionTitle": "O que é obrigatório conter no CNJP para fins de cadastro?",
+          "questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed consectetur augue, a sodales odio. Vestibulum convallis pretium consectetur. Morbi hendrerit leo a massa commodo congue. Ut felis turpis, mollis congue sodales sollicitudin, cursus at purus. Donec in diam et urna porttitor pulvinar in quis sapien. Quisque eu lacus sit amet dui faucibus semper non at nisi. Mauris eu erat massa. Vivamus aliquam nulla nec leo auctor, sed tempor felis accumsan. Integer euismod nibh eu ante convallis imperdiet. Nullam ullamcorper maximus leo, nec vestibulum elit egestas et. Ut sit amet aliquet ex.  Mauris eu nisi quis mi rhoncus sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies a lacus ac luctus. Fusce in felis in purus malesuada tincidunt. Mauris pellentesque, velit eget mattis ornare, ligula tellus imperdiet lorem, id laoreet mauris quam at erat. Donec varius gravida libero, sit amet condimentum odio feugiat et. Curabitur et ipsum eleifend, scelerisque augue quis, fermentum metus. Maecenas vitae nisi mollis, euismod urna eu, aliquam orci. Curabitur vel varius lorem. Quisque lobortis tincidunt lacus eget interdum. Vivamus pretium bibendum dolor in sollicitudin. Sed metus sem, eleifend et ante et, tincidunt volutpat arcu. Mauris sollicitudin mi nec est tincidunt semper. Morbi sit amet nibh a lorem dignissim tempus eget nec ligula. Morbi gravida libero semper justo aliquam, id eleifend nibh sodales. Fusce erat lorem, ultrices accumsan fringilla quis, semper quis turpis.  Nam a urna libero. Integer ex massa, vestibulum ut euismod eu, fringilla et velit. Nunc egestas feugiat nulla, a iaculis ante fermentum a. Aenean sit amet ante in massa cursus vehicula. Donec ut mi tincidunt, scelerisque turpis eu, fringilla magna. Integer viverra elit tellus, ut ultricies magna dignissim eget. Nullam at vestibulum sapien. Integer vel rhoncus libero. Nullam non odio vel nunc tincidunt porttitor vitae ac metus. Ut eu leo interdum, pulvinar sem pharetra, imperdiet urna. Cras at lobortis mauris. Etiam semper quis augue vitae facilisis. Praesent a pulvinar tellus. Nullam luctus enim nec sollicitudin accumsan.  Praesent rhoncus ligula at convallis luctus. Integer interdum hendrerit orci porta porta. Mauris eget urna sed leo malesuada ullamcorper. Aenean mattis tincidunt metus, vitae hendrerit purus pellentesque et. Phasellus vel tellus fermentum, fermentum mauris vitae, pulvinar erat. Proin ultricies nunc eu maximus pulvinar. Sed laoreet vehicula magna mollis varius. Integer magna ligula, accumsan quis laoreet eu, suscipit at magna. Phasellus sagittis dolor in erat iaculis auctor. Morbi eget metus ut augue ultricies sagittis. Nullam dui massa, varius eget felis vel, sodales sollicitudin felis. Morbi venenatis dapibus diam, vitae tempor enim dictum vel. Vestibulum congue mi vitae mattis hendrerit. Aenean quis orci massa.  Fusce mi nunc, auctor eu nulla nec, vehicula facilisis urna. Quisque nunc libero, scelerisque quis tincidunt quis, pellentesque a magna. Nunc purus lorem, fermentum et ultricies sit amet, tincidunt sed metus. Proin arcu sem, suscipit vel condimentum eu, facilisis vitae ex. Nam faucibus consectetur leo, ut mollis ligula interdum ut. Sed interdum, turpis in sagittis molestie, justo sem rhoncus nulla, eget sollicitudin leo est a velit. Nunc in est accumsan, lacinia nulla quis, faucibus ipsum. Phasellus ultrices nunc vitae libero mollis, vel semper turpis mollis. Aliquam erat volutpat. Proin eget lorem fringilla, laoreet leo porttitor, pharetra leo."
+        },
+        {
+          "questionTitle": "Quais são as documentações necessárias para o cadastro da corretora?",
+          "questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed consectetur augue, a sodales odio. Vestibulum convallis pretium consectetur. Morbi hendrerit leo a massa commodo congue. Ut felis turpis, mollis congue sodales sollicitudin, cursus at purus. Donec in diam et urna porttitor pulvinar in quis sapien. Quisque eu lacus sit amet dui faucibus semper non at nisi. Mauris eu erat massa. Vivamus aliquam nulla nec leo auctor, sed tempor felis accumsan. Integer euismod nibh eu ante convallis imperdiet. Nullam ullamcorper maximus leo, nec vestibulum elit egestas et. Ut sit amet aliquet ex.  Mauris eu nisi quis mi rhoncus sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies a lacus ac luctus. Fusce in felis in purus malesuada tincidunt. Mauris pellentesque, velit eget mattis ornare, ligula tellus imperdiet lorem, id laoreet mauris quam at erat. Donec varius gravida libero, sit amet condimentum odio feugiat et. Curabitur et ipsum eleifend, scelerisque augue quis, fermentum metus. Maecenas vitae nisi mollis, euismod urna eu, aliquam orci. Curabitur vel varius lorem. Quisque lobortis tincidunt lacus eget interdum. Vivamus pretium bibendum dolor in sollicitudin. Sed metus sem, eleifend et ante et, tincidunt volutpat arcu. Mauris sollicitudin mi nec est tincidunt semper. Morbi sit amet nibh a lorem dignissim tempus eget nec ligula. Morbi gravida libero semper justo aliquam, id eleifend nibh sodales. Fusce erat lorem, ultrices accumsan fringilla quis, semper quis turpis.  Nam a urna libero. Integer ex massa, vestibulum ut euismod eu, fringilla et velit. Nunc egestas feugiat nulla, a iaculis ante fermentum a. Aenean sit amet ante in massa cursus vehicula. Donec ut mi tincidunt, scelerisque turpis eu, fringilla magna. Integer viverra elit tellus, ut ultricies magna dignissim eget. Nullam at vestibulum sapien. Integer vel rhoncus libero. Nullam non odio vel nunc tincidunt porttitor vitae ac metus. Ut eu leo interdum, pulvinar sem pharetra, imperdiet urna. Cras at lobortis mauris. Etiam semper quis augue vitae facilisis. Praesent a pulvinar tellus. Nullam luctus enim nec sollicitudin accumsan.  Praesent rhoncus ligula at convallis luctus. Integer interdum hendrerit orci porta porta. Mauris eget urna sed leo malesuada ullamcorper. Aenean mattis tincidunt metus, vitae hendrerit purus pellentesque et. Phasellus vel tellus fermentum, fermentum mauris vitae, pulvinar erat. Proin ultricies nunc eu maximus pulvinar. Sed laoreet vehicula magna mollis varius. Integer magna ligula, accumsan quis laoreet eu, suscipit at magna. Phasellus sagittis dolor in erat iaculis auctor. Morbi eget metus ut augue ultricies sagittis. Nullam dui massa, varius eget felis vel, sodales sollicitudin felis. Morbi venenatis dapibus diam, vitae tempor enim dictum vel. Vestibulum congue mi vitae mattis hendrerit. Aenean quis orci massa.  Fusce mi nunc, auctor eu nulla nec, vehicula facilisis urna. Quisque nunc libero, scelerisque quis tincidunt quis, pellentesque a magna. Nunc purus lorem, fermentum et ultricies sit amet, tincidunt sed metus. Proin arcu sem, suscipit vel condimentum eu, facilisis vitae ex. Nam faucibus consectetur leo, ut mollis ligula interdum ut. Sed interdum, turpis in sagittis molestie, justo sem rhoncus nulla, eget sollicitudin leo est a velit. Nunc in est accumsan, lacinia nulla quis, faucibus ipsum. Phasellus ultrices nunc vitae libero mollis, vel semper turpis mollis. Aliquam erat volutpat. Proin eget lorem fringilla, laoreet leo porttitor, pharetra leo."
+        },
+        {
+          "questionTitle": "Como tenho acesso à grade de comissionamento da corretora?",
+          "questionText": "Resposta"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

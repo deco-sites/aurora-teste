@@ -1,0 +1,85 @@
+{
+  "seo": {
+    "type": "website",
+    "jsonLDs": [],
+    "noIndexing": false,
+    "description": "Escolha um plano para estar sempre junto de você.",
+    "titleTemplate": "%s | Aurora Saúde",
+    "descriptionTemplate": "%s | Deco.cx",
+    "title": "Aurora Saúde",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/ed5511b6-a917-48bc-969b-af01df3ed4d8",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f8177c39-ae9e-491b-b470-81e2f7d4c3ad"
+  },
+  "global": [
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    },
+    {
+      "__resolveType": "htmx/sections/htmx.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/UserWay.tsx",
+      "dataAccount": "Nth4EfyEtY"
+    },
+    {
+      "__resolveType": "site/sections/Site/CookiesModal.tsx"
+    }
+  ],
+  "routes": [
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    },
+    {
+      "__resolveType": "website/loaders/redirects.ts"
+    }
+  ],
+  "caching": {
+    "directives": []
+  },
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false,
+  "theme": {
+    "__resolveType": "Neutral"
+  },
+  "supabaseClient": {
+    "__resolveType": "site/loaders/supabase/supabaseConfig.ts",
+    "token": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "2611a90abb03174282327932674805cc2da2ec7bd8263e7128f86d698a7343ad327854df576256af114eecbe8c5d170ff5311924e635a5cf363b645f2d465c5e307fccc6b4cbef30c528345c61604e1332c90e2d5955f4a2f99c22565d4f2f3a66647e085887dcd9f6f0b9967ecc0818078acdba16e5d56e6e8a77fe5095bbc49090c3c539afad26f69419fafa1762cfca0fbc6def34c1f2ca12965544e963cb7018d8008d7da1aff0a5b72c19c3274bc71298123d33cfaa6a2936284b103aee577e5f389c51a4bc5a709b3f19a18eaa445a9d5aed9816281d0df572d335a977",
+      "name": "SUPABASEKEY"
+    },
+    "url": "https://dxnwgxrdctepmlqvpnfb.supabase.co"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
+  },
+  "algolia": {
+    "__resolveType": "site/loaders/algolia/algoliaConfig.ts",
+    "applicationId": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "2ea6ec57d2171fb74c064b4dade40fb5",
+      "name": "ALGOLIAAPPID"
+    },
+    "adminAPIKey": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "404ecd70acf248b6b71570a0e3cc17ac8e5ed4dbc87beca05f57763fb9388e5b032a8c23467581a24e2f13d21ca9b30f",
+      "name": "ALGOLIAADMINAPIKEY"
+    },
+    "indexName": "AuroraSite"
+  },
+  "framework": "fresh",
+  "sendgrid": {
+    "__resolveType": "site/loaders/sendgrid/sendgridConfig.ts",
+    "sendgridApiKey": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "6dbded482bd9b8ea053aea067fa0ccb82c6cabec5be34bcc933ecd248fee8a3f5964c94ce8f270ab3c1f7ce12c72e40f746d6eb505eb2b480e1c26a1d61fab2bb1fc689366975e892245528feb633103",
+      "name": "SENDGRIDAPIKEY"
+    }
+  }
+}

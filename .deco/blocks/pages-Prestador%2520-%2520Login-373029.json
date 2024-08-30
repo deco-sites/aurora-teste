@@ -1,0 +1,26 @@
+{
+  "name": "Prestador - Login",
+  "path": "/prestador-login",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "bgColor": "Rosa",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "prestador"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/ProviderLoginForm.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

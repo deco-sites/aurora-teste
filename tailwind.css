@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html{
+    font-family: "Inter", sans-serif;
+  }
+
+  /** Remove default styles from input[type=number] */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+}
+
+@layer components {
+
+  /** Prevent scroll when modal is open */
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+@layer utilities {
+
+  /** Remove scrollbar from overflow-auto */
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:width-calc {
+      width: calc(100vw - 18px);
+    }
+  }
+
+
+}
+
+/*Keyframes do Dot do Banner*/
+@keyframes progress-frame {
+  0% {
+    --dot-progress: 0%
+  }
+
+  to {
+    --dot-progress: 100%
+  }
+}
+
+.group:disabled .group-disabled\:animate-progress {
+    animation: progress-frame ease normal
+}
+
+
+ /*Keyframes da animação dos cards da Jornada de Cuidado*/
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-324px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-324px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-left {
+    animation: slideLeft 0.5s forwards;
+}
+
+.slide-right {
+    animation: slideRight 0.5s forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.control-buttons {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.control-buttons-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+/*Keyframes e estilização da seção de Conheça os nossos planos Desktop*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes cardSlideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes cardSlideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes cardSlideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+
+@keyframes cardSlideDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(180px);
+  }
+}
+
+.card-slide-left {
+  animation: cardSlideLeft 1s forwards;
+}
+
+.card-slide-right {
+  animation: cardSlideRight 1s forwards;
+}
+
+.card-slide-up {
+  animation: cardSlideUp 1s forwards;
+}
+
+.card-slide-down {
+  animation: cardSlideDown 1s forwards;
+}
+
+/*O código abaixo é para a tag hr na página de notícias*/
+.hr-extend-left::before {
+    content: '';
+    position: absolute;
+    height: 0.5px; /* Altere a altura para corresponder ao estilo desejado */
+    background-color: rgba(0, 0, 0, 0.1); /* Usa a cor do elemento atual */
+    left: -9999px; /* Ajuste conforme necessário para alcançar a borda esquerda da viewport */
+    right: 100%; /* Faz com que se estenda até o ponto inicial da linha original */
+    bottom: -23px; /* Centraliza verticalmente em relação ao <hr> */
+    transform: translateY(-50%); /* Ajusta para centralizar corretamente */
+}
+
+
+/*Código do efeito do botão de Solicitar Cotação*/
+.button-border-effect {
+  position: relative;
+  z-index: 1;
+  border-radius: 9999px; /* Bordas arredondadas */
+  overflow: visible; /* Permite que o ::before seja visível fora dos limites do botão */
+}
+
+.button-border-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  border: 2px solid rgba(255, 165, 0, 1); /* Borda laranja */
+  z-index: -1; /* Coloca a borda atrás do botão */
+  animation: expandContractBorder 2s ease-in-out infinite;
+}
+
+@keyframes expandContractBorder {
+  0%, 100% {
+    transform: scale(1); /* Tamanho original da borda, encostando no botão */
+  }
+  50% {
+    transform: scaleX(1.15) scaleY(1.4); /* Escala ajustada para 22px horizontalmente e 16px verticalmente */
+  }
+}
+
+
+/*Efeito para transições suaves de rolagem*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Efeito do input select*/
+@keyframes dropdown-bounce {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dropdown-retract {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+
+/*Animação do modal de planos*/
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

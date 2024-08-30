@@ -1,0 +1,45 @@
+{
+  "name": "Prestador - Seja um prestador",
+  "path": "/seja-um-prestador",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "bgColor": "Rosa",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "prestador"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c19e331a-af0f-4bec-9d76-e7d4903daf63"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3758ec17-c6b6-4d7b-97a3-483fdf444855"
+            },
+            "alt": "Banner"
+          },
+          "desktopTitle": "Faça parte do plano de<br /> saúde que está sempre<br /> junto.",
+          "textColor": "Laranja",
+          "mobileTitle": "Faça parte<br /> do plano de<br /> saúde que está<br /> sempre junto.",
+          "titleFontSize": "24",
+          "titleFontWeight": "semi-bold"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/BeAProviderForm.tsx",
+      "recipientsEmail": "erick.nascimento@simbioseventures.com",
+      "subject": "Aurora Saúde - Seja um prestador credenciado"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

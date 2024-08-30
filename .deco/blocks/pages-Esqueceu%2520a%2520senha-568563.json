@@ -1,0 +1,26 @@
+{
+  "name": "Cliente - Esqueceu a senha",
+  "path": "/esqueceu-a-senha",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        }
+      ],
+      "bgColor": "Laranja"
+    },
+    {
+      "__resolveType": "site/sections/Site/ForgotPassword.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

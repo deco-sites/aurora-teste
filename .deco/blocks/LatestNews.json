@@ -1,0 +1,26 @@
+{
+  "__resolveType": "site/sections/Site/LatestNews.tsx",
+  "newsArr": [
+    {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a6edd630-d3cc-46e2-946a-71c89cb26486",
+      "date": "22 de agosto",
+      "altImage": "Fundadoras Aurora Saúde",
+      "title": "Minas Gerais ganha operadora de saúde fundada por mulheres",
+      "link": "/noticias-noticia4"
+    },
+    {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c36300cf-4ac7-46a3-b754-d4703f8f5dbc",
+      "altImage": "Equipe Aurora Saúde",
+      "date": "1 de setembro",
+      "title": "Um novo jeito de cuidar da saúde",
+      "link": "/noticias-noticia5"
+    },
+    {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/03d08a14-ce1e-44d9-a9e7-044c50f18dc5",
+      "altImage": "MV Sistemas",
+      "date": "25 de setembro",
+      "title": "Aurora Saúde fecha parceria com MV Sistemas",
+      "link": "/noticias-noticia6"
+    }
+  ]
+}

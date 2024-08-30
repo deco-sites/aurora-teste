@@ -1,0 +1,10 @@
+{
+  "__resolveType": "site/apps/deco/algolia.ts",
+  "adminApiKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "8ab814c8a1fd0567d22e79c443995c47f371bf9dd741e532c9258909c947a700cbed804494db07d94362b028edd30465",
+    "name": "ALGOLIA_ADMIN_API_KEY"
+  },
+  "applicationId": "LM2KGXP27D",
+  "searchApiKey": "1e318e2b04f00cb16f014ad51ed262c5"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Cliente - Trabalhe conosco Formulário",
+  "path": "/trabalhe-conosco",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/85b6e59f-916d-448f-bccd-e527baf627ea"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/17ddc04b-d802-4bcb-b2d9-6d7b934a32b4"
+            },
+            "alt": "Banner"
+          },
+          "textColor": "Branco",
+          "fontSize": "24",
+          "fontWeight": "semi-bold",
+          "desktopTitle": "Faça parte do plano<br /> de saúde que anda junto.",
+          "mobileTitle": "Faça parte<br /> do plano<br /> de saúde que <br />anda junto.",
+          "titleFontSize": "24",
+          "titleFontWeight": "semi-bold"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/WorkWithUsForm.tsx",
+      "recipientsEmail": "erick.nascimento@simbioseventures.com",
+      "subject": "Aurora Saúde - Formulário Trabalhe Conosco"
+    },
+    {
+      "__resolveType": "site/sections/Site/Footer.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
