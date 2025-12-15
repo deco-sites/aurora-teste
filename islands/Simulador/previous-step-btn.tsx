@@ -13,12 +13,13 @@ export default function PreviousStepBtn({ options, executionFunc }: INextStep) {
       className="bg-orange1 lg:bg-transparent rounded-full flex items-center justify-center px-8 py-3 lg:p-0 gap-2 lg:gap-6"
       onClick={(e) => {
         console.log(e);
+        /*
         console.log("clicou", activeOption.value);
         console.log(
           "envio p servidor",
           options[activeOption.value - 1],
         );
-        console.log("aqqui", options);
+        console.log("aqqui", options);*/
         //CheckFields();
         if (executionFunc) {
           executionFunc();

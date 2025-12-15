@@ -1,4 +1,4 @@
 export const yesOrNoOptions = [
-    { value: "yes", text: "Sim" },
-    { value: "no", text: "Não" },
+  { value: "yes", text: "Sim" },
+  { value: "no", text: "Não" },
 ];

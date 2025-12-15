@@ -39,7 +39,7 @@ export default function ReceiveContactButton(
   const { changeStep } = useFormSteps();
 
   const handleSaveLead = async () => {
-    console.log("Chamou a handleSaveLead", dependentLead);
+    //console.log("Chamou a handleSaveLead", dependentLead);
     {
       /* Essa parte comentada era responsável por salvar o lead no final do preenchimento
     await invoke.site.actions.saveLead({

@@ -18,6 +18,7 @@ interface ISelectedPlanDetails {
   whoUseThePlan: string;
   beneficiariesArr: Persons[];
   priceRanges: number[];
+  selectedPlanName: string;
 }
 
 export default function SelectedPlanDetails(
@@ -29,6 +30,7 @@ export default function SelectedPlanDetails(
     whoUseThePlan,
     beneficiariesArr,
     priceRanges,
+    selectedPlanName,
   }: ISelectedPlanDetails,
 ) {
   const beneficiaries = beneficiariesArr.filter((item) => item.range != "");
@@ -63,7 +65,7 @@ export default function SelectedPlanDetails(
     item.range === "59 anos ou mais"
   );
 
-  //console.log("CHEGOU NO FILHO", priceRanges);
+  console.log("CHEGOU NO FILHO", priceRanges);
 
   return (
     <>
@@ -144,7 +146,7 @@ export default function SelectedPlanDetails(
                 </a>
               </div>
               <div className="flex flex-col text-sm text-[#a9a9a9]">
-                <span>a100 rmbh</span>
+                <span>{selectedPlanName}</span>
                 {simulationType === 1 && (
                   <span>
                     R$ {`${
@@ -187,7 +189,7 @@ export default function SelectedPlanDetails(
                       </button>
                     </div>
                     <div className="flex flex-col text-sm text-[#a9a9a9]">
-                      <span>a100 rmbh</span>
+                      <span>{selectedPlanName}</span>
                       <span>
                         {beneficiaries0x18.reduce(
                           (prevVal, el) => prevVal + el.qty,
@@ -232,7 +234,7 @@ export default function SelectedPlanDetails(
                       </button>
                     </div>
                     <div className="flex flex-col text-sm text-[#a9a9a9]">
-                      <span>a100 rmbh</span>
+                      <span>{selectedPlanName}</span>
                       <span>
                         {beneficiaries19x23.reduce(
                           (prevVal, el) => prevVal + el.qty,
@@ -277,7 +279,7 @@ export default function SelectedPlanDetails(
                       </button>
                     </div>
                     <div className="flex flex-col text-sm text-[#a9a9a9]">
-                      <span>a100 rmbh</span>
+                      <span>{selectedPlanName}</span>
                       <span>
                         {beneficiaries24x28.reduce(
                           (prevVal, el) => prevVal + el.qty,
@@ -329,7 +331,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries29x33.reduce(
                         (prevVal, el) => prevVal + el.qty,
@@ -374,7 +376,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries34x38.reduce(
                         (prevVal, el) => prevVal + el.qty,
@@ -419,7 +421,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries39x43.reduce(
                         (prevVal, el) => prevVal + el.qty,
@@ -471,7 +473,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries44x48.reduce(
                         (prevVal, el) => prevVal + el.qty,
@@ -516,7 +518,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries49x53.reduce(
                         (prevVal, el) => prevVal + el.qty,
@@ -561,7 +563,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries54x58.reduce(
                         (prevVal, el) => prevVal + el.qty,
@@ -606,7 +608,7 @@ export default function SelectedPlanDetails(
                     </button>
                   </div>
                   <div className="flex flex-col text-sm text-[#a9a9a9]">
-                    <span>a100 rmbh</span>
+                    <span>{selectedPlanName}</span>
                     <span>
                       {beneficiaries59more.reduce(
                         (prevVal, el) => prevVal + el.qty,
