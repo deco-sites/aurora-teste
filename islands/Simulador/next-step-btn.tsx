@@ -38,6 +38,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
   const {
     socialReasonValue,
+    cnpjValue2,
     name2Value,
     ufValue2,
     cityValue2,
@@ -53,14 +54,15 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
   async function fetchCityCode(value: string) {
     const cityCode = await getCityCode(value);
     cd_cidade.value = cityCode;
-    console.log("CD_CIDADE AQUI ERICK", cd_cidade.value);
+    //console.log("CD_CIDADE AQUI ERICK", cd_cidade.value);
   }
 
   const cd_range = signal(0);
+
   async function fetchAgeRangeCode(value: string) {
     const ageRangeCode = await getAgeRangeCodeFunction(value);
     cd_range.value = ageRangeCode;
-    console.log("CD_FAIXA AQUI ERICK", cd_range.value);
+    //console.log("CD_FAIXA AQUI ERICK", cd_range.value);
   }
 
   const { cd_lead, cd_lead_dep } = useCdLead();
@@ -118,15 +120,15 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           };
 
           if (cd_lead.value === 0) {
-            console.log("Usuário inserido primeira vez");
+            //console.log("Usuário inserido primeira vez");
             const leadSaved = await invoke.site.actions.saveStep2Option1({
               leadToSave: lead_data,
             });
             cd_lead.value = leadSaved.data?.[0].cd_lead;
-            console.log("Código retornado:", cd_lead.value);
+            //console.log("Código retornado:", cd_lead.value);
           } else {
             //faz o update do usuário já inserido
-            console.log("Fazer update");
+            //console.log("Fazer update");
             await invoke.site.actions.updateLead({
               dataToUpdate: lead_data,
               leadId: cd_lead.value,
@@ -144,7 +146,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           const lead_data = {
             razao_social: socialReasonValue.value,
             nome: name2Value.value,
-            //cpf_cnpj: extractNumbers(cpfValue.value),
+            cpf_cnpj: extractNumbers(cnpjValue2.value),
             estado: ufValue2.value,
             cidade: cd_cidade.value,
             telefone: extractNumbers(tel2Value.value),
@@ -157,11 +159,11 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               leadToSave: lead_data,
             });
             cd_lead.value = leadSaved.data?.[0].cd_lead;
-            console.log("Código retornado:", cd_lead.value);
+            //console.log("Código retornado:", cd_lead.value);
           } else {
             //Se já existe, faz o update
             //faz o update do usuário já inserido
-            console.log("Fazer update", lead_data, cd_lead.value);
+            //console.log("Fazer update", lead_data, cd_lead.value);
             await invoke.site.actions.updateLead({
               dataToUpdate: lead_data,
               leadId: cd_lead.value,
@@ -192,10 +194,10 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
           //Se a resposta for outra_pessoa ou eu_e_meus_dependentes, salva os leads
           if (thirdStepSignal.value.whoUseThePlan !== "somente_eu") {
-            console.log(
+            /*console.log(
               "Array dos benefíciários para salvar:",
               thirdStepSignal.value.beneficiariesValuesArr,
-            );
+            );*/
 
             const dependentsArr = await Promise.all(
               thirdStepSignal.value.beneficiariesValuesArr.map(
@@ -213,11 +215,11 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               ),
             );
 
-            console.log("Array de dependentes transformado:", dependentsArr);
+            //console.log("Array de dependentes transformado:", dependentsArr);
 
             //Se aida não inseriu dependentes
             if (!cd_lead_dep.value?.data) {
-              console.log("Insere dependentes 1 vez");
+              //console.log("Insere dependentes 1 vez");
               cd_lead_dep.value = await invoke.site.actions.saveLeadDependents({
                 dependentLead: dependentsArr,
               });
@@ -229,7 +231,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               );*/
               }
             } else {
-              console.log("Atualiza dependentes");
+              //console.log("Atualiza dependentes");
               await invoke.site.actions.updateDependents({
                 dependentLead: dependentsArr,
                 leadId: cd_lead.value,
@@ -243,10 +245,10 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           activeStep.value === 4 && activeOption.value === 2 ||
           activeOption.value === 3
         ) {
-          console.log(
+          /*console.log(
             "Array de Bene",
             thirdStepSignal.value.beneficiariesValuesArr,
-          );
+          );*/
 
           const dependentsArr = await Promise.all(
             thirdStepSignal.value.beneficiariesValuesArr.map(
@@ -264,15 +266,15 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
             ),
           );
 
-          console.log("Array de dependentes 2 transformado:", dependentsArr);
+          //console.log("Array de dependentes 2 transformado:", dependentsArr);
           //Se não salvou ainda dependentes, salva pela 1 vez
           if (!cd_lead_dep.value?.data) {
-            console.log("Salvou pela 1 vez");
+            //console.log("Salvou pela 1 vez");
             cd_lead_dep.value = await invoke.site.actions.saveLeadDependents({
               dependentLead: dependentsArr,
             });
           } else {
-            console.log("Atualiza dependentes");
+            //console.log("Atualiza dependentes");
             await invoke.site.actions.updateDependents({
               dependentLead: dependentsArr,
               leadId: cd_lead.value,
@@ -282,8 +284,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando as informações da tela de escolha do plano da opção Você e sua família
         if (activeStep.value === 5 && activeOption.value === 1) {
-          console.log("Entrou aqui lindo", selectedPlan.value);
-          console.log("transformedArr", transformedArray.value);
+          //console.log("Entrou aqui lindo", selectedPlan.value);
+          //console.log("transformedArr", transformedArray.value);
           //leads salvar cd_plano e cd_tab_preco
           //lead_dependente salvar cd_tab_preco
 
@@ -300,14 +302,14 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               selectedPlan.value,
             );
           }
-          console.log("cd_plano.value:", cd_plano.value);
+          //console.log("cd_plano.value:", cd_plano.value);
 
           //Capturando cd_tab_preco
-          console.log("Idade de quem preencheu:", ageRangeValue.value);
+          /*console.log("Idade de quem preencheu:", ageRangeValue.value);
           console.log(
             "Idades no array",
             thirdStepSignal.value.beneficiariesValuesArr,
-          );
+          );*/
 
           if (thirdStepSignal.value.whoUseThePlan === "somente_eu") {
             rangesArr.value = [ageRangeValue.value];
@@ -320,20 +322,20 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
             ];
           }
 
-          console.log("rangesArr:", rangesArr.value);
+          //console.log("rangesArr:", rangesArr.value);
 
           const prices = await invoke.site.actions.getPrices({
             plan_code: cd_plano.value,
             ageranges: rangesArr.value,
+            plan_type: activeOption.value,
           });
-
           console.log("Prices:", prices.data);
 
           cd_tab_preco.value = prices.data.find((el) =>
             el.faixa === ageRangeValue.value
           );
 
-          console.log("CD_TAB:", cd_tab_preco.value.cd_tab_preco);
+          //console.log("CD_TAB:", cd_tab_preco.value.cd_tab_preco);
 
           const leadToUpdate = {
             cd_plano: cd_plano.value,
@@ -347,8 +349,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           });
 
           //Aqui eu atualizo cd_tab_preco na lead_dependente
-          console.log("To mexendo aqui:", cd_lead_dep.value.data);
-          console.log("Mexendo no prices", prices.data);
+          //console.log("To mexendo aqui:", cd_lead_dep.value.data);
+          //console.log("Mexendo no prices", prices.data);
 
           const resultArray = await Promise.all(
             cd_lead_dep.value.data.map(async (item) => {
@@ -375,7 +377,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
             }),
           );
 
-          console.log("ResultArray", resultArray);
+          //console.log("ResultArray", resultArray);
 
           await invoke.site.actions.realUpdateDependents({
             dependentsToUpdate: resultArray,
@@ -387,8 +389,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           activeStep.value === 5 && activeOption.value === 2 ||
           activeOption.value === 3
         ) {
-          console.log("Entrou nesse if aki Erick");
-          console.log("transformedArr", transformedArray.value);
+          //console.log("Entrou nesse if aki Erick");
+          //console.log("transformedArr", transformedArray.value);
 
           const selectedPlanObject = transformedArray.value.find(
             (plan) => plan.id === selectedPlan.value,
@@ -403,7 +405,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               selectedPlan.value,
             );
           }
-          console.log("cd_plano.value:", cd_plano.value);
+          //console.log("cd_plano.value:", cd_plano.value);
 
           const leadToUpdate = {
             cd_plano: cd_plano.value,
@@ -416,10 +418,10 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           });
 
           //Capturando cd_tab_preco dos dependentes
-          console.log(
+          /*console.log(
             "Idades no array",
             thirdStepSignal.value.beneficiariesValuesArr,
-          );
+          );*/
 
           rangesArr.value = [
             ageRangeValue.value,
@@ -428,15 +430,15 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
             ),
           ];
 
-          console.log("rangesArr:", rangesArr.value);
+          //console.log("rangesArr:", rangesArr.value);
 
           const prices = await invoke.site.actions.getPrices({
             plan_code: cd_plano.value,
             ageranges: rangesArr.value,
+            plan_type: activeOption.value,
           });
 
-          console.log("Prices:", prices.data);
-          console.log("CD_LEAD_DEP:", cd_lead_dep.value.data);
+          //console.log("CD_LEAD_DEP:", cd_lead_dep.value.data);
 
           const resultArray = await Promise.all(
             cd_lead_dep.value.data.map(async (item) => {
@@ -444,6 +446,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               const correspondingPrice = await Promise.all(
                 prices.data.map(async (priceItem) => {
                   const code = await getAgeRangeCodeFunction(priceItem.faixa);
+                  console.log("Código retornado:", code);
                   return code === item.cd_faixa
                     ? priceItem.cd_tab_preco
                     : undefined;
@@ -462,7 +465,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               };
             }),
           );
-          console.log("Resultado final", resultArray);
+          //console.log("Resultado final", resultArray);
 
           await invoke.site.actions.realUpdateDependents({
             dependentsToUpdate: resultArray,

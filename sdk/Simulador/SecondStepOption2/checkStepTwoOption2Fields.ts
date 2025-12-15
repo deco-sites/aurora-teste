@@ -5,11 +5,13 @@ const { activeStep, changeStep } = useFormSteps();
 
 const {
   socialReasonValue,
+  cnpjValue2,
   name2Value,
   tel2Value,
   email2Value,
 
   socialReasonError,
+  cnpjError2,
   name2Error,
   tel2Error,
   email2Error,
@@ -40,6 +42,10 @@ export const handleNextStepSecondStepOp2 = () => {
       ? socialReasonError.value = true
       : socialReasonError.value = false;
 
+    cnpjValue2.value.trim() === ""
+      ? cnpjError2.value = true
+      : cnpjError2.value = false;
+
     name2Value.value.trim() === ""
       ? name2Error.value = true
       : name2Error.value = false;
@@ -54,7 +60,7 @@ export const handleNextStepSecondStepOp2 = () => {
 
     // Se todos os campos do passo 2 estão preenchidos, avance para o próximo passo
     if (
-      socialReasonError.value === false && name2Error.value === false &&
+      socialReasonError.value === false && cnpjError2.value === false && name2Error.value === false &&
       tel2Error.value === false && email2Error.value === false
     ) {
       changeStep(activeStep.value, "increase");

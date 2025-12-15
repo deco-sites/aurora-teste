@@ -134,7 +134,8 @@ export default function FormStepFour() {
     });
     //console.log("Código da cidade selecionada", city_code.data[0].cd_cidade);
 
-    const plan_type = activeOption.value === 1 ? 3 : 2;
+    //const plan_type = activeOption.value === 1 ? 3 : 2;
+    const plan_type = activeOption.value;
     setLoading(true);
 
     try {

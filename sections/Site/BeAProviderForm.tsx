@@ -1,10 +1,29 @@
 import BeAProviderFormIsland from "site/islands/Site/be-a-provider.tsx";
 
-export interface Props {
-    recipientsEmail: string;
-    subject: string;
+/** @titleBy email */
+export interface RecipientsEmail {
+  email: string;
 }
 
-export default function BeAProviderForm({ recipientsEmail, subject }: Props) {
-    return <BeAProviderFormIsland recipientsEmail={recipientsEmail} subject={subject} />;
+/** @titleBy email */
+export interface CopyEmail {
+  email?: string;
+}
+
+export interface Props {
+  RecipientsEmailArr: RecipientsEmail[];
+  CopyToArr?: CopyEmail[];
+  subject: string;
+}
+
+export default function BeAProviderForm(
+  { RecipientsEmailArr, CopyToArr, subject }: Props,
+) {
+  return (
+    <BeAProviderFormIsland
+      RecipientsEmailArr={RecipientsEmailArr}
+      CopyToArr={CopyToArr}
+      subject={subject}
+    />
+  );
 }

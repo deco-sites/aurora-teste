@@ -2,14 +2,14 @@ import FrequentlyAskedQuestionsIsland from "site/islands/Site/frequently-asked-q
 
 /** @titleBy questionTitle */
 export interface Question {
-    questionTitle: string;
-    questionText: string;
+  questionTitle: string;
+  questionText: string;
 }
 
 export interface Props {
-    questions: Question[];
+  questions: Question[];
 }
 
 export default function FrequentlyAskedQuestions({ questions }: Props) {
-    return <FrequentlyAskedQuestionsIsland questions={questions} />;
+  return <FrequentlyAskedQuestionsIsland questions={questions} />;
 }

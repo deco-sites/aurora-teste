@@ -1,18 +1,18 @@
 import { Secret } from "apps/website/loaders/secret.ts";
 
 export interface Props {
-    sendgridApiKey: Secret;
+  sendgridApiKey: Secret;
 }
 
 export type Sendgrid = string;
 
 /** @title Sendgrid config setup */
 export default function loader(
-    { sendgridApiKey }: Props,
+  { sendgridApiKey }: Props,
 ): Sendgrid {
-    const sendgridApiKeyString = typeof sendgridApiKey === "string"
-        ? sendgridApiKey
-        : sendgridApiKey.get() as string;
+  const sendgridApiKeyString = typeof sendgridApiKey === "string"
+    ? sendgridApiKey
+    : sendgridApiKey.get() as string;
 
-    return sendgridApiKeyString;
+  return sendgridApiKeyString;
 }

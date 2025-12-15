@@ -43,7 +43,9 @@ export default function InputNumber(
   };
 
   // Formatar o valor para exibir zero à esquerda apenas se for menor que 10
-  const formattedValue = value < 10 ? value.toString().padStart(2, "0") : value.toString();
+  const formattedValue = value < 10
+    ? value.toString().padStart(2, "0")
+    : value.toString();
 
   return (
     <>

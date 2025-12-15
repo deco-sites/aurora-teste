@@ -1,32 +1,32 @@
 export default function BrokerLoginSection() {
-    return (
-        <>
-            <div className="flex justify-center bg-aquagreen px-10 lg:px-0">
-                <div className="flex flex-col lg:flex-row gap-16 lg:w-[1400px] w-full pt-32 pb-36">
-                    <div className="flex flex-col items-center gap-16 lg:flex-row bg-yellow rounded-[20px] lg:pl-20 lg:pr-12 py-16">
-                        <div className="flex flex-col px-10 lg:px-0 text-pink6 gap-4 lg:gap-5">
-                            <span className="font-sora font-bold text-2xl">
-                                Minhas Vendas
-                            </span>
-                            <span>
-                                Aqui você preenche, envia e gerencia suas
-                                propostas com segurança e agilidade. Aproveite
-                                para conhecer as campanhas de vendas vigentes,
-                                consultar comissões e participar das premiações.
-                            </span>
-                        </div>
-                        <div className="flex justify-center items-center">
-                            <a
-                                href="https://souaurorasaude.planium.io/web/login/?target=venda"
-                                target="_blank"
-                            >
-                                <button className="bg-pink6 w-fit text-white rounded-full py-3 px-16">
-                                    Entrar
-                                </button>
-                            </a>
-                        </div>
-                        {
-                            /*
+  return (
+    <>
+      <div className="flex justify-center bg-aquagreen px-10 lg:px-10 2xl:px-0">
+        <div className="flex flex-col lg:flex-row gap-16 lg:w-[1400px] w-full pt-32 pb-36">
+          <div className="flex flex-col items-center gap-16 lg:flex-row bg-yellow rounded-[20px] lg:pl-20 lg:pr-12 py-16">
+            <div className="flex flex-col px-10 lg:px-0 text-pink6 gap-4 lg:gap-5">
+              <span className="font-sora font-bold text-2xl">
+                Minhas Vendas
+              </span>
+              <span>
+                Aqui você preenche, envia e gerencia suas propostas com
+                segurança e agilidade. Aproveite para conhecer as campanhas de
+                vendas vigentes, consultar comissões e participar das
+                premiações.
+              </span>
+            </div>
+            <div className="flex justify-center items-center">
+              <a
+                href="https://souaurorasaude.planium.io/web/login/?target=venda"
+                target="_blank"
+              >
+                <button className="bg-pink6 w-fit text-white rounded-full py-3 px-16">
+                  Entrar
+                </button>
+              </a>
+            </div>
+            {
+              /*
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-col items-center lg:flex-row gap-6">
                                 <input
@@ -57,10 +57,10 @@ export default function BrokerLoginSection() {
                             </div>
                         </div>
                         */
-                        }
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+            }
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
