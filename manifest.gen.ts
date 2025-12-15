@@ -8,13 +8,14 @@ import * as $$$$$$$$$2 from "./actions/getCityCode.ts";
 import * as $$$$$$$$$3 from "./actions/getPlans.ts";
 import * as $$$$$$$$$4 from "./actions/getPrices.ts";
 import * as $$$$$$$$$5 from "./actions/realUpdateDependents.ts";
-import * as $$$$$$$$$6 from "./actions/saveLead.ts";
-import * as $$$$$$$$$7 from "./actions/saveLeadDependents.ts";
-import * as $$$$$$$$$8 from "./actions/saveStep2Option1.ts";
-import * as $$$$$$$$$9 from "./actions/saveStep2Option2.ts";
-import * as $$$$$$$$$10 from "./actions/sendEmail.ts";
-import * as $$$$$$$$$11 from "./actions/updateDependents.ts";
-import * as $$$$$$$$$12 from "./actions/updateLead.ts";
+import * as $$$$$$$$$6 from "./actions/saveBroker.ts";
+import * as $$$$$$$$$7 from "./actions/saveLead.ts";
+import * as $$$$$$$$$8 from "./actions/saveLeadDependents.ts";
+import * as $$$$$$$$$9 from "./actions/saveStep2Option1.ts";
+import * as $$$$$$$$$10 from "./actions/saveStep2Option2.ts";
+import * as $$$$$$$$$11 from "./actions/sendEmail.ts";
+import * as $$$$$$$$$12 from "./actions/updateDependents.ts";
+import * as $$$$$$$$$13 from "./actions/updateLead.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/algolia.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/site.ts";
@@ -181,13 +182,14 @@ const manifest = {
     "site/actions/getPlans.ts": $$$$$$$$$3,
     "site/actions/getPrices.ts": $$$$$$$$$4,
     "site/actions/realUpdateDependents.ts": $$$$$$$$$5,
-    "site/actions/saveLead.ts": $$$$$$$$$6,
-    "site/actions/saveLeadDependents.ts": $$$$$$$$$7,
-    "site/actions/saveStep2Option1.ts": $$$$$$$$$8,
-    "site/actions/saveStep2Option2.ts": $$$$$$$$$9,
-    "site/actions/sendEmail.ts": $$$$$$$$$10,
-    "site/actions/updateDependents.ts": $$$$$$$$$11,
-    "site/actions/updateLead.ts": $$$$$$$$$12,
+    "site/actions/saveBroker.ts": $$$$$$$$$6,
+    "site/actions/saveLead.ts": $$$$$$$$$7,
+    "site/actions/saveLeadDependents.ts": $$$$$$$$$8,
+    "site/actions/saveStep2Option1.ts": $$$$$$$$$9,
+    "site/actions/saveStep2Option2.ts": $$$$$$$$$10,
+    "site/actions/sendEmail.ts": $$$$$$$$$11,
+    "site/actions/updateDependents.ts": $$$$$$$$$12,
+    "site/actions/updateLead.ts": $$$$$$$$$13,
   },
   "apps": {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,

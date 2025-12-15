@@ -55,6 +55,7 @@ export default function ClearForm() {
 
   const {
     socialReasonValue,
+    cnpjValue2,
     name2Value,
     ufValue2,
     cityValue2,
@@ -62,6 +63,7 @@ export default function ClearForm() {
     email2Value,
 
     socialReasonError,
+    cnpjError2,
     name2Error,
     ufError2,
     cityError2,
@@ -70,12 +72,14 @@ export default function ClearForm() {
   } = useStepTwoOption2InputValues();
 
   socialReasonValue.value = "";
+  cnpjValue2.value = "";
   name2Value.value = "";
   ufValue2.value = "";
   cityValue2.value = "";
   tel2Value.value = "";
   email2Value.value = "";
   socialReasonError.value = false;
+  cnpjError2.value = false;
   name2Error.value = false;
   ufError2.value = false;
   cityError2.value = false;
