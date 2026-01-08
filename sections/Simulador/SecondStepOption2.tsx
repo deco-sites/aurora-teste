@@ -10,13 +10,11 @@ import InputSelect from "site/components/Simulador/input-select.tsx";
 import { invoke } from "../../runtime.ts";
 import { titleCase } from "site/helpers/titleCase.ts";
 import { useLoaderInfos } from "site/sdk/Simulador/useLoaderInfos.ts";
-import { cnpjMask } from "site/helpers/Simulador/cnpjMask.ts";
 
 export default function SecondStepOption2() {
   const [socialReasonPlaceholder, setSocialReasonPlaceholder] = useState(
     "Escreva aqui",
   );
-  const [cnpjPlaceholder, setCnpjPlaceholder] = useState("CNPJ");
   const [namePlaceholder, setNamePlaceholder] = useState("Nome Completo");
   const [ufPlaceholder, setUFPlaceholder] = useState("Selecione");
   const [cityPlaceholder, setCityPlaceholder] = useState("Selecione");
@@ -27,7 +25,6 @@ export default function SecondStepOption2() {
 
   const {
     socialReasonValue,
-    cnpjValue2,
     name2Value,
     ufValue2,
     cityValue2,
@@ -35,7 +32,6 @@ export default function SecondStepOption2() {
     email2Value,
 
     socialReasonError,
-    cnpjError2,
     name2Error,
     ufError2,
     cityError2,
@@ -47,7 +43,6 @@ export default function SecondStepOption2() {
     const updateNamePlaceholder = () => {
       if (globalThis.innerWidth < 640) {
         setSocialReasonPlaceholder("Razão social");
-        setCnpjPlaceholder("CNPJ");
         setNamePlaceholder("Nome e sobrenome");
         setUFPlaceholder("UF");
         setCityPlaceholder("Cidade");
@@ -55,7 +50,6 @@ export default function SecondStepOption2() {
         setEmailPlaceholder("E-mail");
       } else {
         setSocialReasonPlaceholder("Escreva aqui");
-        setCnpjPlaceholder("CNPJ");
         setNamePlaceholder("Nome completo");
         setUFPlaceholder("Selecione");
         setCityPlaceholder("Selecione");
@@ -112,33 +106,10 @@ export default function SecondStepOption2() {
             label={"Razão social"}
             placeholder={socialReasonPlaceholder}
             value={socialReasonValue.value}
-            inputValueSetter={(value) => (socialReasonValue.value = value)}
+            inputValueSetter={(value) => socialReasonValue.value = value}
             wfull
           />
           {socialReasonError.value && (
-            <Image
-              src={"/Simulador/error-circle-icon.png"}
-              alt="Error Icon"
-              width=""
-              height=""
-              className="h-5 w-5 absolute top-50 right-2 lg:left-[520px]"
-            />
-          )}
-        </div>
-
-        <div className="relative flex gap-2 items-center lg:w-[500px]">
-          <InputText
-            id={"cnpj"}
-            name={"cnpj"}
-            label={"CNPJ"}
-            placeholder={cnpjPlaceholder}
-            value={cnpjValue2.value}
-            inputValueSetter={(value) => (cnpjValue2.value = value)}
-            mask={cnpjMask}
-            maxLength={18}
-            wfull
-          />
-          {cnpjError2.value && (
             <Image
               src={"/Simulador/error-circle-icon.png"}
               alt="Error Icon"
@@ -156,7 +127,7 @@ export default function SecondStepOption2() {
             label={"Nome e Sobrenome"}
             placeholder={namePlaceholder}
             value={name2Value.value}
-            inputValueSetter={(value) => (name2Value.value = value)}
+            inputValueSetter={(value) => name2Value.value = value}
             mask={nameMask}
             wfull
           />
@@ -233,7 +204,7 @@ export default function SecondStepOption2() {
             label={"Telefone/WhatsApp"}
             placeholder={telPlaceholder}
             value={tel2Value.value}
-            inputValueSetter={(value) => (tel2Value.value = value)}
+            inputValueSetter={(value) => tel2Value.value = value}
             mask={PhoneMask}
             maxLength={16}
           />
@@ -255,7 +226,7 @@ export default function SecondStepOption2() {
             label={"E-mail"}
             placeholder={emailPlaceholder}
             value={email2Value.value}
-            inputValueSetter={(value) => (email2Value.value = value)}
+            inputValueSetter={(value) => email2Value.value = value}
             wfull
           />
           {email2Error.value && (

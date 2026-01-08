@@ -194,15 +194,6 @@
   overflow: visible; /* Permite que o ::before seja visível fora dos limites do botão */
 }
 
-.request-your-quote {
-  max-width: calc(var(--icon-size) + 2 * var(--inline-padding));
-}
-
-.request-your-quote.for-mobile.expanded,
-.request-your-quote:not(.for-mobile):hover {
-  max-width: 400px;
-}
-
 .button-border-effect::before {
   content: "";
   position: absolute;

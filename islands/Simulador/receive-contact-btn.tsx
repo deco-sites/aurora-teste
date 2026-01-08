@@ -1,35 +1,55 @@
 import Image from "apps/website/components/Image.tsx";
 import { useFormSteps } from "../../sdk/Simulador/useFormSteps.ts";
 import { invoke } from "../../runtime.ts";
-import { DependentLead, Lead } from "site/actions/saveLead.ts";
+
+export interface Lead {
+  nome: string;
+  razao_social: string;
+  cpf_cnpj: string;
+  cidade: number;
+  estado: string;
+  telefone: string;
+  email: string;
+  cd_plano: number;
+  somente_titular: boolean;
+  possui_plano: boolean;
+  cd_tab_preco: number;
+  outra_pessoa: boolean;
+}
+
+export interface DependentLead {
+  cd_faixa: number;
+  quantidade: number;
+  cd_tab_preco: number;
+}
 
 interface IBtnProps {
   number: number;
-  mission: "increase" | "decrease" | "specificStep";
+  mission: string;
   leadToSave: Lead;
-  dependentLead?: DependentLead[];
+  dependentLead?: DependentLead;
   whoUseThePlan: string;
   activeOption: number;
 }
 
-export default function ReceiveContactButton({
-  number,
-  mission,
-  leadToSave,
-  dependentLead,
-  whoUseThePlan,
-  activeOption,
-}: IBtnProps) {
-  const { changeStep, activeStep } = useFormSteps();
+export default function ReceiveContactButton(
+  { number, mission, leadToSave, dependentLead, whoUseThePlan, activeOption }:
+    IBtnProps,
+) {
+  const { changeStep } = useFormSteps();
 
   const handleSaveLead = async () => {
-    const _result = await invoke.site.actions.saveLead({
+    //console.log("Chamou a handleSaveLead", dependentLead);
+    {
+      /* Essa parte comentada era responsável por salvar o lead no final do preenchimento
+    await invoke.site.actions.saveLead({
       leadToSave,
       dependentLead,
       whoUseThePlan,
       activeOption,
     });
-
+    */
+    }
     changeStep(number, mission);
   };
 

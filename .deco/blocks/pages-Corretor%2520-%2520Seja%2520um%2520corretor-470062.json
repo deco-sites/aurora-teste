@@ -13,10 +13,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/de9699cd-20e3-4815-917e-cdf7fe07d9b8"
+              "image": "https://data.decoassets.com/official-aurora-saude/618a3943-d845-4ad0-a071-a786b25832f0/1742234111289-de9699cd-20e3-4815-917e-cdf7fe07d9b8"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/2a3d98bb-9d15-4401-a5be-740ba9f5a6cb"
+              "image": "https://data.decoassets.com/official-aurora-saude/f6c4a60f-b774-401e-8678-a52f68babe85/1742234113080-2a3d98bb-9d15-4401-a5be-740ba9f5a6cb"
             },
             "alt": "Banner"
           },
@@ -34,10 +34,24 @@
     {
       "__resolveType": "site/sections/Site/BeABrokerForm.tsx",
       "subject": "Aurora Saúde - Seja um corretor parceiro",
-      "recipientsEmail": "corretor@souaurorasaude.com.br"
+      "recipientsEmail": "corretor@souaurorasaude.com.br",
+      "RecipientsEmailArr": [
+        {
+          "email": "corretor@souaurorasaude.com.br"
+        }
+      ],
+      "CopyToArr": [
+        {
+          "email": "thais.oliveira@souaurorasaude.com.br"
+        }
+      ],
+      "textButton": "Enviar"
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

@@ -1,1 +1,309 @@
-{"name":"Cliente - Perguntas frequentes","path":"/perguntas-frequentes","sections":[{"__resolveType":"site/sections/Site/ColorfullWrapper.tsx","sections":[{"__resolveType":"site/sections/Site/HeaderSite.tsx","type":"cliente"},{"__resolveType":"site/sections/Site/BannerSection.tsx","image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3f8d9a68-3ad2-4caf-88fb-13798fe79f97"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/78fc7e0a-034b-43b0-b924-20fa6cfcb08a"},"alt":"Banner"},"textColor":"Branco","fontSize":"26","fontWeight":"semi-bold","desktopTitle":"Está com dúvidas?","mobileTitle":"Está com<br /> dúvidas?","titleFontSize":"26","titleFontWeight":"semi-bold"}]},{"__resolveType":"site/sections/Site/CommonQuestions.tsx","themes":[{"themeName":"Como utilizar o seu plano","themeQuestions":[{"questionTitle":"Como usar o aplicativo da Aurora Saúde?","questionText":"<p><span>Primeiro, acesse a loja de aplicativos do seu dispositivo móvel (Google Play Store para Android ou App Store para iOS). <br>Na barra de pesquisa, digite o nome da sua operadora de planos de saúde e encontre o aplicativo oficial. <br>Toque em \"Instalar\" para baixar e instalar o aplicativo no seu dispositivo. <br><br></span><strong><span>Cadastro ou Login: </span></strong><span><br><br>Abra o aplicativo após a instalação. <br>Faça o login com suas credenciais (nome de usuário e senha). <br>Após o login, você será direcionado para a página inicial do aplicativo. <br><br></span><strong><span>Em seu APP, você terá acesso às seguintes funcionalidades: </span></strong><span><br><br>Dados do Plano; <br>Acesso a sua Carteirinha do Plano; <br>Solicitar autorizações de exames ou procedimentos; <br>Acompanhar o status das autorizações; <br>Manuais e Informativos da Operadora; <br>Canal direto de comunicação para entrar em contato com a operadora;<br>Podcast de saúde; <br>Relatório de Coparticipações e Carências.<br><br>Se você encontrar dificuldades ou tiver dúvidas específicas sobre o aplicativo, não hesite em entrar em contato com a nossa central de atendimento ao cliente pelo App, WhatsApp ou Telefone 4000-2105.</span></p>"},{"questionTitle":"Onde encontrar minha carteirinha? ","questionText":"<p>Texto faltando no figma.</p>"},{"questionTitle":"Como marcar um nutricionista, fonoaudiólogo, psicólogo, terapeuta ocupacional ou fisioterapeuta?","questionText":"<p>Texto faltando no figma.</p>"},{"questionTitle":"Como agendar uma consulta presencial?","questionText":"<p>Texto faltando no figma.</p>"},{"questionTitle":"O que são consultas eletivas?","questionText":"<p>Texto faltando no figma.</p>"}]},{"themeName":"Contratação de planos","themeQuestions":[{"questionTitle":"Opção 1","questionText":"<p>Texto da opção 1</p>"},{"questionTitle":"Opção 2","questionText":"<p>Texto da opção 2</p>"}]},{"themeName":"Questões Financeiras","themeQuestions":[{"questionTitle":"Opção 1","questionText":"<p>Texto da opção 1</p>"},{"questionTitle":"Outra questão","questionText":"<p>Este é o texto de mais uma questão</p>"}]}]},{"__resolveType":"site/sections/Site/Footer.tsx"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Cliente - Perguntas frequentes",
+  "path": "/perguntas-frequentes",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/93d82d36-fc94-472b-81a3-8e8d0de68bb3/1742234204781-3f8d9a68-3ad2-4caf-88fb-13798fe79f97"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/bfb72954-8831-41e0-a61d-2aeb7775a0e3/1742234206848-78fc7e0a-034b-43b0-b924-20fa6cfcb08a"
+            },
+            "alt": "Banner"
+          },
+          "textColor": "Branco",
+          "fontSize": "26",
+          "fontWeight": "semi-bold",
+          "desktopTitle": "Está com dúvidas?",
+          "mobileTitle": "Está com<br /> dúvidas?",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/CommonQuestions.tsx",
+      "themes": [
+        {
+          "themeName": "Como utilizar o seu plano",
+          "themeQuestions": [
+            {
+              "questionTitle": "Como usar o aplicativo da Aurora Saúde?",
+              "questionText": "<p><span>Primeiro, acesse a loja de aplicativos do seu dispositivo móvel (Google Play Store para Android ou App Store para iOS). <br>Na barra de pesquisa, digite o nome da sua operadora de planos de saúde e encontre o aplicativo oficial. <br>Toque em \"Instalar\" para baixar e instalar o aplicativo no seu dispositivo. <br><br></span><strong><span>Cadastro ou Login: </span></strong><span><br><br>Abra o aplicativo após a instalação. <br>Faça o login com suas credenciais (nome de usuário e senha). <br>Após o login, você será direcionado para a página inicial do aplicativo. <br><br></span><strong><span>Em seu APP, você terá acesso às seguintes funcionalidades: </span></strong><span><br><br>Dados do Plano; <br>Acesso a sua Carteirinha do Plano; <br>Solicitar autorizações de exames ou procedimentos; <br>Acompanhar o status das autorizações; <br>Manuais e Informativos da Operadora; <br>Canal direto de comunicação para entrar em contato com a operadora;<br>Podcast de saúde; <br>Relatório de Coparticipações e Carências.<br><br>Se você encontrar dificuldades ou tiver dúvidas específicas sobre o aplicativo, não hesite em entrar em contato com a nossa central de atendimento ao cliente pelo App, WhatsApp ou Telefone 4000-2105.</span></p>"
+            },
+            {
+              "questionTitle": "Onde encontrar minha carteirinha? ",
+              "questionText": "<p>A carteirinha digital está disponível no aplicativo da Aurora Saúde na opção Cartão Virtual.</p>"
+            },
+            {
+              "questionTitle": "Como encontrar um médico ou estabelecimento que atende meu plano?",
+              "questionText": "<p>Você pode encontrar médicos, consultórios, clínicas e hospitais que atendem seu plano através da rede credenciada que disponibilizamos em nosso site ou em seu aplicativo Aurora Saúde.</p>"
+            },
+            {
+              "questionTitle": "Como agendar uma consulta presencial?",
+              "questionText": "<p>Para agendar uma consulta presencial você deverá acessar a área do Cliente do site ou seu aplicativo da Aurora Saúde, localizar no Guia Médico o prestador que deseja conforme tipo de prestador, especialidade, cidade de atendimento e você deve entrar em contato diretamente com o consultório médico ou clínica para realizar o atendimento.</p><p>Em caso de dúvidas, você pode acionar nossa equipe pelos nossos canais de atendimento App Aurora Saúde, Whatsapp ou telefone 4000-2105.</p>"
+            },
+            {
+              "questionTitle": "O que são consultas eletivas?",
+              "questionText": "<p>As consultas eletivas são consultas agendadas com antecedência.</p>"
+            },
+            {
+              "questionTitle": "Como agendar um retorno de consulta?",
+              "questionText": "<p>Você pode ligar diretamente no consultório ou clínica onde realizou sua consulta e verificar o prazo de retorno.</p>"
+            },
+            {
+              "questionTitle": "Como confirmar um horário de consulta?",
+              "questionText": "<p>Você deverá entrar em contato com o consultório ou clínica para confirmar seu agendamento.</p>"
+            },
+            {
+              "questionTitle": "Como remarcar ou cancelar uma consulta?",
+              "questionText": "<p>Você pode remarcar ou cancelar uma consulta entrando em contato diretamente com o consultório ou clinica onde agendou sua consulta.</p>"
+            },
+            {
+              "questionTitle": "Como marcar um nutricionista, fonoaudiólogo, psicólogo, terapeuta ocupacional ou fisioterapeuta?",
+              "questionText": "<p>Para agendamentos com nutricionista, fonoaudiólogo, psicólogo, terapeuta ocupacional ou fisioterapeuta você precisará de um encaminhamento médico prévio antes de marcar uma consulta.</p><p>Para conseguir um encaminhamento médico, agende uma consulta com um especialista. </p><p>Se você já possui uma guia autorizada, você pode fazer o agendamento com nossos profissionais localizando a clinica de preferencia atraves do site. </p>"
+            },
+            {
+              "questionTitle": "Como agendar uma consulta a partir de um encaminhamento?",
+              "questionText": "<p>Você deverá entrar em contato com o consultório ou clínica para realizar seu agendamento.</p>"
+            },
+            {
+              "questionTitle": "Como realizar uma consulta de telemedicna?",
+              "questionText": "<p>Você pode realizar uma consulta de telemedicina através do acesso em seu portal do cliente. Lá haverá um link para você ser direcionado ao atendimento imediato de um médico da especialidade de clínica geral.</p>"
+            },
+            {
+              "questionTitle": "É cobrada coparticipação para realizar um Atendimento On-line de Urgência?",
+              "questionText": "<p>Poderá haver cobrança de coparticipação para atendimentos on-lines. Para confirmar se haverá cobranças, você deverá buscar o RH de sua empresa ou sua Administradora de Benefíciospara para que verifiquem o contrato. </p>"
+            },
+            {
+              "questionTitle": "O CID é obrigatório no atestado?",
+              "questionText": "<p>O CID, conforme legislação não é obrigatório, mas poderá ser aberto uma pendência para verificação com o Prestador.</p>"
+            },
+            {
+              "questionTitle": "Como consultar o status de autorização da guia de exame?",
+              "questionText": "<p>Você poderá verificar em seu APP todos os status das suas guias de autorização.</p>"
+            },
+            {
+              "questionTitle": "Como encontrar um estabelecimento para realizar meus exames?",
+              "questionText": "<p>Você pode encontrar uma clinica, hospitais ou prestadores que atendem seu plano acessando seu guia médico em seu portal do beneficiário ou APP.</p>"
+            },
+            {
+              "questionTitle": "Como marcar um exame ou procedimento?",
+              "questionText": "<p>Você deverá verificar sua rede de atendimento em seu guia médico e agendar a realização do procedimento diretamente com a clínica ou laboratório.</p>"
+            },
+            {
+              "questionTitle": "Como confirmar o horário de um exame ou procedimento?",
+              "questionText": "<p>Para confirmar o horário de um exame ou procedimento que foi agendado, você deverá entrar em contato diretamente com o prestador onde agendou a realização do procedimento. </p>"
+            },
+            {
+              "questionTitle": "Como solicitar a autorização pra realização de exames?",
+              "questionText": "<p>Você poderá solicitar a solicitação de autorização de realização de exames pelo seu portal ou app de beneficiário. É fácil e rápido!</p>"
+            },
+            {
+              "questionTitle": "Como saber se um exame foi autorizado?",
+              "questionText": "<p>Você poderá acompanhar sua solicitação de autorização pelo seu portal ou app de beneficiário.</p>"
+            },
+            {
+              "questionTitle": "Minha guia de exame venceu. Como revalidar?",
+              "questionText": "<p>Se a sua guia de exame venceu, você pode revalidá-la por mais 30 dias após a data de vencimento. Porém, não pode haver alteração na solicitação, como mudança de materiais cirúrgico. E também, não é possível revalidar caso tenha uma data prevista de exclusão do contrato.  </p><p>Para revalidar sua guia, você pode entrar em contato no 4000-2105.</p>"
+            },
+            {
+              "questionTitle": "Meu exame não foi autorizado. O que fazer?",
+              "questionText": "<p>Se seu exame não foi autorizado, você pode solicitar revisão, Além disso, você também pode entrar em contato conosco por telefone ou Whatsapp no número 4000-2105.</p>"
+            },
+            {
+              "questionTitle": "Quando devo ir ao pronto atendimento presencial?",
+              "questionText": "<p>Você deve procurar o pronto atendimento presencial em casos de urgência e emergência, por exemplo:</p><p>dores súbitas e intensas no peito ou no abdome, dificuldades respiratórias, traumas, perda de consciência, hemorragias, intoxicações ou envenenamentos, queimaduras, complicações gestacionais, comportamento suicida, sinais de infecções como febre alta, queda da pressão arterial e sinais de alerta de AVC (fraqueza, dificuldades na fala, dormência em um lado do corpo).  </p><p>Dúvidas de Onde Ir? Acesse nosso site e conheça nossas opções de atendimento.</p>"
+            },
+            {
+              "questionTitle": "Qual o pronto atendimento mais perto de mim?",
+              "questionText": "<p>Você pode localizar o pronto atendimento mais perto de você,  acessando  nossa rede credenciada através do nosso site ou app e conheça nossas opções de atendimento.  </p>"
+            },
+            {
+              "questionTitle": "Qual a diferença de urgência e emergência?",
+              "questionText": "<p>Emergências são as situações que necessitam de tratamento imediato, podendo ocorrer óbito se o atendimento não for realizado.</p><p>Exemplos de emergências: Hemorragias, AVC (Acidente Vascular Cerebral), parada cardiorrespiratória, dores agudas no peito, infarto, fraturas expostas, acidentes de trânsito, ferimentos à bala.</p><p>Já a urgência, é uma ocorrência imprevista sem caráter de risco eminente de morte, onde é necessário assistência médica imediata.</p><p>Exemplos de urgências: Fraturas não expostas, cólicas renais, aumento de pressão arterial, pancadas na cabeça, luxações ou torções, intoxicações agudas, queimaduras.</p>"
+            },
+            {
+              "questionTitle": "Como fazer uma cirurgia programada?",
+              "questionText": "<p>As cirurgias programadas ou eletivas, são solicitadas e agendadas pelo médico solicitante, sendo assim, ao identificar a necessidade de um procedimento cirúrgico, o médico deverá encaminhar a solicitação ao plano e após autorizado, realizar o agendamento. </p><p>No dia e horário programados, o paciente deverá comparecer ao hospital com toda documentação necessária (informada previamente) e acompanhado de um responsável maior de 18 anos.</p>"
+            },
+            {
+              "questionTitle": "Como funcionam as internações e cirurgias de urgência?",
+              "questionText": "<p>As internações e cirurgias de urgência são solicitadas mediante atendimento de urgência e emergência no pronto socorro, após a avaliação e identificação da necessidade do procedimento em caráter de urgência. </p><p>Lembrando que sempre deverá ser verificada a cobertura pelo tipo de plano contratado.</p>"
+            },
+            {
+              "questionTitle": "Quais documentos são necessários para a internação?",
+              "questionText": "<p>Os documentos necessários para uma internação são:  </p><p>*Documento de identidade e CPF do paciente; </p><p>*Documento de identidade e CPF do responsável pelo paciente; </p><p>*Documento do convênio; </p><p>*Guia de autorização; </p><p>*Exames pré-operatórios; </p><p>*Risco cirúrgico; </p><p>*Termo de consentimento devidamente assinado pelo paciente ou responsável legal.</p>"
+            },
+            {
+              "questionTitle": "A Aurora Saúde possui serviço de ambulância?",
+              "questionText": "<p>Não, em caso de urgência em que não é possível o deslocamento do paciente até o serviço de saúde, o SAMU deverá ser acionado para realização da remoção.</p>"
+            },
+            {
+              "questionTitle": "Os planos da Aurora Saúde cobrem a colocação do DIU?",
+              "questionText": "<p>Sim, a inserção e o dispositivo possuem cobertura e será cobrado somente a coparticipação (caso haja).</p>"
+            },
+            {
+              "questionTitle": "Como solicitar a colocação do DIU?",
+              "questionText": "<p>Durante a consulta com o seu ginecologista, manifeste o seu desejo em fazer a inserção do DIU e você e o seu médico juntos irão definir qual melhor dispositivo para o seu caso. Após definir, o médico deverá formalizar o pedido com a descrição do código e do material e a documentação deverá ser encaminhada para a operadora. Após a autorização, agende o procedimento com o seu médico.</p>"
+            }
+          ]
+        },
+        {
+          "themeName": "Contratação de planos",
+          "themeQuestions": [
+            {
+              "questionTitle": "Qual a rede de atendimento da AURORA SAÚDE?",
+              "questionText": "<p>O Cliente AURORA SAÚDE pode verificar a rede de atendimento através do nosso site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://www.souaurorasaude.com.br\">www.souaurorasaude.com.br</a> ou através de seu App Aurora Saúde.</p>"
+            },
+            {
+              "questionTitle": "Como cancelar meu plano?",
+              "questionText": "<p>Os planos de saúde da Aurora Saúde podem ser empresariais ou coletivos por adesão. </p><p>Em caso de plano empresarial, você deverá entrar em contato com o seu RH para solicitar o cancelamento. Caso você seja o responsável pela empresa, você poderá solicitar o cancelamento através de seu Portal Empresas e em caso de dúvidas, entre em contato com o setor de relacionamento empresarial para que possam conhecer as condições de cancelamento.</p><p>Em caso de plano coletivo por adesão, você deve solicitar o cancelamento diretamente com sua administradora pois ela nos enviará a solicitação de cancelamento de seu plano.</p><p>Lembrete: Em caso de cancelamento do plano do titular, os dependentes também serão cancelados.</p>"
+            },
+            {
+              "questionTitle": "Como saber se eu preciso cumprir carências?",
+              "questionText": "<p>Você pode consultar seu período de carência em seu contrato, em sua carteirinha em nosso site no Portal do Beneficiário ou através do seu APP Aurora Saúde. </p><p>Em caso de dúvidas, você pode nos chamar no Whatsapp ou ligar para o 4000-2105.</p>"
+            },
+            {
+              "questionTitle": "Titular e dependente: o que é e quem eu posso incluir no plano?",
+              "questionText": "<p>Em planos empresariais, os titulares dos planos podem ser os sócios, funcionários CLTs, prestadores de serviço PJ, estagiário, jovem aprendiz ou administradores das empresas e os dependentes são os beneficiários vinculados ao plano.  </p><p>Você pode associar alguns familiares como dependentes do seu plano. Podendo ser: cônjuges; filhos, enteados e titulados até 18 anos e que estejam sob a guarda do titular ou até 23 anos, 11 meses e 29 dias se estiverem estudando Para isso, basta comprovar o vínculo entre o titular e o dependente. </p><p>Em planos coletivos por adesão, os titulares são definidos de acordo com o tipo de entidade vinculada a administradora de benefícios.</p>"
+            },
+            {
+              "questionTitle": "O que é a coparticipação? Todos os planos têm?",
+              "questionText": "<p>Coparticipação é o valor pago pelos beneficiários a título de participação nos custos dos procedimentos realizados. Exemplo: Consulta médica, realização de exames, internações, entre outros. </p><p>Fique tranquilo pois você sómente pagará suas coparticipações através do boleto de sua empresa ou administradora de benefícios. Não há cobrança de coparticipações no ato do atendimento médico.</p><p>Todos os planos AURORA SAÚDE são coparticipativos e você pode solicitar sua tabela de coparticipações para sua empresa ou Administradora de Benefícios.</p>"
+            },
+            {
+              "questionTitle": "O que é a carência dos planos? Quando posso começar a usá-los?",
+              "questionText": "<p>A carência do plano de saúde é o prazo de espera necessário para realizar determinados procedimentos após a data de vigencia do plano. Nos planos empresariais, essa regra pode variar de acordo com o tipo de contrato e número de beneficiários pertencentes ao mesmo. </p><p>De forma geral, os clientes que acabam de contratar um plano de saúde Aurora Saúde devem cumprir o prazo de carência determinado pela Agência Nacional de Saúde Suplementar (ANS).  </p><p>A regra geral estipula intervalos variáveis entre o período de carência. </p><p>Na Aurora Saúde, estes prazos são divididos em: </p><p>24 horas para urgência e emergência. </p><p>30 dias para consultas médicas e exames simples. </p><p>180 dias para exames e terapias. </p><p>180 dias para atendimentos ambulatoriais. </p><p>180 dias para internações e cirurgias. </p><p>300 dias para partos. </p><p>Lembrete: É necessário observar a cobertura de plano pra melhor identificação das carências. Em casos de planos ambulatoriais, não há cobertura para internações, cirurgias e partos.</p>"
+            },
+            {
+              "questionTitle": "Se eu adquirir um plano de saúde em período de gestação terei cobertura para o parto?",
+              "questionText": "<p>A carência para parto a termo é de 300 dias.</p>"
+            },
+            {
+              "questionTitle": "O que é a opção de Enfermaria ou apartamento? Qual a diferença?",
+              "questionText": "<p>Enfermaria e apartamento são tipos de acomodação hospitalar que você pode escolher na contratação do plano de saúde. </p><p>A diferença é que a enfermaria é uma acomodação coletiva. Nessa opção, dois ou mais pacientes ficam internados em um mesmo ambiente e a principal vantagem é o custo do plano.  </p><p>Já o apartamento é uma acomodação individual, onde o paciente tem mais privacidade e mais conforto.  </p>"
+            },
+            {
+              "questionTitle": "O que é área de abrangência da Aurora Saúde? Qual é sua abrangência?",
+              "questionText": "<p>É a área em que a operadora de plano de saúde se compromete a garantir todas as coberturas de assistência à saúde contratadas pelo beneficiário. Você pode consultar a área de abrangência dos planos da Aurora Saúde em seu contrato, com o RH de sua empresa ou com sua Administradora de Benefícios.</p>"
+            },
+            {
+              "questionTitle": "Meu plano aumentou de valor, o que pode ter acontecido?",
+              "questionText": "<p>O seu contrato pode ter sofrido um reajuste por faixa etária ou um reajuste contratual anual.</p><p>O reajuste contratual anual é a atualização do valor da mensalidade e coparticipações baseado na variação dos custos dos procedimentos médico-hospitalares. O objetivo dessa atualização é manter a prestação do serviço contratado. Os contratos dos planos empresariais e coletivos são reajustados anualmente nas datas de aniversário do contrato. </p><p>O reajuste por faixa etária acontece à partir de 19 anos de idade do beneficiário e se torna recorrente de 4 anos em 4 anos. Ele é cobrado no boleto posterior ao aniversário do beneficiário.</p><p>A empresa é responsável por comunicar aos seus funcionários o percentual de reajuste aplicado em ambos os casos. Ela efetuará o desconto do funcionário de acordo com a política de benefícios. </p><p>O ajuste é realizado conforme regulamentação da Agência Nacional de Saúde (ANS) e definição em contrato ou aditivo contratual. </p>"
+            },
+            {
+              "questionTitle": "Onde e como posso contratar um plano de saúde Aurora Saúde?",
+              "questionText": "<p>Você poderá contratar nosso plano através de um corretor de planos de saúde ou de uma administradora de benefícios parceiros.</p>"
+            },
+            {
+              "questionTitle": "Quem pode contratar um plano de saúde Aurora Saúde?",
+              "questionText": "<p>Planos empresariais podem ser contratados por: Empresas, Igrejas, Associações, Sindicatos, Institutos, Condôminos, Cooperativas e cartório.</p><p>Planos coletivos por adesão podem ser contratos conforme vinculação as entidades das nossas Administradoras de Benefícios.</p>"
+            },
+            {
+              "questionTitle": "Como faço para aderir o plano de ex-funcionário e quais são as condições para contratação?",
+              "questionText": "<p>Confira algumas informações importantes para a manutenção do seu plano em casos de demissão sem justa causa ou aposentadoria.</p><p></p><p>Condições</p><p>Você pode permanecer na Aurora Saúde por meio do benefício PAD (Programa de Assistência aos Aposentados e Demitidos), caso você se enquadre nas condições abaixo estabelecidas ou até a duração do contrato empresa conosco:</p><p>Demissão sem justa causa ou Aposentadoria;</p><p>A solicitação de inclusão no benefício junto a Aurora Saúde deve ser feita até 30 dias da data de seu desligamento ou aposentadoria;</p><p>O direito ao PAD cessa caso você perca a condição de desemprego e volte a trabalhar com vínculo empregatício (carteira assinada) ou nos casos de cancelamento do contrato da empresa.</p><p></p><p>Lembre-se:</p><p>Tem direito a manter o plano de saúde oferecido pela empresa os aposentados e demitidos que contribuiram mensalmente para o pagamento do plano de saúde.</p><p></p><p>Caso o empregador pague integralmente o plano de saúde do usuário, este não tem direito ao plano de saúde pelo programa.</p><p>Documentos necessários para inclusão:</p><p>- Cópia do Termo de Rescisão Contratual;</p><p>- Cópia da Carteira de Trabalho da página com a foto (frente e verso);</p><p>- Cópia da Carteira de Trabalho da página em que consta o carimbo da empresa com a data do desligamento;</p><p>- Cópia do comprovante de endereço atualizado;</p><p>- Certidão de nascimento (nos casos dos filhos com menor idade);</p><p>- Cópia da carta de concessão de Aposentadoria (nos casos de Aposentadoria);</p><p>- Cópia da identidade e CPF do titular e dependentes do contrato;</p><p>Como dar entrada ao PAD?</p><p>Você poderá realizar a solicitação através do email <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"mailto:pad@souaurorasaude.com.br\">pad@souaurorasaude.com.br</a></p><p></p><p>Como ficam meus dependentes?</p><p>O aposentado ou demitido tem o direito de manter a condição de beneficiário individualmente ou com seu grupo familiar, permanecendo com os mesmos dependentes do contrato da empresa. Após a inclusão no benefício, somente poderão ser inclusos: novo cônjuge até 30 dias após o casamento, e filhos recém-nascido e adotado, também no prazo de 30 dias do nascimento/adoção.</p><p>Quando acaba o direito de permanecer no plano?</p><p>Caso o beneficiário seja admitido em novo emprego.</p><p>Quando terminarem os prazos de permanência no plano como demitido ou aposentado.</p><p>Se o ex-empregador cancelar o benefício do plano de saúde.</p>"
+            }
+          ]
+        },
+        {
+          "themeName": "Questões Financeiras",
+          "themeQuestions": [
+            {
+              "questionTitle": "Como retirar a segunda via do boleto?",
+              "questionText": "<p>Se você é o responsável pela empresa, você pode acessar seu boleto através do Portal Empresa localizado em nosso site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://www.souaurorasaude.com.br\">www.souaurorasaude.com.br</a>.</p><p>Os boletos estarão disponíveis para emissão por 89 dias a contar da data de vencimento. Se desejar pagar um boleto vencimento a mais de 89 dias, pedimos que entre  em contato em nossos canais de atendimento para que possamos lhe ajudar.</p>"
+            },
+            {
+              "questionTitle": "Meu boleto está vencido. O que fazer?",
+              "questionText": "<p>Para boletos vencidos até 89 dias, os valores serão atualizados automaticamente na sua fatura, independente do banco. Por isso, não será necessário solicitar a emissão de um novo boleto para o pagamento. </p><p>Os boletos em atraso podem ser quitados em qualquer banco. Ou seja, não é necessário pagar no banco que emitiu o boleto. </p><p>Após o prazo de 89 dias, o cliente precisará entrar em contato com a Aurora Saúde para realizar a negociação do pagamento. </p>"
+            },
+            {
+              "questionTitle": "Como saber se meu boleto é verdadeiro?",
+              "questionText": "<p>Para saber se o boleto recebido é verdadeiro, deixamos abaixo algumas dicas para você conferir: </p><p>Leia o boleto com atenção e observe os detalhes: Documentos falsos costumam ter diferenças do padrão de formatação ou erros básicos de português. </p><p>Observe o número de registro do banco. Os três primeiros números do código digitável devem ser iguais aos do número de registro do banco. Exemplo: O número de registro do Banco Itaú é 341, então o código digitável deve começar com 341. </p><p>Observe se há falhas ou mudanças no padrão do código de barras: diferenças podem ser indícios de fraude. </p><p> </p><p>Lembre-se: Sempre use o portal de empresas para acessar seus boletos e extratos. </p>"
+            },
+            {
+              "questionTitle": "Onde encontrar meu informe de pagamentos?",
+              "questionText": "<p>Para beneficiários de planos empresariais, o informe de pagamento deve ser concedido pela empresa responsável.</p><p>Para beneficiários de planos coletivos por adesão, o informe de pagamento deve ser concedido pela Administradora de Benefícios.</p>"
+            },
+            {
+              "questionTitle": "Como cancelar o plano em caso de óbito do titular?",
+              "questionText": "<p>Em caso de óbito do titular:</p><p>Se é o responsável pela empresa, você deve solicitar o cancelamento do plano através do nosso portal de Empresas. </p><p>Se você é dependente do titular responsável da empresa e que veio a óbito, você deverá entrar em contato em nossos canais de atendimento para que realizemos o cancelamento do contrato empresarial.</p><p>Se você é beneficiário de planos coletivos por adesão, procure informações em sua Administradora de benefícios.</p><p>Importante: Para cancelamentos por este motivo, é necessário enviar o atestado de óbito.</p>"
+            }
+          ]
+        },
+        {
+          "themeQuestions": [
+            {
+              "questionTitle": "O que é a Jornada de Cuidados?",
+              "questionText": "<p><span style=\"font-size: 12pt\">A Jornada de Cuidados é o processo de medicina preventiva que a Aurora Saúde criou para ajudar seus beneficiários na prevenção de mais de 20 doenças. Para participar, o beneficiário deverá acessar seu App ou Portal Aurora Saúde, acessar o ícone “Jornada de Cuidados” e seguir os passos indicados.</span></p>"
+            },
+            {
+              "questionTitle": "O que é o Produto Incentivado?",
+              "questionText": "<p><span style=\"font-size: 12pt\">O produto incentivado é um produto no qual os clientes que o contratarem, garantem um percentual de desconto nos três primeiros meses de plano enquanto os beneficiários elegíveis do contrato (maiores de 18 anos) realizam as etapas da Jornada de Cuidado. A empresa contratante terá até 60 dias para que os beneficiários elegíveis concluam seus processos da Jornada e de acordo com o percentual de conclusão, a empresa poderá garantir o desconto pelos próximos 9 meses. O fluxo deverá ocorrer anualmente na renovação do contrato.</span></p>"
+            },
+            {
+              "questionTitle": "De quais atividades o BENEFICIÁRIO deverá participar para garantir o seu desconto do Produto Incentivado? ",
+              "questionText": "<p><span style=\"font-size: 12pt\">O Beneficiário deverá realizar as atividades propostas na Jornada de Cuidados até que não haja nenhuma pendência. O processo envolve:</span></p><ol type=\"1\"><li><p><span style=\"font-size: 12pt\">Responder ao Questionário disponível no App do beneficiário;</span></p></li><li><p><span style=\"font-size: 12pt\">Realizar os exames preventivos indicados na Jornada, quando necessário, e enviar os resultados pela plataforma;</span></p></li><li><p><span style=\"font-size: 12pt\">Após a análise dos resultados dos exames, se houver indicação de encaminhamento médico, o Beneficiário deverá comparecer à primeira consulta médica.</span></p></li></ol><p><span style=\"font-size: 12pt\">O processo deverá ser realizado anualmente na renovação do contrato.</span></p><p><span style=\"font-size: 12pt\">Somente será considerado elegível os beneficiários inclusos na vigência do contrato ou os que estão vigentes na data dos aniversários do contrato.</span></p>"
+            },
+            {
+              "questionTitle": "Como saberei quais exames deverei realizar para garantir o desconto do Produto Incentivado?",
+              "questionText": "<p><span style=\"font-size: 12pt\">Todo o processo é individual, então para saber quais exames nossa equipe te solicitará, pedimos que acesse o seu App ou Portal Aurora Saúde no ícone Jornada de Cuidados. Você deverá responder o questionário da forma mais transparente possível e nossa equipe lhe direcionará ao longo do processo. e se achar necessário lhe enviará um pedido médico com os exames que você deverá realizar em até 60 dias a contar da sua vigência.</span></p>"
+            },
+            {
+              "questionTitle": "Posso responder o questionário por outra pessoa? ",
+              "questionText": "<p><span style=\"font-size: 12pt\">As respostas aos questionários sempre estarão vinculadas ao CPF e telefone celular do beneficiário. É um processo pessoal e intransferível que demanda transparência do beneficiário, então não indicamos que responda por outros beneficiários.</span></p>"
+            },
+            {
+              "questionTitle": "O questionário da Jornada de Cuidados será considerado como uma Declaração de Saúde? ",
+              "questionText": "<p><span style=\"font-size: 12pt\">Não. A Declaração de saúde é um documento que você preenche e assina no ato da adesão do contrato e não deve ser confundido com a Jornada de Cuidados que é um processo que visa a prevenção de doenças.</span></p>"
+            },
+            {
+              "questionTitle": "Quem é obrigado a participar do Programa de Prevenção? ",
+              "questionText": "<p><span style=\"font-size: 12pt\">Nenhum Beneficiário é obrigado a participar da Jornada de Cuidados, entretanto, o processo é ofertado de forma gratuita para os beneficiários vinculados aos contratos da Aurora Saúde* cada beneficiário que não aderir a Jornada impacta no desconto na mensalidade proporcionalmente. Se todos os beneficiários elegíveis se recusarem a participar, não haverá desconto nas mensalidades. Salvo os casos acordados previamente.</span></p>"
+            },
+            {
+              "questionTitle": "Em quais situações haverá o direito ao desconto na mensalidade? ",
+              "questionText": "<p><span style=\"font-size: 12pt\">Para as empresas que tiverem o produto Incentivado, os beneficiários elegíveis deverão concluir todas as atividades da Jornada de Cuidados nos primeiros 60 dias após a data de vigência do contrato para garantir que tenha na mensalidade o desconto indicado na Proposta de Adesão assinada. O desconto será proporcional a quantidade de beneficiários elegíveis que concluírem sua Jornada de Cuidados.</span></p>"
+            },
+            {
+              "questionTitle": "Quais beneficiários poderão ser considerados elegíveis para participar do cálculo do Incentivo?",
+              "questionText": "<p><span style=\"font-size: 12pt\">Titulares e dependentes com 18 anos de idade ou mais.</span></p>"
+            },
+            {
+              "questionTitle": "A empresa a qual estou vinculado(a) terá acesso aos dados de saúde que respondi no questionário? ",
+              "questionText": "<p><span style=\"font-size: 12pt\">De forma alguma. Todo o processo da Jornada de Cuidados é pessoal, individual e sigiloso.</span></p>"
+            },
+            {
+              "questionTitle": "Como funcionará o desconto na mensalidade nos próximos anos do contrato?",
+              "questionText": "<p><span style=\"font-size: 12pt\">Os beneficiários deverão realizar a Jornada de Cuidados anualmente. Serão considerados elegíveis para cálculo do desconto todos os beneficiários acima de 18 anos. Assim como o primeiro ano, os beneficiários deverão realizar a Jornada de Cuidados em até 60 dias a contar do aniversário do contrato.</span></p>"
+            },
+            {
+              "questionTitle": "O que acontece se os beneficiários elegíveis não concluírem suas Jornadas de Cuidados em até 60 dias da vigência do contrato ou do aniversário dele?",
+              "questionText": "<p><span style=\"font-size: 12pt\">Caso eles não concluam o processo da Jornada de Cuidados no período, a empresa perderá o seu desconto e passará a pagar o valor de mensalidade integral dos beneficiários vinculados ao contrato.</span></p>"
+            }
+          ],
+          "themeName": "Produto Incentivado"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

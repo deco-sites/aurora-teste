@@ -2,13 +2,13 @@
   "__resolveType": "site/sections/Header.tsx",
   "logo": {
     "alt": "Logo",
-    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7b00098d-2053-46b0-9c7b-6ea862bb2058",
+    "src": "https://data.decoassets.com/official-aurora-saude/86493f6a-fd41-4690-966e-687534d00c32/1742234233970-7b00098d-2053-46b0-9c7b-6ea862bb2058",
     "width": 300
   },
   "buttonReceiveContact": {
     "text": "<p>Receber contato de um especialista</p>",
     "link": "#",
-    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9d3a490a-b10f-4b73-9656-153924e0fe4b"
+    "icon": "https://data.decoassets.com/official-aurora-saude/b0c52d93-d259-40f0-aeaa-e56a92152550/1742234235659-9d3a490a-b10f-4b73-9656-153924e0fe4b"
   },
   "buttonBackToSite": {
     "link": "#",

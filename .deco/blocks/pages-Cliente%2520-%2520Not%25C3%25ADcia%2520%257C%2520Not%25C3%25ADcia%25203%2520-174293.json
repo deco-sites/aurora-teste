@@ -1,0 +1,70 @@
+{
+  "name": "Cliente - Notícia | Notícia 3 ",
+  "path": "/noticia-noticia3",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/NewsPage.tsx",
+        "image": {
+          "image": "https://data.decoassets.com/official-aurora-saude/e977ffa3-b1a5-44b4-9612-7ec84b2f4468/KAH_0417.jpg",
+          "alt": "SRH 24"
+        },
+        "date": "22 de novembro de 2024",
+        "title": "Aurora Saúde marcando presença no SRH24",
+        "text": "<p><em>Além de patrocinar o evento, as fundadoras, Marcela e Liliane, conversaram no</em></p><p><em>podcast Talk SIM sobre suas trajetórias como empreendedoras no segmento da</em></p><p><em>saúde.</em></p><p></p><p>Aconteceu em novembro o SRH 24, evento promovido pela SIMgular que discute</p><p>as novas tendências em saúde e gestão de pessoas, trazendo especialistas para</p><p>a conversa. A 3ª edição do encontro ocorreu no Hospital Mater Dei, em Belo</p><p>Horizonte, para tratar do tema “evolução”.</p><p></p><p>Uma das novidades dessa edição foi o patrocínio da Aurora Saúde, que marcou</p><p>presença ao ter suas duas fundadoras, Marcela e Liliane, participando do Talk</p><p>SIM, um podcast ao vivo integrado à programação.</p><p></p><p>Na conversa, elas compartilharam insights sobre a trajetória como</p><p>empreendedoras no segmento da saúde, destacando os desafios e as</p><p>conquistas de liderar uma operadora de planos de saúde inovadora e integrada,</p><p>criada por mulheres.</p><p></p><p><strong>Jornada de Cuidado</strong></p><p></p><p>Aproveitando o espaço, as fundadoras apresentaram os resultados da Jornada</p><p>de Cuidado, um programa de medicina preventiva que exemplifica o</p><p>compromisso da Aurora Saúde com a transformação do setor.</p><p></p><p>Na ocasião, abordaram, também, temas como empreendedorismo feminino,</p><p>soluções personalizadas para gestão de saúde, inovação tecnológica e a</p><p>importância da diversidade e inclusão nos modelos de negócios.</p><p></p><p><strong>Diversidade e inclusão nas organizações</strong></p><p></p><p>Usando da experiência corporativa da Aurora Saúde para levantar algumas</p><p>reflexões, Marcela e Liliane compartilharam sobre como o posicionamento</p><p>disruptivo da operadora em um setor historicamente conservador, permite</p><p>com que adotem práticas de gestão modernas para transformar a experiência</p><p>do cliente e elevar o padrão da saúde suplementar no Brasil.</p><p></p><p>O SRH 24 continua a se consolidar como um evento estratégico, reunindo</p><p>grandes players do mercado para discutir as tendências e os desafios da gestão</p><p>de benefícios. Este ano foi especialmente marcante ao dar voz ao</p><p>empreendedorismo feminino e à inovação na saúde, elementos centrais na</p><p>inspiradora trajetória da Aurora Saúde.</p>",
+        "relatedsNews": [
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/d356a6ff-adae-429b-8a05-1f2b784ad896/Noticia-Site-.png",
+              "alt": "PEGN"
+            },
+            "date": "11 de março de 2025",
+            "title": "Aurora Saúde em destaque na revista Pequenas Empresas & Grandes Negócios",
+            "link": "/noticia-noticia8"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/e6904f7d-45b0-47e5-9866-b54fb529ae83/Noticia-.png",
+              "alt": "pesquisa"
+            },
+            "date": "10 de março de 2024",
+            "title": "A Aurora Saúde quer ouvir você",
+            "link": "/noticias-noticia6"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/ddd6ac82-b1e1-4be5-911c-1232371d0c54/IMG_1915.jpeg",
+              "alt": "Montes Claros "
+            },
+            "date": "06 de fevereiro de 2025",
+            "title": "A Aurora Saúde chegou ao norte de Minas ",
+            "link": "/noticias-noticia4"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

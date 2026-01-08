@@ -13,10 +13,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/85b6e59f-916d-448f-bccd-e527baf627ea"
+              "image": "https://data.decoassets.com/official-aurora-saude/023e5a74-7e8f-483e-9d13-59174b6971a9/1742234114928-85b6e59f-916d-448f-bccd-e527baf627ea"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/17ddc04b-d802-4bcb-b2d9-6d7b934a32b4"
+              "image": "https://data.decoassets.com/official-aurora-saude/8900420b-0d1c-45a9-82a1-9329989d874d/1742234116933-17ddc04b-d802-4bcb-b2d9-6d7b934a32b4"
             },
             "alt": "Banner"
           },
@@ -33,10 +33,18 @@
     {
       "__resolveType": "site/sections/Site/WorkWithUsForm.tsx",
       "recipientsEmail": "rh@souaurorasaude.com.br",
-      "subject": "Aurora Saúde - Formulário Trabalhe Conosco"
+      "subject": "Aurora Saúde - Formulário Trabalhe Conosco",
+      "RecipientsEmailArr": [
+        {
+          "email": "rh@souaurorasaude.com.br"
+        }
+      ]
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

@@ -13,10 +13,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/33d005b9-e5b5-4e22-8e8e-164f9d607d9c"
+              "image": "https://data.decoassets.com/official-aurora-saude/f56452a3-bda2-498c-8041-7286483dbbb4/1742234226674-33d005b9-e5b5-4e22-8e8e-164f9d607d9c"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/11338209-4ff5-4d43-86f9-07489c1f487e"
+              "image": "https://data.decoassets.com/official-aurora-saude/0f5adab7-b841-4ac5-b76a-005ae7607630/1742234228613-11338209-4ff5-4d43-86f9-07489c1f487e"
             },
             "alt": "Banner"
           },
@@ -34,10 +34,19 @@
     {
       "__resolveType": "site/sections/Site/TalkToUsForm.tsx",
       "recipientsEmail": "faleconosco@souaurorasaude.com.br",
-      "subject": "Aurora Saúde - Formulário Fale Conosco"
+      "subject": "Aurora Saúde - Formulário Fale Conosco",
+      "RecipientsEmailArr": [
+        {
+          "email": "faleconosco@souaurorasaude.com.br"
+        }
+      ],
+      "CopyToArr": []
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

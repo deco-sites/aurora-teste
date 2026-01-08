@@ -2,7 +2,6 @@ import { signal } from "@preact/signals";
 
 //SecondStep Option 1
 const socialReasonValue = signal("");
-const cnpjValue2 = signal("");
 const name2Value = signal("");
 const ufValue2 = signal("");
 const cityValue2 = signal("");
@@ -10,7 +9,6 @@ const tel2Value = signal("");
 const email2Value = signal("");
 
 const socialReasonError = signal(false);
-const cnpjError2 = signal(false);
 const name2Error = signal(false);
 const ufError2 = signal(false);
 const cityError2 = signal(false);
@@ -19,7 +17,6 @@ const email2Error = signal(false);
 
 const state = {
   socialReasonValue,
-  cnpjValue2,
   name2Value,
   ufValue2,
   cityValue2,
@@ -27,7 +24,6 @@ const state = {
   email2Value,
 
   socialReasonError,
-  cnpjError2,
   name2Error,
   ufError2,
   cityError2,

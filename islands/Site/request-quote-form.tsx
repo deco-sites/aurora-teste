@@ -5,7 +5,6 @@ import SiteCitiesSelect from "site/components/Site/site-cities-select.tsx";
 import { ufsOptions } from "site/helpers/Site/ufsOptions.ts";
 import { citiesOptions } from "site/helpers/Simulador/cities.ts";
 import { useEffect, useRef, useState } from "preact/hooks";
-import { extractNumbers } from "site/helpers/Simulador/extractNumbers.ts";
 import { indicationsOptions } from "site/helpers/Site/indications.ts";
 import { invoke } from "../../runtime.ts";
 import SendingConfirmation from "site/components/Site/sending-confirmation.tsx";
@@ -13,8 +12,6 @@ import { signal } from "@preact/signals";
 import { PhoneMask } from "site/helpers/Simulador/phoneMask.ts";
 import CustomSelect from "site/components/Site/custom-select.tsx";
 import Image from "apps/website/components/Image.tsx";
-import { LeadModality } from "../../actions/saveLead.ts";
-import { isAValidNumber } from "site/helpers/Simulador/numbers.ts";
 
 export interface RecipientsEmail {
   email: string;
@@ -173,29 +170,6 @@ export default function RequestQuoteIsland(
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    await invoke.site.actions.saveLead({
-      leadToSave: {
-        nome: name.trim(),
-        razao_social: null,
-        cpf_cnpj: null,
-        cidade: +city,
-        estado: UF.trim(),
-        telefone: tel ? extractNumbers(tel) : '',
-        email: email.trim(),
-        cd_modalidade: LeadModality.Others,
-        cd_plano: null,
-        somente_titular: null,
-        possui_plano: null,
-        cd_tab_preco: null,
-        outra_pessoa: null,
-        cd_faixa: null,
-        qtd_vidas: null,
-      },
-      activeOption: undefined,
-      whoUseThePlan: undefined,
-    });
-
     requestQuoteEmailSended.value = true;
     await invoke.site.actions.sendEmail({
       RecipientsEmailArr: RecipientsEmailArr,
