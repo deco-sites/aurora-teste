@@ -4,8 +4,8 @@ const ageRangesSignal = signal([]);
 const ufsSignal = signal([]);
 
 const state = {
-    ageRangesSignal,
-    ufsSignal,
+  ageRangesSignal,
+  ufsSignal,
 };
 
 export const useLoaderInfos = () => state;

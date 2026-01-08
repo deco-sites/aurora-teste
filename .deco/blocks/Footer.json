@@ -1,1 +1,7 @@
-{"__resolveType":"site/sections/Footer.tsx"}
+{
+  "__resolveType": "site/sections/Site/Footer.tsx",
+  "cnpj": "49.955.478/0001-64",
+  "address": "Rua Ministro Orozimbo Nonato, 442 - Sala 313 - Vila da Serra - Nova Lima - MG",
+  "ansNumber": 423629,
+  "tel": "4000 2105"
+}

@@ -106,10 +106,10 @@ export default function SecondStepOption1() {
   }, []);
 
   async function getMyCities() {
-    //console.log("Chamou a getMyCities");
     const fetchedCities = await invoke.site.actions.getCities({
       selectedUF: ufValue.value,
     });
+    //console.log("FetchedCities", fetchedCities);
     changeCitiesData(fetchedCities, handleCitiesDataChange);
   }
 

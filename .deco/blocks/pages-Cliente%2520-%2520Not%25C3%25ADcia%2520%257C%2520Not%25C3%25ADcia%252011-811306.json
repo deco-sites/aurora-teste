@@ -1,0 +1,70 @@
+{
+  "name": "Cliente - Notícia | Notícia 11",
+  "path": "/noticia-noticia11",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/NewsPage.tsx",
+        "image": {
+          "image": "https://assets.decocache.com/official-aurora-saude/6093723a-862d-44fe-96b9-aff2487568bc/Noticia-.png",
+          "alt": "Resultado Pesquisa de Satisfação "
+        },
+        "date": "28 de abril de 2025",
+        "title": "Resultados da Pesquisa de Satisfação 2025 - Ano Base 2024",
+        "text": "<p>Pensando em tornar nossos serviços cada vez melhores para você, a Aurora, realizou a Pesquisa de Satisfação de Beneficiários de Planos de Saúde.<br><br>A pesquisa segue critérios técnicos da ANS e nos ajuda a entender como estamos cuidando de você, além de comparar nosso desempenho com o de outras operadoras.<br>E o mais importante: saber se nossos beneficiários indicariam a Aurora para amigos e familiares.</p><p>&nbsp;</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1kWUOg6eECwfj29yZ93ZbdXZ3g0tRZWfk/view?usp=sharing\"><strong><em><u>Pesquisa de Satisfação 2025 - Ano base 2024</u></em></strong></a></p><p>&nbsp;</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1YBbWogtCAgJ0mRssU-fVf8jNRpXU4qeK/view?usp=sharing\"><strong><em><u>Parecer da Auditoria Independente - Ano base 2024</u></em></strong></a></p>",
+        "relatedsNews": [
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/d356a6ff-adae-429b-8a05-1f2b784ad896/Noticia-Site-.png",
+              "alt": "PEGN"
+            },
+            "date": "11 de março de 2025",
+            "title": "Aurora Saúde em destaque na revista Pequenas Empresas & Grandes Negócios",
+            "link": "/noticia-noticia8"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/ddd6ac82-b1e1-4be5-911c-1232371d0c54/IMG_1915.jpeg",
+              "alt": "Montes Claros "
+            },
+            "date": "06 de fevereiro de 2025",
+            "title": "A Aurora Saúde chegou ao norte de Minas ",
+            "link": "/noticias-noticia4"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/e6904f7d-45b0-47e5-9866-b54fb529ae83/Noticia-.png",
+              "alt": "pesquisa"
+            },
+            "date": "10 de março de 2024",
+            "title": "A Aurora Saúde quer ouvir você",
+            "link": "/noticias-noticia6"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

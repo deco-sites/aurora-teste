@@ -1,1 +1,207 @@
-{"name":"Cliente - Cuidado Integrado","path":"/cuidado-integrado","sections":[{"__resolveType":"site/sections/Site/ColorfullWrapper.tsx","sections":[{"__resolveType":"site/sections/Site/HeaderSite.tsx","type":"cliente"},{"__resolveType":"site/sections/Site/BannerSection.tsx","image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/faf52143-7a9e-4d33-8ea8-6bd24c341b9b"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/80aa8c5d-b1ea-4d76-abc1-467b616796df"},"alt":"Banner"},"textColor":"Branco","fontSize":"26","fontWeight":"semi-bold","desktopTitle":"Cuidado integrado é<br />estar junto, sempre.","mobileTitle":"Cuidado<br /> integrado é<br />estar junto,<br /> sempre.","titleFontSize":"26"}]},{"__resolveType":"site/sections/Site/ColorfullBanner.tsx","title":"<p>Imagine oferecer um plano &lt;br /&gt; qu</p>","text":"<p></p>"},{"__resolveType":"site/sections/Site/SideBySideContent.tsx","image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f96fb769-4f1b-41e2-9318-2386a5fd20bf"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/04e68423-4eba-4d55-8b4d-f86752ce3a1d"},"alt":"Banner"},"title":"Abordagem Centrada  no Paciente","text":"Nossas linhas de cuidados foram projetadas desde o início para colocar os pacientes no centro de suas próprias jornadas de saúde.","boxColor":"Rosa","textColor":"Branco","ImageSide":"Esquerda","section":[{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/734b1d88-7515-44ca-95d2-60518f0e8f47"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/04e68423-4eba-4d55-8b4d-f86752ce3a1d"},"alt":"Banner"},"boxColor":"Rosa","textColor":"Branco","ImageSide":"Esquerda","title":"Abordagem Centrada  no Paciente","text":"Nossas linhas de cuidados foram projetadas desde o início para colocar os pacientes no centro de suas próprias jornadas de saúde."},{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3f7fb0f5-f18c-480c-b008-f98372864623"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/ad619224-c15f-4858-a8a7-da529e3e7525"},"alt":"Banner2"},"boxColor":"Laranja","textColor":"Branco","ImageSide":"Direita","title":"Coordenação Multidisciplinar","text":"Acreditamos que a saúde é um esforço colaborativo, por isso nossas linhas de cuidados são integradas por uma equipe multidisciplinar de profissionais de saúde. Essa colaboração permite uma abordagem holística e abrangente para o tratamento, contemplando todas as dimensões da saúde física e mental dos pacientes."}],"sections":[{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/734b1d88-7515-44ca-95d2-60518f0e8f47"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/ffe0d7ee-4629-48c5-8609-b19930e1c071"},"alt":"Banner"},"boxColor":"Rosa","textColor":"Branco","ImageSide":"Esquerda","title":"Abordagem Centrada  no Paciente","text":"Nossas linhas de cuidados foram projetadas desde o início para colocar os pacientes no centro de suas próprias jornadas de saúde."},{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3f7fb0f5-f18c-480c-b008-f98372864623"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/ad619224-c15f-4858-a8a7-da529e3e7525"},"alt":"Banner"},"boxColor":"Laranja","textColor":"Branco","ImageSide":"Direita","title":"Coordenação Multidisciplinar","text":"Acreditamos que a saúde é um esforço colaborativo, por isso nossas linhas de cuidados são integradas por uma equipe multidisciplinar de profissionais de saúde. Essa colaboração permite uma abordagem holística e abrangente para o tratamento, contemplando todas as dimensões da saúde física e mental dos pacientes."},{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/75a326c9-aa70-484a-b941-f4ce8d6751e0"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/d7d94472-6f46-4b91-980d-19f9213de68f"},"alt":"Banner3"},"boxColor":"Amarelo","textColor":"Rosa","ImageSide":"Esquerda","title":"Prevenção e Gestão de Doenças Crônicas","text":"Nossas linhas de cuidados têm uma abordagem preventiva, mas também focada na gestão de doenças crônicas. Isso não apenas melhora a qualidade de vida dos nossos beneficiários, mas também reduz a necessidade de intervenções médicas intensivas a longo prazo."},{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/acc009f3-fc5d-4392-b357-e0a5c65e1b69"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/5d602e03-ac23-4632-a8f4-b980e8b0e30f"},"alt":"Banner4"},"boxColor":"Verde","textColor":"Branco","ImageSide":"Direita","title":"Tecnologia Avançada","text":"Investimos em tecnologia de ponta para cuidar dos nossos beneficiários de forma diferenciada, humanizada e única."},{"image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/2fba5c22-4039-4c5a-a8ac-215e0fe9d668"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/04b74f59-2b9c-4eae-ad6f-e9bb49a5c50f"},"alt":"Banner5"},"boxColor":"Roxo","textColor":"Branco","ImageSide":"Esquerda","title":"Experiência do Paciente Aprimorada","text":"Cuidados garantem que nossos beneficiários se sintam ouvidos, compreendidos e apoiados em todos os momentos. Somos mais do que uma operadora de saúde, somos um plano de cuidado integrado, que acompanha e se preocupa com a jornada e o bem-estar dos nossos beneficiários. Estamos comprometidos em transformar a maneira como você vê a saúde, fornecendo resultados tangíveis e mensuráveis que irão melhorar sua qualidade de vida."}]},{"__resolveType":"site/sections/Site/LatestNews.tsx","newsArr":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a6edd630-d3cc-46e2-946a-71c89cb26486","altImage":"Fundadoras Aurora Saúde","date":"22 de agosto","title":"Minas Gerais ganha operadora de saúde fundada por mulheres","link":"/noticias-noticia4"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c36300cf-4ac7-46a3-b754-d4703f8f5dbc","altImage":"Equipe Aurora Saúde","date":"1 de setembro","title":"Um novo jeito de cuidar da saúde","link":"/noticias-noticia5"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/03d08a14-ce1e-44d9-a9e7-044c50f18dc5","altImage":"MV Sistemas","date":"25 de setembro","title":"Aurora Saúde fecha parceria com MV Sistemas","link":"/noticias-noticia6"}]},{"__resolveType":"site/sections/Site/Footer.tsx"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Cliente - Cuidado Integrado",
+  "path": "/cuidado-integrado",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/63ece696-a7ee-430e-9fb4-22e88088d8f1/1742234259273-faf52143-7a9e-4d33-8ea8-6bd24c341b9b"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/0cb1be04-b918-49b4-9c28-1cfb7f70134f/1742234261804-80aa8c5d-b1ea-4d76-abc1-467b616796df"
+            },
+            "alt": "Banner"
+          },
+          "textColor": "Branco",
+          "fontSize": "26",
+          "fontWeight": "semi-bold",
+          "desktopTitle": "Cuidado integrado é<br />estar junto, sempre.",
+          "mobileTitle": "Cuidado<br /> integrado é<br />estar junto,<br /> sempre.",
+          "titleFontSize": "26"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/ColorfullBanner.tsx",
+      "title": "<p>Imagine oferecer um plano &lt;br /&gt; qu</p>",
+      "text": "<p></p>"
+    },
+    {
+      "__resolveType": "site/sections/Site/SideBySideContent.tsx",
+      "image": {
+        "desktop": {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f96fb769-4f1b-41e2-9318-2386a5fd20bf"
+        },
+        "mobile": {
+          "image": "https://data.decoassets.com/official-aurora-saude/521fbcbe-1c27-4422-a1d6-c659b0f8ea6d/1742234264016-04e68423-4eba-4d55-8b4d-f86752ce3a1d"
+        },
+        "alt": "Banner"
+      },
+      "title": "Abordagem Centrada  no Paciente",
+      "text": "Nossas linhas de cuidados foram projetadas desde o início para colocar os pacientes no centro de suas próprias jornadas de saúde.",
+      "boxColor": "Rosa",
+      "textColor": "Branco",
+      "ImageSide": "Esquerda",
+      "section": [
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/814deae3-0fa9-49f3-8699-bf15bdf98940/1742234266077-734b1d88-7515-44ca-95d2-60518f0e8f47"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/d30b0ca4-7602-45cd-9577-b24322526eea/1742234267857-04e68423-4eba-4d55-8b4d-f86752ce3a1d"
+            },
+            "alt": "Banner"
+          },
+          "boxColor": "Rosa",
+          "textColor": "Branco",
+          "ImageSide": "Esquerda",
+          "title": "Abordagem Centrada  no Paciente",
+          "text": "Nossas linhas de cuidados foram projetadas desde o início para colocar os pacientes no centro de suas próprias jornadas de saúde."
+        },
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/7c9570c4-8109-4e49-8369-b0beb2ead75d/1742234270774-3f7fb0f5-f18c-480c-b008-f98372864623"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/f3f27d3f-c478-4141-9e0c-c24177fb8fa5/1742234274623-ad619224-c15f-4858-a8a7-da529e3e7525"
+            },
+            "alt": "Banner2"
+          },
+          "boxColor": "Laranja",
+          "textColor": "Branco",
+          "ImageSide": "Direita",
+          "title": "Coordenação Multidisciplinar",
+          "text": "Acreditamos que a saúde é um esforço colaborativo, por isso nossas linhas de cuidados são integradas por uma equipe multidisciplinar de profissionais de saúde. Essa colaboração permite uma abordagem holística e abrangente para o tratamento, contemplando todas as dimensões da saúde física e mental dos pacientes."
+        }
+      ],
+      "sections": [
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/6b35ac14-ccd0-4e80-8bdb-2afa386e4e8d/1742234276143-734b1d88-7515-44ca-95d2-60518f0e8f47"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/b7694e93-a171-4bc4-ac56-f89d5e2e32ec/1742234278483-ffe0d7ee-4629-48c5-8609-b19930e1c071"
+            },
+            "alt": "Banner"
+          },
+          "boxColor": "Rosa",
+          "textColor": "Branco",
+          "ImageSide": "Esquerda",
+          "title": "Abordagem Centrada  no Paciente",
+          "text": "Nossas linhas de cuidados foram projetadas desde o início para colocar os pacientes no centro de suas próprias jornadas de saúde."
+        },
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/e514fce2-3b44-46c1-b2a7-f38a8608c971/1742234280566-3f7fb0f5-f18c-480c-b008-f98372864623"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/4f104a31-084b-4d2d-98ec-96f55de43dda/1742234282227-ad619224-c15f-4858-a8a7-da529e3e7525"
+            },
+            "alt": "Banner"
+          },
+          "boxColor": "Laranja",
+          "textColor": "Branco",
+          "ImageSide": "Direita",
+          "title": "Coordenação Multidisciplinar",
+          "text": "Acreditamos que a saúde é um esforço colaborativo, por isso nossas linhas de cuidados são integradas por uma equipe multidisciplinar de profissionais de saúde. Essa colaboração permite uma abordagem holística e abrangente para o tratamento, contemplando todas as dimensões da saúde física e mental dos pacientes."
+        },
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/bdf9398f-1d17-4be7-a10c-931a1e369f61/1742234284332-75a326c9-aa70-484a-b941-f4ce8d6751e0"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/62fe91d3-64f8-4cd8-95ec-7f4cd36b6098/1742234286656-d7d94472-6f46-4b91-980d-19f9213de68f"
+            },
+            "alt": "Banner3"
+          },
+          "boxColor": "Amarelo",
+          "textColor": "Rosa",
+          "ImageSide": "Esquerda",
+          "title": "Prevenção e Gestão de Doenças Crônicas",
+          "text": "Nossas linhas de cuidados têm uma abordagem preventiva, mas também focada na gestão de doenças crônicas. Isso não apenas melhora a qualidade de vida dos nossos beneficiários, mas também reduz a necessidade de intervenções médicas intensivas a longo prazo."
+        },
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/e42904c8-399e-4e12-a539-e65b2d413e24/1742234288870-acc009f3-fc5d-4392-b357-e0a5c65e1b69"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/7ea1784d-890b-4f89-971e-5f8733cebc5a/1742234291212-5d602e03-ac23-4632-a8f4-b980e8b0e30f"
+            },
+            "alt": "Banner4"
+          },
+          "boxColor": "Verde",
+          "textColor": "Branco",
+          "ImageSide": "Direita",
+          "title": "Tecnologia Avançada",
+          "text": "Investimos em tecnologia de ponta para cuidar dos nossos beneficiários de forma diferenciada, humanizada e única."
+        },
+        {
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/fe395aee-8fda-452c-be6a-cfada41d52d0/1742234293068-2fba5c22-4039-4c5a-a8ac-215e0fe9d668"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/5c4de5c8-8a4f-402f-9ddc-a40606682115/1742234295110-04b74f59-2b9c-4eae-ad6f-e9bb49a5c50f"
+            },
+            "alt": "Banner5"
+          },
+          "boxColor": "Roxo",
+          "textColor": "Branco",
+          "ImageSide": "Esquerda",
+          "title": "Experiência do Paciente Aprimorada",
+          "text": "Cuidados garantem que nossos beneficiários se sintam ouvidos, compreendidos e apoiados em todos os momentos. Somos mais do que uma operadora de saúde, somos um plano de cuidado integrado, que acompanha e se preocupa com a jornada e o bem-estar dos nossos beneficiários. Estamos comprometidos em transformar a maneira como você vê a saúde, fornecendo resultados tangíveis e mensuráveis que irão melhorar sua qualidade de vida."
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/LatestNews.tsx",
+      "newsArr": [
+        {
+          "image": "https://data.decoassets.com/official-aurora-saude/1ba2d320-9833-47c2-9643-502ca179f9b8/1742234297094-a6edd630-d3cc-46e2-946a-71c89cb26486",
+          "altImage": "Fundadoras Aurora Saúde",
+          "date": "22 de agosto",
+          "title": "Minas Gerais ganha operadora de saúde fundada por mulheres",
+          "link": "/noticias-noticia4"
+        },
+        {
+          "image": "https://data.decoassets.com/official-aurora-saude/b6c901d8-7a2f-4401-94b4-1daab2b258cb/1742234298959-c36300cf-4ac7-46a3-b754-d4703f8f5dbc",
+          "altImage": "Equipe Aurora Saúde",
+          "date": "1 de setembro",
+          "title": "Um novo jeito de cuidar da saúde",
+          "link": "/noticias-noticia5"
+        },
+        {
+          "image": "https://data.decoassets.com/official-aurora-saude/c5735755-c7f4-4611-b30a-88b5d542f612/1742234300888-03d08a14-ce1e-44d9-a9e7-044c50f18dc5",
+          "altImage": "MV Sistemas",
+          "date": "25 de setembro",
+          "title": "Aurora Saúde fecha parceria com MV Sistemas",
+          "link": "/noticias-noticia6"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

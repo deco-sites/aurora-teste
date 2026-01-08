@@ -1,18 +1,15 @@
-import { App, AppContext as AC } from "deco/mod.ts";
 import website, { Props } from "apps/website/mod.ts";
 import type { Supabase } from "../loaders/supabase/supabaseConfig.ts";
 import type { Algolia } from "site/loaders/algolia/algoliaConfig.ts";
 import manifest, { Manifest } from "../manifest.gen.ts";
 import { Sendgrid } from "site/loaders/sendgrid/sendgridConfig.ts";
-
+import { type App, type AppContext as AC } from "@deco/deco";
 type WebsiteApp = ReturnType<typeof website>;
-
 export interface SiteProps extends Props {
   algolia: Algolia;
   supabaseClient: Supabase;
   sendgrid: Sendgrid;
 }
-
 /**
  * @title Site
  * @description Start your site from a template or from scratch.
@@ -37,7 +34,6 @@ export default function Site(
     ],
   };
 }
-
 export type SiteApp = ReturnType<typeof Site>;
 export type AppContext = AC<SiteApp>;
 export { onBeforeResolveProps, Preview } from "apps/website/mod.ts";

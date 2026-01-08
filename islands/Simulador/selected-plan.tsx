@@ -104,7 +104,7 @@ ${
             Faixa de idade: ${beneficiary.range}
             Quantidade: ${beneficiary.qty}
             Valor da faixa: ${
-              price ? price.valor_mensalidade.toFixed(2) : "Não encontrado"
+              price ? price.a_partir_de.toFixed(2) : "Não encontrado"
             }
           `;
           },
@@ -120,7 +120,7 @@ ${
   const sendEmailToUser = async (e) => {
     //console.log("Envia e-mail pro usuario");
     await invoke.site.actions.sendEmail({
-      recipientsEmail: emailValue.value,
+      RecipientsEmailArr: [{ email: emailValue.value }],
       subject: "Simulação - Aurora",
       data: sendData,
     });
@@ -139,13 +139,15 @@ ${
             {/*a100 rmbh*/}
           </span>
           <span className="lg:hidden text-yellow font-bold font-sora py-4 text-5xl ">
-            a100 <br /> rmbh
+            {selectedPlanName}
+            {/*a100 <br /> rmbh*/}
           </span>
         </div>
         <div className="flex flex-col lg:flex-row items-baseline lg:gap-4">
           <span className="text-sm text-white">Valor total por mês</span>
           <span className="text-white font-semibold font-sora text-xl">
-            R$ {totalValue.toString().replace(".", ",")}
+            R$ {Number(totalValue).toFixed(2).toString().replace(".", ",")}
+            {/*.toFixed(2).toString().replace(".", ",")*/}
           </span>
         </div>
       </div>

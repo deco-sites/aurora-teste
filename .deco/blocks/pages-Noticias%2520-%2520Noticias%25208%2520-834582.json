@@ -1,0 +1,61 @@
+{
+  "name": "Noticias - Noticias 8 ",
+  "path": "/notícia-noticia8",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/NewsPage.tsx",
+        "image": {
+          "image": "https://data.decoassets.com/official-aurora-saude/d356a6ff-adae-429b-8a05-1f2b784ad896/Noticia-Site-.png",
+          "alt": "pegn"
+        },
+        "date": "11 de março ",
+        "title": "Aurora Saúde em destaque na revista Pequenas Empresas & Grandes Negócios",
+        "text": "<p><em>Nosso empenho em usar a Inteligência Artificial para prevenir e promover uma saúde plena para quem adere aos nossos planos nos colocou em uma página de destaque em uma das maiores revistas de negócios do Brasil. </em><br><br>Nas palavras de Mariana Iwakura, editora chefe da revista Pequenas Empresas &amp; Grandes Negócios, a intenção da última edição é “destacar o brilho de grandes mulheres: as empreendedoras que estão transformando esse mercado”. E o que nos colocou em destaque foi toda a nossa jornada em entender como a Inteligência Artificial poderia tornar ainda mais eficiente o cuidado com as vidas que vêm até a gente em busca de auxílio, segurança e bem-estar.<br><br><strong>Imersão no Vale do Silício</strong><br><br>Tivemos a oportunidade de contar mais sobre nossa imersão no Vale do Silício e aprofundar nos resultados que obtivemos ao agir de maneira inovadora e desafiadora na tentativa de promover transformações no mercado de saúde suplementar. Foram essas escolhas que nos permitiram desenvolver soluções para oferecer cuidado personalizado e antecipado para o inesperado, personalizando nosso atendimento de acordo com cada vida. Assim, ninguém fica desamparado. Não poderíamos estar mais felizes, afinal, trocar esses conhecimentos e levar nossa bagagem para outros empreendedores com sede de transformação é um dos nossos objetivos mais antigos. Leia a matéria na íntegra e nos acompanhe nas redes sociais.<br><br><em>Aurora Saúde. Um plano de cuidado.</em><br></p>",
+        "relatedsNews": [
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/e6904f7d-45b0-47e5-9866-b54fb529ae83/Noticia-.png",
+              "alt": "Pesquisa de Satisfação 2025"
+            },
+            "date": "10 de março ",
+            "title": "A Aurora Saúde quer ouvir você ",
+            "link": "https://www.souaurorasaude.com.br/noticias-noticia6"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/ddd6ac82-b1e1-4be5-911c-1232371d0c54/IMG_1915.jpeg",
+              "alt": "Montes Claros "
+            },
+            "date": "06 de fevereiro ",
+            "title": "Aurora Saúde chega ao norte de Minas ",
+            "link": "https://www.souaurorasaude.com.br/noticias-noticia4"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

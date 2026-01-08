@@ -1,56 +1,48 @@
 import TourSectionIsland from "site/islands/Site/tour-section.tsx";
 import { Device } from "apps/website/matchers/device.ts";
-import { FnContext } from "deco/types.ts";
-
+import { type FnContext } from "@deco/deco";
 /** @titleBy itemText */
 export interface Item {
-    itemText: string;
+  itemText: string;
 }
-
 /** @titleBy buttonText */
 export interface Button {
-    buttonText: string;
-    buttonLink: string;
+  buttonText: string;
+  buttonLink: string;
 }
-
 export interface Division {
-    /**
-     * @format rich-text
-     * @description Texto da seção
-     */
-    text: string;
-    items: Item[];
-    buttonsSectionTitle?: string;
-    buttons: Button[];
-    /**
-     * @format rich-text
-     * @description Texto da seção
-     */
-    finalText?: string;
+  /**
+   * @format rich-text
+   * @description Texto da seção
+   */
+  text: string;
+  items: Item[];
+  buttonsSectionTitle?: string;
+  buttons: Button[];
+  /**
+   * @format rich-text
+   * @description Texto da seção
+   */
+  finalText?: string;
 }
-
 /** @titleBy sectionName */
 export interface Section {
-    sectionName: string;
-    divisions: Division[];
+  sectionName: string;
+  divisions: Division[];
 }
-
 export interface TourSectionProps {
-    sections: Section[];
-    device: Device;
+  sections: Section[];
+  device: Device;
 }
-
 export interface Props {
-    sections: Section[];
+  sections: Section[];
 }
-
 export default function TourSection({ sections, device }: TourSectionProps) {
-    return <TourSectionIsland sections={sections} device={device} />;
+  return <TourSectionIsland sections={sections} device={device} />;
 }
-
 export const loader = (props: Props, req: Request, ctx: FnContext) => {
-    return {
-        ...props,
-        device: ctx.device,
-    };
+  return {
+    ...props,
+    device: ctx.device,
+  };
 };

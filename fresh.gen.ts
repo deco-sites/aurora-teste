@@ -58,7 +58,7 @@ import * as $Site_talk_to_us_form from "./islands/Site/talk-to-us-form.tsx";
 import * as $Site_tour_section from "./islands/Site/tour-section.tsx";
 import * as $Site_video_player from "./islands/Site/video-player.tsx";
 import * as $Site_work_with_us_form from "./islands/Site/work-with-us-form.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

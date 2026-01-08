@@ -19,23 +19,23 @@ const ufError4 = signal(false);
 const cityError4 = signal(false);
 
 const state = {
-    socialReasonValue4,
-    cnpjValue4,
-    nameValue4,
-    emailValue4,
-    telValue4,
-    lifesqtyValue4,
-    ufValue4,
-    cityValue4,
+  socialReasonValue4,
+  cnpjValue4,
+  nameValue4,
+  emailValue4,
+  telValue4,
+  lifesqtyValue4,
+  ufValue4,
+  cityValue4,
 
-    socialReasonError4,
-    cnpjError4,
-    nameError4,
-    emailError4,
-    telError4,
-    lifesqtyError4,
-    ufError4,
-    cityError4,
+  socialReasonError4,
+  cnpjError4,
+  nameError4,
+  emailError4,
+  telError4,
+  lifesqtyError4,
+  ufError4,
+  cityError4,
 };
 
 export const useFourthStepInputValues = () => state;
