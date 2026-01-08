@@ -90,7 +90,7 @@ export default function CareJourneyIsland({ device }: Device) {
               acompanhamento de <br /> saúde individualizado.
             </span>
           </div>
-          <a href="/jornada-de-saude" className="w-fit">
+          <a href="/jornada-de-cuidado" className="w-fit">
             <button className="flex items-center text-darkPurple gap-1">
               Conheça mais
               <Image

@@ -16,6 +16,15 @@ import SiteCitiesSelect from "site/components/Site/site-cities-select.tsx";
 import CustomSelect from "site/components/Site/custom-select.tsx";
 import CustomSelectWithLabels from "site/components/Site/custom-select-whit-labels.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { isAValidNumber } from "site/helpers/Simulador/numbers.ts";
+
+export interface RecipientsEmail {
+  email: string;
+}
+
+export interface CopyEmail {
+  email?: string;
+}
 
 export interface RecipientsEmail {
   email: string;
@@ -33,18 +42,17 @@ export interface RequestQuoteIslandProps {
 
 const beABrokerEmailSended = signal(false);
 
-export default function BeABrokerFormIsland(
-  { RecipientsEmailArr, CopyToArr, subject }: RequestQuoteIslandProps,
-) {
-  const [brokerNamePlaceholder, setbrokerNamePlaceholder] = useState(
-    "Escreva aqui",
-  );
-  const [responsibleNamePlaceholder, setresponsibleNamePlaceholder] = useState(
-    "Escreva aqui",
-  );
-  const [emailPlaceholder, setEmailPlaceholder] = useState(
-    "seuemail@email.com",
-  );
+export default function BeABrokerFormIsland({
+  RecipientsEmailArr,
+  CopyToArr,
+  subject,
+}: RequestQuoteIslandProps) {
+  const [brokerNamePlaceholder, setbrokerNamePlaceholder] =
+    useState("Escreva aqui");
+  const [responsibleNamePlaceholder, setresponsibleNamePlaceholder] =
+    useState("Escreva aqui");
+  const [emailPlaceholder, setEmailPlaceholder] =
+    useState("seuemail@email.com");
   const [cnpjPlaceholder, setCnpjPlaceholder] = useState(
     "xx. xxx. xxx/xxxx-xx",
   );
@@ -59,12 +67,8 @@ export default function BeABrokerFormIsland(
     "Quantos funcionários tem a sua corretora?",
   );
 
-  const [customerBasePlaceholder, setcustomerBasePlaceholder] = useState(
-    "Não",
-  );
-  const [haveSalesPlaceholder, sethaveSalesPlaceholder] = useState(
-    "Não",
-  );
+  const [customerBasePlaceholder, setcustomerBasePlaceholder] = useState("Não");
+  const [haveSalesPlaceholder, sethaveSalesPlaceholder] = useState("Não");
 
   useEffect(() => {
     const updateNamePlaceholder = () => {
@@ -78,9 +82,7 @@ export default function BeABrokerFormIsland(
         setCityPlaceholder("Cidade");
         setAddressPlaceholder("Endereço");
         setCepPlaceholder("CEP");
-        setemployeesQtyPlaceholder(
-          "Quantos funcionários tem a sua corretora?",
-        );
+        setemployeesQtyPlaceholder("Quantos funcionários tem a sua corretora?");
         setcustomerBasePlaceholder("Não");
         sethaveSalesPlaceholder("Não");
       } else {
@@ -118,7 +120,9 @@ export default function BeABrokerFormIsland(
   const [address, setAddress] = useState("");
   const [cep, setCep] = useState("");
   const [employeesQty, setEmployeesQty] = useState("");
-  const [customerBase, setCustomerBase] = useState("");
+  const [customerBase, setCustomerBase] = useState(
+    yesOrNoOptions?.find((o) => o.value === "no")?.text ?? "",
+  );
   const [haveSales, setHaveSales] = useState("");
 
   const [brokerNameError, setBrokerNameError] = useState(false);
@@ -246,6 +250,26 @@ export default function BeABrokerFormIsland(
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    await invoke.site.actions.saveBroker({
+      broker: {
+        nomeDaCorretora: brokerName,
+        nomeDoResponsavel: responsibleName,
+        email: email,
+        cnpj: cnpj,
+        telefone: tel,
+        estado: UF,
+        cidade: isAValidNumber(city) ? +city : null,
+        endereco: address,
+        cep: cep,
+        quantidadeDeFuncionarios: isAValidNumber(employeesQty)
+          ? +employeesQty
+          : 0,
+        possuiCarteira: customerBase === "yes" ? true : false,
+        possuiVenda: haveSales === "yes" ? true : false,
+      },
+    });
+
     beABrokerEmailSended.value = true;
     await invoke.site.actions.sendEmail({
       RecipientsEmailArr: RecipientsEmailArr,
@@ -261,7 +285,8 @@ export default function BeABrokerFormIsland(
         <div className="lg:max-w-[1400px] w-full pt-12 pb-16">
           <div className="lg:px-48 flex flex-col gap-16">
             <span className="font-sora font-semibold text-orange4 text-2xl">
-              Seja um corretor<br /> parceiro
+              Seja um corretor
+              <br /> parceiro
             </span>
 
             <form className="flex flex-col gap-4 lg:gap-11">
@@ -547,7 +572,9 @@ export default function BeABrokerFormIsland(
 
                 <div className="relative flex items-center gap-2 flex-grow">
                   <CustomSelectWithLabels
-                    label={"Possui venda para lançar na<br /> abertura do código?"}
+                    label={
+                      "Possui venda para lançar na<br /> abertura do código?"
+                    }
                     value={haveSales}
                     inputValueSetter={setHaveSales}
                     options={yesOrNoOptions}
@@ -563,8 +590,7 @@ export default function BeABrokerFormIsland(
                     />
                   )}
                 </div>
-                {
-                  /*
+                {/*
                                 <SiteInputSelect
                                     id={"customerBase"}
                                     name={"customerBase"}
@@ -582,8 +608,7 @@ export default function BeABrokerFormIsland(
                                     inputValueSetter={setHaveSales}
                                     options={yesOrNoOptions}
                                     placeholder={haveSalesPlaceholder}
-                                />*/
-                }
+                                />*/}
               </div>
               <div className="flex flex-col lg:hidden">
                 <div className="relative flex items-center gap-2 flex-grow">
@@ -607,7 +632,9 @@ export default function BeABrokerFormIsland(
 
                 <div className="relative flex items-center gap-2 flex-grow">
                   <CustomSelectWithLabels
-                    label={"Possui venda para lançar na<br /> abertura do código?"}
+                    label={
+                      "Possui venda para lançar na<br /> abertura do código?"
+                    }
                     value={haveSales}
                     inputValueSetter={setHaveSales}
                     options={yesOrNoOptions}
@@ -623,8 +650,7 @@ export default function BeABrokerFormIsland(
                     />
                   )}
                 </div>
-                {
-                  /*
+                {/*
                                 <MobileInputSelectWithLabel
                                     id={"customerBase"}
                                     name={"customerBase"}
@@ -643,8 +669,7 @@ export default function BeABrokerFormIsland(
                                     options={yesOrNoOptions}
                                     placeholder={haveSales}
                                 />
-                                */
-                }
+                                */}
               </div>
               <div className="flex justify-end w-full">
                 <button
@@ -661,7 +686,9 @@ export default function BeABrokerFormIsland(
     </>
   );
 
-  return beABrokerEmailSended.value
-    ? <SendingConfirmation signalToChange={beABrokerEmailSended} />
-    : formComponent;
+  return beABrokerEmailSended.value ? (
+    <SendingConfirmation signalToChange={beABrokerEmailSended} />
+  ) : (
+    formComponent
+  );
 }

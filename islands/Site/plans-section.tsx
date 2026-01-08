@@ -155,7 +155,7 @@ export default function PlansSectionIsland(
                     <div className="flex justify-center mt-14">
                       <ColorfullButton
                         text={"Solicite sua cotação"}
-                        link={"/solicitar-cotacao"}
+                        link="/simulador-aurora"
                         bgColor={card.buttonColor}
                         textColor={card.textButtonColor}
                       />

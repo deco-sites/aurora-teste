@@ -26,11 +26,12 @@ import { titleCase } from "site/helpers/titleCase.ts";
 import { extractNumbers } from "site/helpers/Simulador/extractNumbers.ts";
 import { getCityCode } from "site/helpers/Simulador/getCityCode.ts";
 import { useSignal } from "@preact/signals";
+import { LeadModality } from "../../actions/saveLead.ts";
+import { isAValidNumber } from "site/helpers/Simulador/numbers.ts";
 
 export default function FormStepTwoforFourthOption() {
-  const [socialReasonPlaceholder, setSocialReasonPlaceholder] = useState(
-    "Nome e sobrenome",
-  );
+  const [socialReasonPlaceholder, setSocialReasonPlaceholder] =
+    useState("Nome e sobrenome");
   const [cnpjPlaceholder, setCNPJPlaceholder] = useState("Escreva aqui");
   const [namePlaceholder, setNamePlaceholder] = useState("Escreva aqui");
   const [emailPlaceholder, setEmailPlaceholder] = useState("Escreva aqui");
@@ -115,7 +116,8 @@ export default function FormStepTwoforFourthOption() {
     if (isScrolling || !plansDivTwoRef.current) return;
 
     const cards = plansDivTwoRef.current.children;
-    const center = plansDivTwoRef.current.scrollLeft +
+    const center =
+      plansDivTwoRef.current.scrollLeft +
       plansDivTwoRef.current.clientWidth / 2;
 
     Array.from(cards).forEach((card, index) => {
@@ -152,14 +154,15 @@ export default function FormStepTwoforFourthOption() {
   };
 
   useEffect(() => {
-    const index = plansInfos.findIndex((plan) =>
-      plan.id === activePlanBtn.value
+    const index = plansInfos.findIndex(
+      (plan) => plan.id === activePlanBtn.value,
     );
     if (index !== -1 && plansDivTwoRef.current) {
       const card = plansDivTwoRef.current.children[index] as HTMLElement; // Asserção de tipo para HTMLElement
       const cardStart = card.offsetLeft;
       const cardEnd = cardStart + card.clientWidth;
-      const center = plansDivTwoRef.current.scrollLeft +
+      const center =
+        plansDivTwoRef.current.scrollLeft +
         plansDivTwoRef.current.clientWidth / 2;
       if (!(center >= cardStart && center <= cardEnd)) {
         scrollToCard(activePlanBtn.value);
@@ -181,7 +184,7 @@ export default function FormStepTwoforFourthOption() {
   const obj = {
     nome: nameValue4.value,
     cpf_cnpj: extractNumbers(cnpjValue4.value),
-    razao_social: socialReasonValue4,
+    razao_social: socialReasonValue4.value,
     cidade: cd_cidade.value,
     estado: ufValue4.value,
     telefone: extractNumbers(telValue4.value),
@@ -190,7 +193,11 @@ export default function FormStepTwoforFourthOption() {
     somente_titular: null,
     possui_plano: null,
     cd_tab_preco: 4,
+    cd_modalidade: LeadModality.ForFormEnterprisesWithMoreThan100Lifes,
     outra_pessoa: null,
+    qtd_vidas: isAValidNumber(lifesqtyValue4.value)
+      ? null
+      : +lifesqtyValue4.value,
   };
 
   return (
@@ -201,10 +208,13 @@ export default function FormStepTwoforFourthOption() {
             <div className="flex items-center justify-center bg-pink1 rounded-2xl px-11 py-16 lg:p-24 w-full lg:w-1/2 h-full">
               <span className="flex flex-col text-white text-2xl lg:text-xl font-semibold font-sora">
                 <span className="text-yellow">
-                  Plano de saúde<br /> precisa estar junto.<br />
+                  Plano de saúde
+                  <br /> precisa estar junto.
+                  <br />
                 </span>
-                Mais segurança para<br /> sua empresa e<br />{" "}
-                tranquilidade para seus<br />
+                Mais segurança para
+                <br /> sua empresa e<br /> tranquilidade para seus
+                <br />
                 colaboradores.
               </span>
             </div>
@@ -267,7 +277,8 @@ export default function FormStepTwoforFourthOption() {
                     label={"Razão Social"}
                     value={socialReasonValue4.value}
                     inputValueSetter={(value) =>
-                      socialReasonValue4.value = value}
+                      (socialReasonValue4.value = value)
+                    }
                     placeholder={socialReasonPlaceholder}
                     wfull
                   />
@@ -279,7 +290,7 @@ export default function FormStepTwoforFourthOption() {
                     label={"CNPJ"}
                     placeholder={cnpjPlaceholder}
                     value={cnpjValue4.value}
-                    inputValueSetter={(value) => cnpjValue4.value = value}
+                    inputValueSetter={(value) => (cnpjValue4.value = value)}
                     mask={cnpjMask}
                     maxLength={18}
                     wfull
@@ -294,7 +305,7 @@ export default function FormStepTwoforFourthOption() {
                     label={"Nome Completo"}
                     placeholder={namePlaceholder}
                     value={nameValue4.value}
-                    inputValueSetter={(value) => nameValue4.value = value}
+                    inputValueSetter={(value) => (nameValue4.value = value)}
                     mask={nameMask}
                     wfull
                   />
@@ -305,7 +316,7 @@ export default function FormStepTwoforFourthOption() {
                     name={"email"}
                     label={"E-mail"}
                     value={emailValue4.value}
-                    inputValueSetter={(value) => emailValue4.value = value}
+                    inputValueSetter={(value) => (emailValue4.value = value)}
                     placeholder={emailPlaceholder}
                     wfull
                   />
@@ -319,7 +330,7 @@ export default function FormStepTwoforFourthOption() {
                     label={"Telefone/WhatsApp"}
                     placeholder={telPlaceholder}
                     value={telValue4.value}
-                    inputValueSetter={(value) => telValue4.value = value}
+                    inputValueSetter={(value) => (telValue4.value = value)}
                     mask={PhoneMask}
                     maxLength={16}
                     wfull
@@ -331,7 +342,7 @@ export default function FormStepTwoforFourthOption() {
                     name={"lifesqty"}
                     label={"Quantidade de Vidas"}
                     value={lifesqtyValue4.value}
-                    inputValueSetter={(value) => lifesqtyValue4.value = value}
+                    inputValueSetter={(value) => (lifesqtyValue4.value = value)}
                     placeholder={lifesQtyPlaceholder}
                     wfull
                   />
@@ -373,7 +384,7 @@ export default function FormStepTwoforFourthOption() {
                     name={"city"}
                     label={"Cidade"}
                     value={cityValue4.value}
-                    inputValueSetter={(value) => cityValue4.value = value}
+                    inputValueSetter={(value) => (cityValue4.value = value)}
                     placeholder={cityPlaceholder}
                     options={cities}
                     wfull
@@ -406,8 +417,7 @@ export default function FormStepTwoforFourthOption() {
                           fill-rule="evenodd"
                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                           clip-rule="evenodd"
-                        >
-                        </path>
+                        ></path>
                       </svg>
                     </span>
                   </label>
@@ -421,8 +431,7 @@ export default function FormStepTwoforFourthOption() {
               </div>
 
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
-                {
-                  /*<button
+                {/*<button
                   onClick={(e) => {
                     changeStep(5, "increase");
                     //changeStep(currentStep + 1, e);
@@ -436,8 +445,7 @@ export default function FormStepTwoforFourthOption() {
                     className="w-7"
                   />
                   Receber contato de <br /> especialistas
-                </button>*/
-                }
+                </button>*/}
                 <PreviousStepBtn
                   options={whoWillUseThePlan}
                   executionFunc={() => changeStep(activeStep.value, "decrease")}

@@ -15,6 +15,7 @@ import * as $Simulador_next_step_btn from "./islands/Simulador/next-step-btn.tsx
 import * as $Simulador_plan_card from "./islands/Simulador/plan-card.tsx";
 import * as $Simulador_previous_step_btn from "./islands/Simulador/previous-step-btn.tsx";
 import * as $Simulador_receive_contact_btn from "./islands/Simulador/receive-contact-btn.tsx";
+import * as $Simulador_request_your_quote from "./islands/Simulador/request-your-quote.tsx";
 import * as $Simulador_selected_plan from "./islands/Simulador/selected-plan.tsx";
 import * as $Site_be_a_broker_form from "./islands/Site/be-a-broker-form.tsx";
 import * as $Site_be_a_provider from "./islands/Site/be-a-provider.tsx";
@@ -79,6 +80,7 @@ const manifest = {
     "./islands/Simulador/previous-step-btn.tsx": $Simulador_previous_step_btn,
     "./islands/Simulador/receive-contact-btn.tsx":
       $Simulador_receive_contact_btn,
+    "./islands/Simulador/request-your-quote.tsx": $Simulador_request_your_quote,
     "./islands/Simulador/selected-plan.tsx": $Simulador_selected_plan,
     "./islands/Site/be-a-broker-form.tsx": $Site_be_a_broker_form,
     "./islands/Site/be-a-provider.tsx": $Site_be_a_provider,

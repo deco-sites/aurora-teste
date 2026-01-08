@@ -38,6 +38,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
   const {
     socialReasonValue,
+    cnpjValue2,
     name2Value,
     ufValue2,
     cityValue2,
@@ -145,7 +146,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           const lead_data = {
             razao_social: socialReasonValue.value,
             nome: name2Value.value,
-            //cpf_cnpj: extractNumbers(cpfValue.value),
+            cpf_cnpj: extractNumbers(cnpjValue2.value),
             estado: ufValue2.value,
             cidade: cd_cidade.value,
             telefone: extractNumbers(tel2Value.value),
