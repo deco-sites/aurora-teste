@@ -1,0 +1,81 @@
+{
+  "name": "Notícia | Notícia 9",
+  "path": "/noticia-noticia9",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/64710412-2288-4af3-a432-447b4a9def82/1742234122685-81096489-1048-4ca1-be7e-c4129504888a"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/9ca96c22-e11f-47b5-8503-2d471a6fb892/1742234125278-154b646a-755d-4de1-89d2-c73c16aa12e3"
+            },
+            "alt": "Banner"
+          },
+          "mobileTitle": "Título <br /> Título",
+          "textColor": "Branco",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold",
+          "desktopTitle": "Notícias "
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/NewsPage.tsx",
+      "text": "<p><em><span style=\"color: rgb(0, 0, 0); font-size: 10pt\">Estamos em destaque em uma das principais portais de economia e negócios do Brasil!</span></em><br><br><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">É sempre muito engrandecedor observar como o nosso olhar inovador sobre o mercado de saúde suplementar tem alcançado muita atenção positiva. Dessa vez, quem veio conversar com a gente sobre nossas propostas de transformação nesse mercado foi a revista Exame.</span><br><br><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">A Jornada de Cuidado, nossa tecnologia pioneira de prevenção e rastreio de doenças, surgiu do desejo de estar mais perto das vidas que buscam a Aurora. É nossa maneira de entregar um cuidado personalizado para cada pessoa, levando em conta suas particularidades.</span><br><br><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">E é esse jeito Aurora de cuidar que tem chamado tanta atenção da imprensa e de pessoas atentas ao mercado de saúde.</span><br><br><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">Estamos profundamente orgulhosas, e usamos essa atenção e projeção para nos dar uma força ainda maior no objetivo de apresentar para as pessoas uma forma de cuidar que realmente faça sentido.</span><br><br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://exame.com/negocios/startup-mineira-fatura-r-15-milhoes-com-ia-que-rastreia-doencas/\"><strong><em><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">Leia a matéria na íntegra</span></em></strong></a><span style=\"color: rgb(0, 0, 0); font-size: 11pt\"> e nos acompanhe nas redes sociais.</span></p><p></p><p><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">Aurora Saúde. Um plano de cuidado.</span><br><br></p>",
+      "image": {
+        "alt": "Banner",
+        "image": "https://assets.decocache.com/official-aurora-saude/75d4260f-6a96-4fde-b3f7-338257877829/exame.png"
+      },
+      "relatedsNews": [
+        {
+          "image": {
+            "image": "https://assets.decocache.com/official-aurora-saude/6b1f01f3-a394-4603-a729-8484bfe78d3e/Noticia-Site-.png",
+            "alt": "pegn"
+          },
+          "date": "11 de março de 2025",
+          "link": "https://www.souaurorasaude.com.br/not%C3%ADcia-noticia8",
+          "title": "Aurora Saúde em destaque na revista Pequenas Empresas & Grandes Negócios"
+        },
+        {
+          "image": {
+            "image": "https://assets.decocache.com/official-aurora-saude/c12bf700-2351-467b-886f-3c6b81fd1de9/Noticia-.png",
+            "alt": "pesquisa"
+          },
+          "date": "10 de março de 2025",
+          "title": "A Aurora Saúde quer ouvir você",
+          "link": "/noticias-noticia6"
+        },
+        {
+          "image": {
+            "image": "https://data.decoassets.com/official-aurora-saude/e977ffa3-b1a5-44b4-9612-7ec84b2f4468/KAH_0417.jpg",
+            "alt": "Banner"
+          },
+          "date": "22 de novembro de 2024",
+          "title": "Aurora Saúde marcando presença no SRH24",
+          "link": "/noticias-noticia4"
+        }
+      ],
+      "date": "21 de março de 2025",
+      "title": " A última publicação da Exame teve um espaço dedicado à Aurora Saúde"
+    },
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

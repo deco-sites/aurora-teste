@@ -142,27 +142,13 @@
           "a100Price": "A partir de R$ 50,52*",
           "a300Price": "A partir de R$ 104,67*",
           "a500Price": "A partir de R$ 120,54*"
-        },
-        {
-          "hospitals": [
-            {
-              "name": "Hospital Santa Casa",
-              "a100": true,
-              "a300": true,
-              "a500": false
-            }
-          ],
-          "region": "Pará",
-          "a100Price": "A partir de 99,90",
-          "a300Price": "A partir de 159,90",
-          "a500Price": "A partir de 169,90"
         }
       ],
       "a100Price": "A partir de R$ 50,52*",
       "a300Price": "A partir de R$ 104,67*",
       "a500Price": "A partir de R$ 120,54*",
       "a100Coverage": "Ambulatorial",
-      "a300Coverage": "Ambulatorial e hospitalar",
+      "a300Coverage": "Ambulatorial e hospitalar e obstetrícia",
       "a500Coverage": "Ambulatorial, hospitalar e obstetrícia",
       "hospitals": [
         {
@@ -192,7 +178,10 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

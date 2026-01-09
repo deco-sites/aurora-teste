@@ -61,7 +61,6 @@ export default function ClearForm() {
     cityValue2,
     tel2Value,
     email2Value,
-
     socialReasonError,
     cnpjError2,
     name2Error,

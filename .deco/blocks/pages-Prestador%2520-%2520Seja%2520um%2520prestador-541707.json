@@ -1,5 +1,5 @@
 {
-  "name": "Prestador - Seja um prestador",
+  "name": "Prestador - Seja um prestador ",
   "path": "/seja-um-prestador",
   "sections": [
     {
@@ -14,10 +14,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c19e331a-af0f-4bec-9d76-e7d4903daf63"
+              "image": "https://data.decoassets.com/official-aurora-saude/cbe639bd-b1c8-404a-8b0e-57101fbc96f6/1742234242200-c19e331a-af0f-4bec-9d76-e7d4903daf63"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3758ec17-c6b6-4d7b-97a3-483fdf444855"
+              "image": "https://data.decoassets.com/official-aurora-saude/10f96ecd-bc87-4551-b666-a4a963dca203/1742234244184-3758ec17-c6b6-4d7b-97a3-483fdf444855"
             },
             "alt": "Banner"
           },
@@ -31,11 +31,19 @@
     },
     {
       "__resolveType": "site/sections/Site/BeAProviderForm.tsx",
+      "subject": "Aurora Saúde - Seja um prestador credenciado",
       "recipientsEmail": "prestador@souaurorasaude.com.br",
-      "subject": "Aurora Saúde - Seja um prestador credenciado"
+      "RecipientsEmailArr": [
+        {
+          "email": "dalison.lima@souaurorasaude.com.br"
+        }
+      ]
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

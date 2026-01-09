@@ -13,10 +13,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/81096489-1048-4ca1-be7e-c4129504888a"
+              "image": "https://data.decoassets.com/official-aurora-saude/f3075adf-d123-4350-9be7-6c6cd265aabf/1742234158586-81096489-1048-4ca1-be7e-c4129504888a"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/5b785974-9857-4a9c-87cc-ce7caa313ec6"
+              "image": "https://data.decoassets.com/official-aurora-saude/b0e69207-d5fc-47b3-ade1-da174970b2bc/1742234160622-5b785974-9857-4a9c-87cc-ce7caa313ec6"
             },
             "alt": "Banner"
           },
@@ -47,109 +47,109 @@
         "__resolveType": "site/sections/Site/WhiteBannerCarrousel.tsx",
         "images": [
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7e720cb1-621a-4a35-a0da-89588e28c981",
+            "image": "https://data.decoassets.com/official-aurora-saude/16e74ff9-2644-49b4-99ca-cead3ab25a67/1742234161936-7e720cb1-621a-4a35-a0da-89588e28c981",
             "alt": "Hospital Belo Horizonte",
             "width": 322,
             "height": 173
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3c733030-b896-4c63-9231-1920d122cbc2",
+            "image": "https://data.decoassets.com/official-aurora-saude/fd1844e2-e4fc-479e-a290-661a108427e8/1742234162908-3c733030-b896-4c63-9231-1920d122cbc2",
             "alt": "Hospital Felício Rocho",
             "width": 322,
             "height": 126
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/d323fdc9-25d9-4e0b-8c04-ea265483fbc1",
+            "image": "https://data.decoassets.com/official-aurora-saude/ec034c8a-5e1a-459a-968f-04330183823c/1742234163959-d323fdc9-25d9-4e0b-8c04-ea265483fbc1",
             "alt": "Hospital Evangélico de Belo Horizonte",
             "width": 116,
             "height": 116
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9ae12c2c-3b55-4c16-8cb6-d616e8091599",
+            "image": "https://data.decoassets.com/official-aurora-saude/66f3cbda-8cbf-42af-8465-d86f4b058b41/1742234164928-9ae12c2c-3b55-4c16-8cb6-d616e8091599",
             "alt": "Hospital Evangélico de Belo Horizonte",
             "width": 190,
             "height": 77
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/4e6959db-9494-45c7-9475-a993cb8729e6",
+            "image": "https://data.decoassets.com/official-aurora-saude/aaac489f-8044-45a6-b0fe-1583efaa5297/1742234165920-4e6959db-9494-45c7-9475-a993cb8729e6",
             "alt": "São Lucas",
             "width": 208,
             "height": 85
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/58322336-35e5-4b5f-8cf6-f79c4d86eb83",
+            "image": "https://data.decoassets.com/official-aurora-saude/771de562-04f3-4612-8520-4b0feb6b73b5/1742234166971-58322336-35e5-4b5f-8cf6-f79c4d86eb83",
             "alt": "Fundação Hospitalar Nossa Senhora de Lourdes",
             "width": 186,
             "height": 77
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9feb7fee-3d1b-43e5-be9e-0ca91856f476",
+            "image": "https://data.decoassets.com/official-aurora-saude/c8b077ea-52c9-4fee-b31e-cf044d099999/1742234167938-9feb7fee-3d1b-43e5-be9e-0ca91856f476",
             "alt": "Instituto de Otorrino",
             "width": 188,
             "height": 60
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3644614b-8d40-406d-9ae3-2266f9706689",
+            "image": "https://data.decoassets.com/official-aurora-saude/3e433898-f581-4bc1-80b2-311a1164d3f3/1742234169019-3644614b-8d40-406d-9ae3-2266f9706689",
             "alt": "Hermes Pardini",
             "width": 338,
             "height": 154
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/70575829-93c9-4632-adc9-99b2b125f8ee",
+            "image": "https://data.decoassets.com/official-aurora-saude/c05317b4-18ae-4ae0-a836-5fe139554830/1742234170151-70575829-93c9-4632-adc9-99b2b125f8ee",
             "alt": "Hospital Lindouro Avelar",
             "width": 177,
             "height": 80
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a246b845-51c7-4932-842b-4a764cfe014e",
+            "image": "https://data.decoassets.com/official-aurora-saude/d44bd5b2-cdb1-425d-a8e6-5d1690c2e1ab/1742234171156-a246b845-51c7-4932-842b-4a764cfe014e",
             "alt": "Santa Casa de Misericórdia de Sabará",
             "width": 184,
             "height": 63
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/8c6bc6ab-1360-4ff2-bd84-264c27131386",
+            "image": "https://data.decoassets.com/official-aurora-saude/6b712f1f-0958-4b2e-944e-7ecae0ab9a03/1742234172033-8c6bc6ab-1360-4ff2-bd84-264c27131386",
             "alt": "Hospital Socor",
             "width": 389,
             "height": 124
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/0473c81a-f4f6-42a0-911f-b9fea6d62ba2",
+            "image": "https://data.decoassets.com/official-aurora-saude/7ccc44bb-a0d7-4081-8b90-7417a71b25e1/1742234173017-0473c81a-f4f6-42a0-911f-b9fea6d62ba2",
             "alt": "Labclass",
             "width": 240,
             "height": 155
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/395b1966-de77-450d-8fe3-871a68b0e578",
+            "image": "https://data.decoassets.com/official-aurora-saude/ec4db11e-992d-4705-a80a-ef55c1d5df5c/1742234173965-395b1966-de77-450d-8fe3-871a68b0e578",
             "alt": "Ecoar",
             "width": 129,
             "height": 119
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/8adb3641-1d88-4382-8c5d-f0f216cf89ad",
+            "image": "https://data.decoassets.com/official-aurora-saude/d043dd10-7b2a-44ae-963b-61e7a1f2ecd8/1742234174950-8adb3641-1d88-4382-8c5d-f0f216cf89ad",
             "alt": "São Marcos",
             "width": 198,
             "height": 48
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/380ff235-9bec-415e-94f5-249fb02a3f8f",
+            "image": "https://data.decoassets.com/official-aurora-saude/96313088-5673-4e7c-bca3-1f0cc2e6a2ad/1742234175963-380ff235-9bec-415e-94f5-249fb02a3f8f",
             "alt": "Laboratório Lustosa",
             "width": 366,
             "height": 108
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a86342bc-d471-44e4-8a81-9edf46cf3dd9",
+            "image": "https://data.decoassets.com/official-aurora-saude/fdb466a1-0fde-46e7-b8fb-39da17205b75/1742234176994-a86342bc-d471-44e4-8a81-9edf46cf3dd9",
             "alt": "Hospital São José",
             "width": 196,
             "height": 50
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/3e2e25d1-81d0-4288-8430-fdd5763a157b",
+            "image": "https://data.decoassets.com/official-aurora-saude/e7c595c3-c840-466d-9675-6d52dd75e9fe/1742234177977-3e2e25d1-81d0-4288-8430-fdd5763a157b",
             "alt": "Oculare",
             "width": 360,
             "height": 104
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/908dfb54-ab0b-4b59-bc1a-03d267c6ac99",
+            "image": "https://data.decoassets.com/official-aurora-saude/eb7748e8-4039-485a-a231-1f04482e02ee/1742234178995-908dfb54-ab0b-4b59-bc1a-03d267c6ac99",
             "alt": "Empremed",
             "width": 199,
             "height": 86
@@ -186,7 +186,7 @@
           "buttonBgColor": "Amarelo",
           "planName": "a100",
           "basePrice": "50,52",
-          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/7da32d42-0867-4add-85ee-5b961655b6b4"
+          "cardImage": "https://data.decoassets.com/official-aurora-saude/35782c33-afbd-48d4-8afb-c170466e4980/1742234179988-7da32d42-0867-4add-85ee-5b961655b6b4"
         },
         {
           "benefits": [
@@ -211,7 +211,7 @@
           "titleColor": "Amarelo",
           "buttonTextColor": "Verde",
           "buttonBgColor": "Amarelo",
-          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f1bf2519-0225-4396-bd1b-c2f46f19a1eb",
+          "cardImage": "https://data.decoassets.com/official-aurora-saude/14ef6949-656d-40bd-aa32-03d0ea5f4a96/1742234181127-f1bf2519-0225-4396-bd1b-c2f46f19a1eb",
           "planName": "a300",
           "basePrice": "104,67"
         },
@@ -238,7 +238,7 @@
           "titleColor": "Rosa",
           "buttonTextColor": "Amarelo",
           "buttonBgColor": "Laranja",
-          "cardImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/b13817a7-cfab-4f61-96ea-9cac52a4d54c",
+          "cardImage": "https://data.decoassets.com/official-aurora-saude/a3e4e981-ad34-46b1-aa37-7310ce06609f/1742234182218-b13817a7-cfab-4f61-96ea-9cac52a4d54c",
           "planName": "a500",
           "basePrice": "120,54"
         }
@@ -254,10 +254,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/e73697bd-27dc-429f-9587-f58e5f97067d"
+              "image": "https://data.decoassets.com/official-aurora-saude/e44c31d5-d857-425b-bdd4-9e8074217162/1742234183813-e73697bd-27dc-429f-9587-f58e5f97067d"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c46fba62-4969-4a9b-a71c-9a8ac0acdbb4"
+              "image": "https://data.decoassets.com/official-aurora-saude/f7774d98-bbd5-4faf-b42f-6fa5e376763e/1742234186127-c46fba62-4969-4a9b-a71c-9a8ac0acdbb4"
             },
             "alt": "Banner"
           },
@@ -282,21 +282,21 @@
       "__resolveType": "LatestNews",
       "news": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a6edd630-d3cc-46e2-946a-71c89cb26486",
+          "image": "https://data.decoassets.com/official-aurora-saude/b8537362-80c4-4df6-ad0a-7c4093edc2d4/1742234187926-a6edd630-d3cc-46e2-946a-71c89cb26486",
           "altImage": "Fundadoras da aurora saúde",
           "date": "22 de agosto",
           "title": "Minas Gerais ganha operadora de saúde fundada por mulheres",
           "link": "/noticias-noticia"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c36300cf-4ac7-46a3-b754-d4703f8f5dbc",
+          "image": "https://data.decoassets.com/official-aurora-saude/cdc5f627-4f8f-4523-aaa3-d3fe482895c9/1742234189898-c36300cf-4ac7-46a3-b754-d4703f8f5dbc",
           "date": "1 de setembro",
           "title": "Um novo jeito de cuidar da saúde",
           "altImage": "Equipe Aurora Saúde",
           "link": "/noticias-noticia5"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/03d08a14-ce1e-44d9-a9e7-044c50f18dc5",
+          "image": "https://data.decoassets.com/official-aurora-saude/12a26dca-fff4-4cab-85ce-d6994e2361d7/1742234192425-03d08a14-ce1e-44d9-a9e7-044c50f18dc5",
           "altImage": "MV Sistemas",
           "title": "Aurora Saúde fecha parceria com MV Sistemas",
           "date": "25 de setembro",
@@ -334,7 +334,10 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

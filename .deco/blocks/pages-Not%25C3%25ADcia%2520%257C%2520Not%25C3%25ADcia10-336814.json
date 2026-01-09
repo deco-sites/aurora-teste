@@ -1,0 +1,81 @@
+{
+  "name": "Notícia | Notícia10",
+  "path": "/noticia-noticia10",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/64710412-2288-4af3-a432-447b4a9def82/1742234122685-81096489-1048-4ca1-be7e-c4129504888a"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/9ca96c22-e11f-47b5-8503-2d471a6fb892/1742234125278-154b646a-755d-4de1-89d2-c73c16aa12e3"
+            },
+            "alt": "Banner"
+          },
+          "mobileTitle": "Título <br /> Título",
+          "textColor": "Branco",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold",
+          "desktopTitle": "Notícias "
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/NewsPage.tsx",
+      "text": "<p>A Aurora Saúde não para de inovar quando o assunto é cuidar de você de forma completa. Por isso, temos o prazer de anunciar o lançamento do Aurora Odonto, o plano odontológico que complementa o cuidado integral que você já conhece e confia. Agora, com o Aurora Odonto, vamos levar a qualidade que você encontra em nosso plano para a sua saúde bucal!<br><br>O Aurora Odonto oferece tudo o que você precisa para manter a sua saúde bucal em dia, com a credibilidade da Aurora Saúde. A partir de apenas R$ 7,90/mês, com o plano Aurora Odonto Urgência e Emergência, você terá acesso a 100% do Rol da ANS, sem coparticipação, sem carência e com adesão imediata. Ou seja, a saúde do seu sorriso está ao seu alcance, com a praticidade que você merece. E se você deseja mais proteção, temos o Aurora Odonto por R$ 18,90/mês.<br><br>Seja para você, sua família ou sua empresa, a Aurora oferece planos personalizados que garantem um atendimento odontológico com cobertura completa e uma rede de profissionais qualificados. Aqui, entendemos que uma boca saudável é muito mais do que aparência, é uma questão de bem-estar e qualidade de vida.<br><br>Entre em contato conosco e descubra como esse plano pode transformar ainda mais sua jornada de saúde e bem-estar!</p>",
+      "image": {
+        "alt": "Banner",
+        "image": "https://assets.decocache.com/official-aurora-saude/21d18e6c-b0a5-48b2-9f61-cbe76d24f2fe/960x450.png"
+      },
+      "relatedsNews": [
+        {
+          "image": {
+            "image": "https://assets.decocache.com/official-aurora-saude/75d4260f-6a96-4fde-b3f7-338257877829/exame.png",
+            "alt": " A última publicação da Exame teve um espaço dedicado à Aurora Saúde"
+          },
+          "date": "21 de março de 2025",
+          "link": "/noticia-noticia9",
+          "title": " A última publicação da Exame teve um espaço dedicado à Aurora Saúde"
+        },
+        {
+          "image": {
+            "image": "https://assets.decocache.com/official-aurora-saude/6b1f01f3-a394-4603-a729-8484bfe78d3e/Noticia-Site-.png",
+            "alt": "pegn"
+          },
+          "date": "11 de março de 2025",
+          "title": "Aurora Saúde em destaque na revista Pequenas Empresas & Grandes Negócios",
+          "link": "https://www.souaurorasaude.com.br/not%C3%ADcia-noticia8"
+        },
+        {
+          "image": {
+            "image": "https://assets.decocache.com/official-aurora-saude/c12bf700-2351-467b-886f-3c6b81fd1de9/Noticia-.png",
+            "alt": "pesquisa"
+          },
+          "date": "10 de março de 2025",
+          "title": "A Aurora Saúde quer ouvir você",
+          "link": "/noticias-noticia6"
+        }
+      ],
+      "date": "10 de abril de 2025",
+      "title": "Aurora Saúde apresenta o novo Aurora Odonto: cuidando do seu sorriso como você merece!"
+    },
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

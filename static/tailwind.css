@@ -5951,6 +5951,10 @@ html {
     right: 2.5rem;
   }
 
+  .lg\:right-20 {
+    right: 5rem;
+  }
+
   .lg\:right-4 {
     right: 1rem;
   }

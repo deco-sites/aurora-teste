@@ -13,10 +13,10 @@
           "__resolveType": "site/sections/Site/BannerSection.tsx",
           "image": {
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/1af738fc-cd3f-4465-87b1-9d333145f590"
+              "image": "https://data.decoassets.com/official-aurora-saude/f6990572-75b2-47b4-aeb5-cc84c5b05a40/1742234196296-1af738fc-cd3f-4465-87b1-9d333145f590"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/9a1cd540-0412-46c0-912b-f25b7c3bfd45"
+              "image": "https://data.decoassets.com/official-aurora-saude/7bb45ee8-0477-465d-a4a7-c4f7a4e2c361/1742234198620-9a1cd540-0412-46c0-912b-f25b7c3bfd45"
             },
             "alt": "Banner"
           },
@@ -257,7 +257,10 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

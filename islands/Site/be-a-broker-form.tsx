@@ -26,6 +26,14 @@ export interface CopyEmail {
   email?: string;
 }
 
+export interface RecipientsEmail {
+  email: string;
+}
+
+export interface CopyEmail {
+  email?: string;
+}
+
 export interface RequestQuoteIslandProps {
   RecipientsEmailArr: RecipientsEmail[];
   CopyToArr?: CopyEmail[];
