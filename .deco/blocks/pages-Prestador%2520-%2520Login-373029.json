@@ -16,7 +16,10 @@
       "__resolveType": "site/sections/Site/ProviderLoginForm.tsx"
     },
     {
-      "__resolveType": "site/sections/Site/Footer.tsx"
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
     }
   ],
   "seo": {

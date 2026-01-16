@@ -44,17 +44,14 @@ export default function FormStepTwoforFourthOption() {
 
   const [cities, setCities] = useState([]);
 
-  const handleCitiesDataChange = (newCities) => {
-    setCities(newCities);
-  };
-
-  const changeCitiesData = (fetchedCities, callback) => {
-    const transformedCitiesData = fetchedCities.data.map((item) => {
-      let value = item.descricao.replace(" ", "-");
+  const changeCitiesData = (cities) => {
+    const newCities = cities.data.map((item) => {
+      let value = item.descricao;
       let text = titleCase(item.descricao);
       return { value, text };
     });
-    callback(transformedCitiesData);
+
+    setCities(newCities);
   };
 
   const {
@@ -170,15 +167,18 @@ export default function FormStepTwoforFourthOption() {
     }
   }, [activePlanBtn.value]);
 
-  const cd_cidade = useSignal(null);
+  const cd_cidade = useSignal<string | null>(null);
+
   useEffect(() => {
     async function fetchCityCode() {
-      let cityCode = await getCityCode(cityValue4.value);
-      cd_cidade.value = cityCode;
-      //console.log("CD_CIDADE AQUI ERICK", cd_cidade.value);
+      cd_cidade.value = await getCityCode(cityValue4.value);
     }
 
-    fetchCityCode();
+    if (cityValue4.value) {
+      fetchCityCode();
+    } else {
+      cd_cidade.value = null;
+    }
   }, [cityValue4.value]);
 
   const obj = {
@@ -196,8 +196,8 @@ export default function FormStepTwoforFourthOption() {
     cd_modalidade: LeadModality.ForFormEnterprisesWithMoreThan100Lifes,
     outra_pessoa: null,
     qtd_vidas: isAValidNumber(lifesqtyValue4.value)
-      ? null
-      : +lifesqtyValue4.value,
+      ? +lifesqtyValue4.value
+      : null,
   };
 
   return (
@@ -363,7 +363,8 @@ export default function FormStepTwoforFourthOption() {
                           selectedUF: value,
                         },
                       );
-                      changeCitiesData(fetchedCities, handleCitiesDataChange);
+
+                      changeCitiesData(fetchedCities);
 
                       ufValue4.value = value;
                     }}

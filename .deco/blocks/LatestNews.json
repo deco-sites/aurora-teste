@@ -2,25 +2,32 @@
   "__resolveType": "site/sections/Site/LatestNews.tsx",
   "newsArr": [
     {
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/a6edd630-d3cc-46e2-946a-71c89cb26486",
-      "date": "22 de agosto",
-      "altImage": "Fundadoras Aurora Saúde",
-      "title": "Minas Gerais ganha operadora de saúde fundada por mulheres",
-      "link": "/noticias-noticia4"
+      "image": "https://assets.decocache.com/official-aurora-saude/1cf26e75-b8e9-4558-ae19-9b3ccfd00935/banners-blog.png",
+      "date": "15 de maio de 2025",
+      "altImage": "gripe telemedicina",
+      "title": "Aurora Saúde oferece telemedicina sem coparticipação durante o inverno",
+      "link": "/noticia-noticia13"
     },
     {
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/c36300cf-4ac7-46a3-b754-d4703f8f5dbc",
-      "altImage": "Equipe Aurora Saúde",
-      "date": "1 de setembro",
-      "title": "Um novo jeito de cuidar da saúde",
-      "link": "/noticias-noticia5"
+      "image": "https://assets.decocache.com/official-aurora-saude/5206b647-4b2b-4200-a419-06d3841dc69e/960x450.png",
+      "altImage": "plano de parto",
+      "date": "15 de maio de 2025",
+      "title": "Aurora Saúde lança plano de parto para gestantes",
+      "link": "/noticia-noticia12"
     },
     {
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/03d08a14-ce1e-44d9-a9e7-044c50f18dc5",
-      "altImage": "MV Sistemas",
-      "date": "25 de setembro",
-      "title": "Aurora Saúde fecha parceria com MV Sistemas",
-      "link": "/noticias-noticia6"
+      "image": "https://assets.decocache.com/official-aurora-saude/6093723a-862d-44fe-96b9-aff2487568bc/Noticia-.png",
+      "altImage": "Pesquisa ",
+      "date": "28 de abril de 2025",
+      "link": "/noticia-noticia11",
+      "title": "Resultados da Pesquisa de Satisfação 2025 - Ano Base 2024"
+    },
+    {
+      "image": "https://assets.decocache.com/official-aurora-saude/21d18e6c-b0a5-48b2-9f61-cbe76d24f2fe/960x450.png",
+      "altImage": "Aurora Odonto ",
+      "date": "10 de abril de 2025",
+      "title": "Aurora Saúde apresenta o novo Aurora Odonto: cuidando do seu sorriso como você merece!",
+      "link": "/noticia-noticia10"
     }
   ]
 }

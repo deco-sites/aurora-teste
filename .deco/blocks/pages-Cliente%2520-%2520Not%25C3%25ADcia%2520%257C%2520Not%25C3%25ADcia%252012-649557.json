@@ -1,0 +1,70 @@
+{
+  "name": "Cliente - Notícia | Notícia 12",
+  "path": "/noticia-noticia12",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/NewsPage.tsx",
+        "image": {
+          "image": "https://assets.decocache.com/official-aurora-saude/5206b647-4b2b-4200-a419-06d3841dc69e/960x450.png",
+          "alt": "Plano de Parto "
+        },
+        "date": "15 de maio de 2025",
+        "title": "Aurora Saúde lança um plano de parto para gestantes ",
+        "text": "<p>A Aurora Saúde está lançando um modelo de plano de parto para suas clientes!<br><br>Este modelo visa proporcionar uma experiência de parto mais segura, confortável e personalizada para as mulheres e suas famílias. A iniciativa reforça o compromisso da operadora com a humanização do nascimento e a centralidade da mulher nas decisões sobre seu próprio corpo e experiência de parto.<br><br>O <strong>Plano de Parto</strong> é um documento onde a gestante pode registrar suas preferências, desejos e limites para o momento do parto, como o tipo de ambiente, práticas de alívio da dor, métodos de intervenção médica, presença de acompanhantes, entre outros aspectos. Mais do que um roteiro, o plano é uma ferramenta de empoderamento e diálogo entre gestante, equipe médica e profissionais de apoio.<br><br>Este guia reflete o nosso compromisso em oferecer os melhores cuidados e serviços para as mulheres e suas famílias durante este momento tão especial. <br><br>“Acreditamos que o nascimento é um momento sagrado e que deve ser vivido com respeito, segurança e protagonismo feminino. Criamos este plano para que a mulher seja acolhida em suas escolhas”, afirmam as fundadoras da operadora.<br><br>A iniciativa reafirma o papel da <strong>Aurora Saúde</strong> como uma empresa inovadora e sensível às demandas reais das mulheres, fortalecendo uma rede de cuidado que respeita a diversidade e as diferentes jornadas de maternidade.<br><br>O plano está disponível para todas as beneficiárias a partir de hoje, para acessa-lo <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/11NbseWuer-hcvMiqd2hqVL11kdmJFKp9/view?usp=sharing\"><strong><em><u>clique aqui</u></em></strong></a>, e pode ser construído com o apoio da nossa equipe entrando em contato pelo <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://wa.me/553198963325\"><strong><em><u>whatsapp - (31) 9896-3325.</u></em></strong></a><br><br>Conte com um plano de cuidado para <strong>todos os momentos</strong>. </p>",
+        "relatedsNews": [
+          {
+            "image": {
+              "image": "https://assets.decocache.com/official-aurora-saude/6093723a-862d-44fe-96b9-aff2487568bc/Noticia-.png",
+              "alt": "Resultados da Pesquisa de Satisfação 2025 - Ano Base 2024"
+            },
+            "date": "28 de abril de 2025",
+            "title": "Resultados da Pesquisa de Satisfação 2025 - Ano Base 2024",
+            "link": "/notícia-noticia11"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/d356a6ff-adae-429b-8a05-1f2b784ad896/Noticia-Site-.png",
+              "alt": "PEGN"
+            },
+            "date": "11 de março de 2025",
+            "title": "Aurora Saúde em destaque na revista Pequenas Empresas & Grandes Negócios",
+            "link": "/noticia-noticia8"
+          },
+          {
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/ddd6ac82-b1e1-4be5-911c-1232371d0c54/IMG_1915.jpeg",
+              "alt": "Montes Claros "
+            },
+            "date": "06 de fevereiro de 2025",
+            "title": "A Aurora Saúde chegou ao norte de Minas ",
+            "link": "/noticias-noticia4"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

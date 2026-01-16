@@ -4,16 +4,13 @@
     "jsonLDs": [],
     "noIndexing": false,
     "description": "Escolha um plano para estar sempre junto de você.",
-    "titleTemplate": "%s | Aurora Saúde",
-    "descriptionTemplate": "%s | Deco.cx",
+    "titleTemplate": "Aurora Saúde",
+    "descriptionTemplate": "Aurora Saúde",
     "title": "Aurora Saúde",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/ed5511b6-a917-48bc-969b-af01df3ed4d8",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/f8177c39-ae9e-491b-b470-81e2f7d4c3ad"
+    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/official-aurora-saude/4cd3440f-241b-4bb5-9868-987de09a65ed/FAVICON-REDONDO.png",
+    "image": "https://data.decoassets.com/official-aurora-saude/2824b7c5-6a07-4620-9c11-7e72525a798a/1742234110002-f8177c39-ae9e-491b-b470-81e2f7d4c3ad"
   },
   "global": [
-    {
-      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
-    },
     {
       "__resolveType": "htmx/sections/htmx.tsx"
     },
@@ -45,14 +42,17 @@
     "__resolveType": "site/loaders/supabase/supabaseConfig.ts",
     "token": {
       "__resolveType": "website/loaders/secret.ts",
-      "encrypted": "2611a90abb03174282327932674805cc2da2ec7bd8263e7128f86d698a7343ad327854df576256af114eecbe8c5d170ff5311924e635a5cf363b645f2d465c5e307fccc6b4cbef30c528345c61604e1332c90e2d5955f4a2f99c22565d4f2f3a66647e085887dcd9f6f0b9967ecc0818078acdba16e5d56e6e8a77fe5095bbc49090c3c539afad26f69419fafa1762cfca0fbc6def34c1f2ca12965544e963cb7018d8008d7da1aff0a5b72c19c3274bc71298123d33cfaa6a2936284b103aee577e5f389c51a4bc5a709b3f19a18eaa445a9d5aed9816281d0df572d335a977",
-      "name": "SUPABASEKEY"
+      "encrypted": "fbd558f152c887c9f9c185b35a57133537c1b739d3466974760fb0329f14968d17f8495a2efeb09f4459291876995199",
+      "name": "SUPABASE_API_KEY"
     },
     "url": "https://dxnwgxrdctepmlqvpnfb.supabase.co"
   },
   "abTesting": {
     "replaces": [],
     "includeScriptsToHead": {
+      "includes": []
+    },
+    "includeScriptsToBody": {
       "includes": []
     }
   },
@@ -64,12 +64,12 @@
     "applicationId": {
       "__resolveType": "website/loaders/secret.ts",
       "encrypted": "2ea6ec57d2171fb74c064b4dade40fb5",
-      "name": "ALGOLIAAPPID"
+      "name": "ALGOLIA_APP_ID"
     },
     "adminAPIKey": {
       "__resolveType": "website/loaders/secret.ts",
       "encrypted": "404ecd70acf248b6b71570a0e3cc17ac8e5ed4dbc87beca05f57763fb9388e5b032a8c23467581a24e2f13d21ca9b30f",
-      "name": "ALGOLIAADMINAPIKEY"
+      "name": "ALGOLIA_ADMIN_API_KEY"
     },
     "indexName": "AuroraSite"
   },
@@ -78,8 +78,10 @@
     "__resolveType": "site/loaders/sendgrid/sendgridConfig.ts",
     "sendgridApiKey": {
       "__resolveType": "website/loaders/secret.ts",
-      "encrypted": "6dbded482bd9b8ea053aea067fa0ccb82c6cabec5be34bcc933ecd248fee8a3f5964c94ce8f270ab3c1f7ce12c72e40f746d6eb505eb2b480e1c26a1d61fab2bb1fc689366975e892245528feb633103",
+      "encrypted": "932fe3ccb18d10e82d943b47400886bd390cd489c3f593213555c412528926133a2ebfa4d490f669bec45c346c986b789688c95f03bda198729ae10a8252829a600c3162fc16b8300f4841c9c7d5a0b6",
       "name": "SENDGRIDAPIKEY"
     }
-  }
+  },
+  "whilelistURLs": [],
+  "whitelistPatterns": []
 }

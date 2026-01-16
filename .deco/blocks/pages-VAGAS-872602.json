@@ -1,0 +1,52 @@
+{
+  "name": "VAGAS",
+  "path": "/Executivo-de-vendas-corporativas",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/NewsPage.tsx",
+        "image": {
+          "image": "https://assets.decocache.com/official-aurora-saude/e54facf7-a9a6-48a7-a072-0e54f66d2827/VAGAS.png",
+          "alt": "Aurora Saúde oferece telemedicina sem coparticipação durante o inverno"
+        },
+        "date": "_",
+        "text": "<h2><strong>EXECUTIVO DE VENDAS CORPORATIVO</strong></h2><p>A Aurora Saúde está buscando um <strong>Executivo de Vendas Corporativo</strong> para liderar a aquisição de novos clientes PME e empresas acima de 100 vidas.</p><p><br><strong>Seu desafio:</strong><br>- Desenvolver relacionamentos estratégicos com corretores e assessorias<br>-Realizar prospecção ativa e consultiva no mercado B2B<br>-Conduzir negociações comerciais complexas<br>-Apresentar propostas técnicas personalizadas<br>-Contribuir com inteligência de mercado</p><p><br><strong>O que buscamos:</strong></p><ul><li><p>Mínimo 2 anos em vendas B2B (saúde suplementar é um diferencial)</p></li><li><p>Domínio de técnicas de venda consultiva e negociação</p></li><li><p>Experiência com CRM e gestão de pipeline</p></li><li><p>Conhecimento de normas ANS</p></li><li><p>Perfil hunter, resiliente e orientado a resultados</p></li></ul><p><br><strong>O que oferecemos:</strong><br>- Remuneração variável significativa atrelada a resultados<br>-Modelo híbrido de trabalho<br>-Oportunidade de crescer em uma healthtech inovadora</p><p><br><strong>Candidate-se enviando o seu currículo e nome da vaga pretendida para \"</strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"mailto:rh@souaurorasaude.com.br\"><strong>rh@souaurorasaude.com.br</strong></a><strong>\" e seja parte da transformação da saúde suplementar!</strong></p><p>#Vendas #SaúdeSuplementar #VagaAberta #Healthtech #VendasB2B</p><p></p>",
+        "relatedsNews": [
+          {
+            "image": {
+              "alt": "VAGAS",
+              "image": "https://assets.decocache.com/official-aurora-saude/6f7cb10b-5a4b-4cde-9fe1-827b98d15b4c/capa-vagas.png"
+            },
+            "date": "_",
+            "title": "ANALISTA DE EXPERIÊNCIA DO CLIENTE (CX)",
+            "link": "https://www.souaurorasaude.com.br/analista-de-experiencia-do-cliente-cx"
+          }
+        ],
+        "title": "_"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

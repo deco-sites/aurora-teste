@@ -17,6 +17,7 @@ import CustomSelect from "site/components/Site/custom-select.tsx";
 import CustomSelectWithLabels from "site/components/Site/custom-select-whit-labels.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { isAValidNumber } from "site/helpers/Simulador/numbers.ts";
+import { City } from "../../components/Site/site-cities-select.tsx";
 
 export interface RecipientsEmail {
   email: string;
@@ -108,14 +109,16 @@ export default function BeABrokerFormIsland({
   const [ufs, setUfs] = useState([]);
   const [cities, setCities] = useState([]);
   const [UF, setUF] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<City | null>(null);
   const [address, setAddress] = useState("");
   const [cep, setCep] = useState("");
   const [employeesQty, setEmployeesQty] = useState("");
   const [customerBase, setCustomerBase] = useState(
     yesOrNoOptions?.find((o) => o.value === "no")?.text ?? "",
   );
-  const [haveSales, setHaveSales] = useState("");
+  const [haveSales, setHaveSales] = useState(
+    yesOrNoOptions?.find((o) => o.value === "no")?.text ?? "",
+  );
 
   const [brokerNameError, setBrokerNameError] = useState(false);
   const [responsibleNameError, setResponsibleNameError] = useState(false);
@@ -140,7 +143,7 @@ export default function BeABrokerFormIsland({
     const cnpjErrorStatus = cnpj === "";
     const telErrorStatus = tel === "";
     const UFErrorStatus = UF === "";
-    const cityErrorStatus = city === "";
+    const cityErrorStatus = !city?.id;
     const addressErrorStatus = address === "";
     const cepErrorStatus = cep === "";
     const employeesQtyErrorStatus = employeesQty === "";
@@ -232,7 +235,7 @@ export default function BeABrokerFormIsland({
         CNPJ: ${cnpj}
         Telefone: ${tel}
         UF: ${UF}
-        Cidade: ${city}
+        Cidade: ${city?.nome}
         Endereço: ${address}
         Cep: ${cep}
         Quantidade de funcionários da corretora: ${employeesQty}
@@ -251,7 +254,7 @@ export default function BeABrokerFormIsland({
         cnpj: cnpj,
         telefone: tel,
         estado: UF,
-        cidade: isAValidNumber(city) ? +city : null,
+        cidade: city?.id ?? null,
         endereco: address,
         cep: cep,
         quantidadeDeFuncionarios: isAValidNumber(employeesQty)
@@ -460,7 +463,7 @@ export default function BeABrokerFormIsland({
                       id={"city"}
                       name={"city"}
                       label={"Cidade:"}
-                      value={city}
+                      value={city?.nome}
                       inputValueSetter={setCity}
                       options={cities}
                       placeholder={cities[0]?.nome}

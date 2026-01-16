@@ -1,0 +1,52 @@
+{
+  "name": "VAGAS",
+  "path": "/analista-de-experiencia-do-cliente-cx",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/NewsPage.tsx",
+        "image": {
+          "image": "https://assets.decocache.com/official-aurora-saude/e54facf7-a9a6-48a7-a072-0e54f66d2827/VAGAS.png",
+          "alt": "Aurora Saúde oferece telemedicina sem coparticipação durante o inverno"
+        },
+        "date": "_",
+        "text": "<h2 style=\"text-align: start\"><strong>ANALISTA DE EXPERIÊNCIA DO CLIENTE (CX)</strong></h2><p style=\"text-align: start\">A Aurora Saúde está em busca de um <strong>Analista de Experiência do Cliente</strong> com foco em RedeCall e canais de relacionamento.</p><p style=\"text-align: start\"><br><strong>Sua missão:</strong><br>-Monitorar performance multicanal (RedeCall, WhatsApp, Reclame Aqui, Google, Instagram, ANS)<br>-Consolidar indicadores e propor melhorias contínuas<br>-Avaliar qualidade de atendimentos<br>-Garantir conformidade com normas da ANS<br>-Gerar insights para decisões estratégicas de CX</p><p style=\"text-align: start\"><br><strong>O que procuramos:</strong></p><ul style=\"text-align: start\"><li><p>Superior completo em Administração, Comunicação ou Gestão de Saúde</p></li><li><p>Mínimo 2 anos em CX, atendimento ou qualidade</p></li><li><p>Perfil analítico com conhecimento de Excel e Power BI</p></li><li><p>Experiência em monitoramento de contact center e canais digitais</p></li><li><p>Familiaridade com Blip, Reclame Aqui e redes sociais (desejável)</p></li></ul><p style=\"text-align: start\"><br><strong>Diferenciais Aurora:</strong><br>-Ambiente data-driven e tecnológico<br>-Foco em inovação e excelência em CX<br>-Time colaborativo e propósito claro<br>-Modelo de trabalho híbrido</p><p style=\"text-align: start\"><br><strong>Candidate-se através do e-mail \"</strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"mailto:rh@souaurorasaude.com.br\"><strong>rh@souaurorasaude.com.br</strong></a><strong>\" e venha transformar a experiência do beneficiário conosco!</strong></p><p style=\"text-align: start\">#ExperienciadoCliente #CX #Atendimento #Saúde #VagaAberta #CustomerExperience</p>",
+        "relatedsNews": [
+          {
+            "image": {
+              "alt": "VAGAS",
+              "image": "https://assets.decocache.com/official-aurora-saude/6f7cb10b-5a4b-4cde-9fe1-827b98d15b4c/capa-vagas.png"
+            },
+            "date": "_",
+            "title": "EXECUTIVO DE VENDAS CORPORATIVO",
+            "link": "https://www.souaurorasaude.com.br/Executivo-de-vendas-corporativas"
+          }
+        ],
+        "title": "_"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

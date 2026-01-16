@@ -1,1 +1,187 @@
-{"name":"Corretor - Materiais de Apoio","path":"/materiais-de-apoio","sections":[{"__resolveType":"site/sections/Site/SingleColorfullWrapper.tsx","sections":[{"__resolveType":"site/sections/Site/HeaderSite.tsx","type":"corretor"},{"__resolveType":"site/sections/Site/BottomBannerSection.tsx","image":{"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/e73697bd-27dc-429f-9587-f58e5f97067d"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10558/eee298b5-e685-48a0-b8f6-276f7d801c6d"},"alt":"Banner"},"desktopTitle":"Materiais de Apoio","mobileTitle":"Materiais<br /> de Apoio","desktopText":"Acesse nosso portal de materiais de apoio<br />e fique por dentro das campanhas de vendas,<br /> baixe documentos de apoio e muito mais.","textColor":"Branco","titleFontWeight":"semi-bold","titleFontSize":"26"}],"bgColor":"Rosa"},{"__resolveType":"site/sections/Site/SalesSection.tsx","sections":[{"textColor":"text-white","bgColor":"bg-orange1","materials":[{"date":"30/08/2024","name":"Teste 1","category":"Categoria Teste","city":"Rio de Janeiro / RJ","link":"#"},{"date":"31/08/2024","name":"Teste2","category":"Teste 2","city":"Belo Horizonte / MG","link":"#"},{"date":"01/09/2024","name":"Teste3","category":"Teste","city":"Belo Horizonte / MG","link":"#"}],"label":"Vendas 1 a 29 vidas","id":1},{"textColor":"text-white","bgColor":"bg-pink1","materials":[{"date":"Teste","name":"Teste","category":"Teste","city":"Teste","link":"#"}],"label":"Vendas 30 a 99 vidas","id":2},{"textColor":"text-white","bgColor":"bg-purple","materials":[{"date":"Teste","name":"Teste","category":"Teste","city":"Teste","link":"#"}],"label":"Vendas acima de 100 vidas","id":3},{"textColor":"text-white","bgColor":"bg-aquagreen","materials":[{"date":"Teste","name":"Teste","category":"Teste","city":"Teste","link":"Teste"}],"label":"Pós-Venda","id":4},{"textColor":"text-pink1","bgColor":"bg-yellow","materials":[{"date":"Teste","name":"Test","category":"Test","city":"Teste","link":"#"}],"label":"Campanhas de Venda","id":5}]},{"__resolveType":"site/sections/Site/Footer.tsx"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Corretor - Materiais de Apoio",
+  "path": "/materiais-de-apoio",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/SingleColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "corretor"
+        },
+        {
+          "__resolveType": "site/sections/Site/BottomBannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/1cf920df-2014-454a-8cd2-35e37adf4eff/1742234238343-e73697bd-27dc-429f-9587-f58e5f97067d"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/26c2ac85-573f-41be-96d1-6195361a14a2/1742234240223-eee298b5-e685-48a0-b8f6-276f7d801c6d"
+            },
+            "alt": "Banner"
+          },
+          "desktopTitle": "Materiais de Apoio",
+          "mobileTitle": "Materiais<br /> de Apoio",
+          "desktopText": "Acesse nosso portal de materiais de apoio<br />e fique por dentro das campanhas de vendas,<br /> baixe documentos de apoio e muito mais.",
+          "textColor": "Branco",
+          "titleFontWeight": "semi-bold",
+          "titleFontSize": "26"
+        }
+      ],
+      "bgColor": "Rosa"
+    },
+    {
+      "__resolveType": "site/sections/Site/SalesSection.tsx",
+      "sections": [
+        {
+          "bgColor": "bg-orange1",
+          "materials": [
+            {
+              "date": "Jan/2026",
+              "name": "Tabela de Preços",
+              "category": "Venda ",
+              "city": "BHRM, CENTRAL MINEIRA, NORTE DE MINAS E TRIÂNGULO MINEIRO.",
+              "link": "https://drive.google.com/file/d/19APZqP-4oK_4z-ADKRvPE3l2Vyp1F80W/view?usp=sharing"
+            },
+            {
+              "date": "Ago/2025",
+              "name": "Tabela de Preços Pará",
+              "category": "Preços",
+              "city": "CANAÃ DOS CARAJÁS, CARAJÁS, MARABÁ, NOVA LIMA, OURILÂNDIA, PARAUAPEBAS E TUCUMÃ",
+              "link": "https://drive.google.com/file/d/1UqXNjZtJkjC5zfzTQFjbPTNwT2WnPHox/view?usp=sharing"
+            }
+          ],
+          "id": 1,
+          "textColor": "text-white",
+          "label": "Tabelas de Preços "
+        },
+        {
+          "textColor": "text-white",
+          "bgColor": "bg-purple",
+          "materials": [
+            {
+              "date": "Jul/2025",
+              "name": "Manuais Fettrominas 2025",
+              "category": "Manuais ",
+              "city": "BH, BHRM, CONTAGEM E BETIM ",
+              "link": "https://drive.google.com/drive/folders/1WO1pCsTNFLpyu5XUFrWSDSdAaYH5VGaT?usp=drive_link"
+            }
+          ],
+          "id": 2,
+          "label": "Fettrominas "
+        },
+        {
+          "textColor": "text-white",
+          "bgColor": "bg-orange1",
+          "materials": [],
+          "label": "Campanhas",
+          "id": 3
+        },
+        {
+          "textColor": "text-pink1",
+          "bgColor": "bg-yellow",
+          "materials": [
+            {
+              "date": "Jul/2025",
+              "name": "Enxoval da Marca - Aurora Saúde",
+              "category": "Marca",
+              "city": "BH",
+              "link": "https://drive.google.com/file/d/1M-pku_182Qe9Vg5DDsdLIGfvxQWjdDjU/view?usp=sharing"
+            }
+          ],
+          "id": 4,
+          "label": "Materiais Institucionais"
+        },
+        {
+          "textColor": "text-white",
+          "bgColor": "bg-aquagreen",
+          "materials": [
+            {
+              "date": "ago/2025",
+              "name": "Aurora Odonto ",
+              "category": "Serviços Opcionas",
+              "city": ". ",
+              "link": "https://drive.google.com/drive/folders/1gR2KzEC8LK7QlRGJrNnIIP8Nj2dquhmv?usp=drive_link"
+            },
+            {
+              "date": "ago/2025",
+              "name": "Aeromédico",
+              "category": "Serviços Opcionais",
+              "city": ".",
+              "link": "https://drive.google.com/drive/folders/1Awch3CxXuNClxSj0tr8GSY21tqBlxzD-?usp=drive_link"
+            },
+            {
+              "date": "ago/2025",
+              "name": "Seguro Viagem ",
+              "category": "Serviços Opcionais",
+              "city": ".",
+              "link": "https://drive.google.com/drive/folders/1ZdfDR-feilgXPifzrpYTQvxPQ4WXgH_K?usp=drive_link"
+            },
+            {
+              "date": ".",
+              "name": "Peças para Divulgação ",
+              "category": "Corretores",
+              "city": ".",
+              "link": "https://drive.google.com/drive/folders/1DI8w76AY3CaZ1RLBT8W8PFTE-ikar_Vn?usp=sharing"
+            }
+          ],
+          "id": 5,
+          "label": "Materiais de Divulgação "
+        },
+        {
+          "textColor": "text-white",
+          "bgColor": "bg-orange1",
+          "materials": [
+            {
+              "date": "set/2025",
+              "name": "Manual de Classificação de Procedimentos ",
+              "category": "Manuais",
+              "city": "BH",
+              "link": "https://drive.google.com/file/d/1P9TbJjU1TcR7OzN-c4qO6pCTAGm4mru-/view?usp=sharing"
+            },
+            {
+              "date": "mai/2025",
+              "name": "Aeromédico",
+              "category": "Manuais",
+              "city": ".",
+              "link": "https://drive.google.com/file/d/1GILTLxioHipwL-1TTJ5cnwvSGgTDjLqH/view?usp=drive_link"
+            },
+            {
+              "date": "mai/2025",
+              "name": "Seguro Viagem",
+              "category": "Manuais",
+              "city": ".",
+              "link": "https://drive.google.com/file/d/1CF0q0Fju5pX3EHYlJLHbVEtfllmI_y_r/view?usp=drive_link"
+            },
+            {
+              "date": "mai/2025",
+              "name": "Aurora Odonto",
+              "category": "Manuais",
+              "city": ".",
+              "link": "https://drive.google.com/file/d/1-Ys_eyb_g6Oe7ROv8AdKcaZqhkrHkYtf/view?usp=drive_link"
+            },
+            {
+              "date": "nov/2025",
+              "name": "Manual de Acesso do Vendedor na Planium",
+              "category": "MANUAIS",
+              "city": ".",
+              "link": "https://drive.google.com/file/d/1_SM150YS7vuWByY9Z2Q6Amlu8Y1ASnHB/view?usp=sharing"
+            }
+          ],
+          "id": 6,
+          "label": "Manuais"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

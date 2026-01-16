@@ -138,8 +138,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando informações da tela Sobre você nas opções 2 e 3 MEI
         if (
-          activeStep.value === 3 && activeOption.value === 2 ||
-          activeOption.value === 3
+          activeStep.value === 3 && (activeOption.value === 2 ||
+          activeOption.value === 3)
         ) {
           await fetchCityCode(cityValue2.value);
 
@@ -242,8 +242,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando as informações da tela Beneficiários nas opções 2 e 3 MEI
         if (
-          activeStep.value === 4 && activeOption.value === 2 ||
-          activeOption.value === 3
+          activeStep.value === 4 && (activeOption.value === 2 ||
+          activeOption.value === 3)
         ) {
           /*console.log(
             "Array de Bene",
@@ -386,8 +386,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando as informações da tela de escolha do plano das opções 2 e 3 Mei
         if (
-          activeStep.value === 5 && activeOption.value === 2 ||
-          activeOption.value === 3
+          activeStep.value === 5 && (activeOption.value === 2 ||
+          activeOption.value === 3)
         ) {
           //console.log("Entrou nesse if aki Erick");
           //console.log("transformedArr", transformedArray.value);

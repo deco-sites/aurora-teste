@@ -1,0 +1,77 @@
+{
+  "name": "Notícias - Notícia 7",
+  "path": "/noticias-noticia7",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/BannerSection.tsx",
+          "image": {
+            "desktop": {
+              "image": "https://data.decoassets.com/official-aurora-saude/64710412-2288-4af3-a432-447b4a9def82/1742234122685-81096489-1048-4ca1-be7e-c4129504888a"
+            },
+            "mobile": {
+              "image": "https://data.decoassets.com/official-aurora-saude/9ca96c22-e11f-47b5-8503-2d471a6fb892/1742234125278-154b646a-755d-4de1-89d2-c73c16aa12e3"
+            },
+            "alt": "Banner"
+          },
+          "mobileTitle": "Título <br /> Título",
+          "textColor": "Branco",
+          "titleFontSize": "26",
+          "titleFontWeight": "semi-bold",
+          "desktopTitle": "Notícias "
+        },
+        {
+          "__resolveType": "website/sections/Rendering/Lazy.tsx",
+          "section": {
+            "__resolveType": "site/sections/Site/NewsPage.tsx",
+            "image": {
+              "image": "https://data.decoassets.com/official-aurora-saude/ddd6ac82-b1e1-4be5-911c-1232371d0c54/IMG_1915.jpeg",
+              "alt": "Montes Clatos "
+            },
+            "date": "06/02/2025",
+            "title": "Aurora Saúde chega a Montes Claros",
+            "text": "<p><span style=\"color: rgb(50, 49, 48); font-size: 18px\">No dia 6 de fevereiro, Montes Claros recebeu o lançamento oficial da Aurora Saúde, que escolheu a cidade para expandir seus serviços e levar uma nova visão de cuidado e bem-estar para o Norte de Minas. O evento, realizado em formato de café da manhã para corretores locais, foi um momento de apresentação dos diferenciais da Aurora e de celebração de parcerias estratégicas.</span><br><br><span style=\"color: rgb(50, 49, 48); font-size: 18px\">As sócias-fundadoras da Aurora, Marcela Meneses e Liliane Freitas, abriram o encontro destacando o compromisso da empresa com a saúde preventiva e com a qualidade de vida dos beneficiários. Elas apresentaram a Jornada de Cuidado, um modelo inovador que usa a tecnologia de rastreamento e prevenção de doenças para cuidar das pessoas, reforçando o impacto positivo que a Aurora trará para Montes Claros.</span><br><br><span style=\"color: rgb(50, 49, 48); font-size: 18px\">O evento contou também com a presença de representantes de empresas parceiras, reforçando a rede de colaboração que a Aurora está construindo para garantir sucesso na nova praça. Além disso, as diretoras aproveitaram para lançar três novos produtos integrados ao plano de saúde:</span><br><span style=\"color: rgb(50, 49, 48); font-size: 18px\">- Aurora Odonto: Um plano de saúde bucal completo, que garante cuidados integrais aos beneficiários.</span><br><span style=\"color: rgb(50, 49, 48); font-size: 18px\">- Seguro Viagem: Um seguro exclusivo, repleto de benefícios para quem busca tranquilidade durante suas viagens.</span><br><span style=\"color: rgb(50, 49, 48); font-size: 18px\">- Aeromédico: Um serviço de transporte aéreo para remoções de urgência e emergência.</span><br><span style=\"color: rgb(50, 49, 48); font-size: 18px\">O lançamento da Aurora Saúde em Montes Claros não só amplia as oportunidades para corretores e beneficiários, como também traz uma nova perspectiva para um mercado que enfrenta desafios constantes. Com foco em prevenção, cuidado integral e inovação, a Aurora promete ser uma referência em saúde suplementar, contribuindo para o bem-estar e a qualidade de vida da população norte-mineira!</span></p>",
+            "relatedsNews": []
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Site/NewsPage.tsx",
+      "text": "<p>A Aurora continua crescendo e agora é a mais nova operadora de saúde habilitada para cuidar das empresas de cargas e transporte de Minas Gerais!&nbsp;</p><p>Em acordo com a Federação dos Trabalhadores em Transportes Rodoviários de Minas Gerais (Fettrominas), a Federação das Empresas de Transportes de Carga do Estado de Minas Gerais (FETCEMG), a Federação dos Trabalhadores na Movimentação de Mercadorias em Geral e Operações de Logística do Estado de Minas Gerais (Fetramovmg) e a Câmara Geral de Benefícios (CGB), fomos autorizados, por contrato coletivo padrão, a prestar os nossos serviços para as companhias associadas.</p><p>Plano de saúde familiar* com o melhor custo benefício do mercado, condições especiais para redução de carências** e o primeiro check-up gratuito nos exames e consultas iniciais*** são apenas algumas das vantagens que preparamos especialmente para acolher as principais necessidades das empresas do setor, que seguem sendo um dos pilares da economia mineira.&nbsp;</p><p>Segundo a Confederação Nacional do Transporte (CNT), Minas Gerais é o segundo estado brasileiro com maior crescimento de empregos no ramo de transporte. Só em 2023, as empresas da área empregaram mais de 107 mil novos trabalhadores.</p><p>&nbsp;</p><p>O contínuo crescimento do setor destaca a necessidade urgente de serviços de saúde especializados, que não só tratem doenças, mas que cuidem integralmente de cada trabalhador, como a Aurora o faz. E é uma honra para a nossa operadora poder garantir a qualidade de vida de todos que movem Minas.</p><p>&nbsp;</p><p>Tem uma empresa de transporte de cargas em Minas? Procure o seu corretor ou ligue para a nossa central 4000-2105.&nbsp;&nbsp;</p><p>&nbsp;</p><p><em>Consulte condições. *Isenção de carências para empresas com até 29 beneficiários, válida para consultas eletivas e exames iniciais solicitados após avaliação médica da Aurora Saúde. ***Exames iniciais solicitados após avaliação médica da Aurora Saúde.</em></p>",
+      "image": {
+        "alt": "Banner",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/official-aurora-saude/4532d339-7640-4f8c-a08e-cbdaf2818f48/notpicia-site-1920x1080.png"
+      },
+      "date": "31/10/2024",
+      "title": "Agora somos o plano de saúde para quem movimenta Minas",
+      "relatedsNews": [
+        {
+          "image": {
+            "image": "https://data.decoassets.com/official-aurora-saude/e977ffa3-b1a5-44b4-9612-7ec84b2f4468/KAH_0417.jpg",
+            "alt": "Banner"
+          },
+          "date": "22 de novembro de 2024",
+          "link": "/noticias-noticia4",
+          "title": "Aurora Saúde marcando presença no SRH24"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Site/FloatingButtons.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

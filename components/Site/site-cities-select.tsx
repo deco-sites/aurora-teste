@@ -1,15 +1,16 @@
 import { useRef, useState } from "preact/hooks";
 import { useClickOutsideListener } from "site/helpers/Site/useClickOutsideListener.ts";
 
-interface Option {
+export interface City {
+  id: number;
   nome: string;
 }
 
 export interface InputProps {
   label: string;
-  options: Option[];
+  options: City[];
   value?: string;
-  inputValueSetter?: (value: string) => void;
+  inputValueSetter?: (value: City) => void;
 }
 
 export default function SiteCitiesSelect(
@@ -34,7 +35,7 @@ export default function SiteCitiesSelect(
     setIsOpen(!isOpen);
   };
 
-  const handleOptionClick = (option: string) => {
+  const handleOptionClick = (option: City) => {
     inputValueSetter(option);
     setIsOpen(false);
   };
@@ -84,7 +85,7 @@ export default function SiteCitiesSelect(
               <div
                 key={index}
                 className="text-center cursor-pointer mb-[33px] last:mb-0"
-                onClick={() => handleOptionClick(option.nome)}
+                onClick={() => handleOptionClick(option)}
               >
                 {option.nome}
               </div>
