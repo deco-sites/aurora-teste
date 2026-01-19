@@ -1,3 +1,5 @@
+//Faça parte do plano<br /> de saúde que anda junto.
+//Faça parte<br /> do plano<br /> de saúde que <br />anda junto.
 import SiteInputText from "site/components/Site/site-input-text.tsx";
 import { ufsOptions } from "site/helpers/Site/ufsOptions.ts";
 import { citiesOptions } from "site/helpers/Simulador/cities.ts";
@@ -31,12 +33,56 @@ const workWithUsEmailSended = signal(false);
 export default function WorkWithUsIsland(
   { RecipientsEmailArr, CopyToArr, subject }: WorkWithUsIslandProps,
 ) {
-  /* =======================
-     STATES EXISTENTES
-  ======================= */
+  const [namePlaceholder, setNamePlaceholder] = useState("Escreva aqui");
+  const [emailPlaceholder, setEmailPlaceholder] = useState(
+    "seuemail@email.com",
+  );
+  const [telPlaceholder, setTelPlaceholder] = useState("(xx) x xxxx xxxx");
+  const [UFPlaceholder, setUFPlaceholder] = useState("MG");
+  const [cityPlaceholder, setCityPlaceholder] = useState("Belo Horizonte");
+  const [addressPlaceholder, setAddressPlaceholder] = useState(
+    "Rua, Bairro e Número",
+  );
+  const [cepPlaceholder, setCepPlaceholder] = useState("xx.xxx-xxx");
+  const [vagaPlaceholder, setVagaPlaceholder] = useState("Vaga Pretendida");
+
+  useEffect(() => {
+    const updateNamePlaceholder = () => {
+      if (globalThis.innerWidth < 640) {
+        setNamePlaceholder("Nome Completo");
+        setEmailPlaceholder("Email");
+        setTelPlaceholder("Telefone");
+        setUFPlaceholder("UF");
+        setCityPlaceholder("Cidade");
+        setAddressPlaceholder("Endereço");
+        setCepPlaceholder("CEP");
+        setCepPlaceholder("Vaga Pretendida");
+      } else {
+        setNamePlaceholder("Escreva aqui");
+        setEmailPlaceholder("seuemail@email.com");
+        setTelPlaceholder("(xx) x xxxx xxxx");
+        setUFPlaceholder("MG");
+        setCityPlaceholder("Belo Horizonte");
+        setAddressPlaceholder("Rua, Bairro e Número");
+        setCepPlaceholder("xx.xxx-xxx");
+        setVagaPlaceholder("Vaga Pretendida");
+      }
+    };
+
+    updateNamePlaceholder(); // Set initial placeholder based on screen size
+    globalThis.addEventListener("resize", updateNamePlaceholder);
+
+    return () =>
+      globalThis.removeEventListener("resize", updateNamePlaceholder);
+  }, []);
+
+  const fileInputRef = useRef(null);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
+  const [ufs, setUfs] = useState([]);
+  const [cities, setCities] = useState([]);
   const [UF, setUF] = useState("");
   const [city, setCity] = useState("");
   const [address, setAddress] = useState("");
@@ -54,20 +100,11 @@ export default function WorkWithUsIsland(
   const [vagaError, setVagaError] = useState(false);
   const [attachmentError, setAttachmentError] = useState(false);
 
-  /* =======================
-     🆕 LGPD
-  ======================= */
-  const [lgpdAccepted, setLgpdAccepted] = useState(false);
-  const [lgpdError, setLgpdError] = useState(false);
-
-  const fileInputRef = useRef(null);
-
-  /* =======================
-     VALIDAÇÃO
-  ======================= */
   const checkFields = (e) => {
+    //console.log("Aqui ó:", selectedFile);
     e.preventDefault();
 
+    // Verifica os campos e atualiza os estados de erro
     const nameErrorStatus = name === "";
     const emailErrorStatus = email === "";
     const telErrorStatus = tel === "";
@@ -77,7 +114,6 @@ export default function WorkWithUsIsland(
     const cepErrorStatus = cep === "";
     const vagaErrorStatus = vaga === "";
     const attachmentErrorStatus = selectedFile === null;
-    const lgpdErrorStatus = !lgpdAccepted;
 
     setNameError(nameErrorStatus);
     setEmailError(emailErrorStatus);
@@ -88,8 +124,8 @@ export default function WorkWithUsIsland(
     setCepError(cepErrorStatus);
     setVagaError(vagaErrorStatus);
     setAttachmentError(attachmentErrorStatus);
-    setLgpdError(lgpdErrorStatus);
 
+    // Se todos os erros forem resolvidos, envie o formulário
     if (
       !nameErrorStatus &&
       !emailErrorStatus &&
@@ -99,173 +135,462 @@ export default function WorkWithUsIsland(
       !addressErrorStatus &&
       !cepErrorStatus &&
       !vagaErrorStatus &&
-      !attachmentErrorStatus &&
-      !lgpdErrorStatus
+      !attachmentErrorStatus
     ) {
       handleSubmit(e);
     }
   };
 
-  /* =======================
-     ENVIO
-  ======================= */
-  const sendData = `
-Nome: ${name}
-E-mail: ${email}
-Telefone: ${tel}
-UF: ${UF}
-Cidade: ${city}
-Endereço: ${address}
-Cep: ${cep}
-Vaga: ${vaga}
+  // Buscar UFs na API do IBGE
+  useEffect(() => {
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+      .then((response) => response.json())
+      .then((data) => {
+        const sortedData = data.sort((a, b) => a.sigla.localeCompare(b.sigla));
 
-Consentimento LGPD: SIM
-Data/Hora: ${new Date().toLocaleString("pt-BR")}
-`;
+        setUfs(sortedData);
+      })
+      .catch((error) => {
+        console.error("Erro ao buscar UFs: ", error);
+      });
+  }, []);
+
+  //Faz o primeiro fetch usando MG como UF padrão
+  useEffect(() => {
+    fetch(
+      `https://servicodados.ibge.gov.br/api/v1/localidades/estados/MG/municipios`,
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setCities(data);
+      })
+      .catch((error) => {
+        console.error("Erro ao buscar cidades: ", error);
+      });
+  }, []);
+
+  // Atualizar as cidades sempre que a UF selecionada mudar
+  useEffect(() => {
+    if (UF) {
+      fetch(
+        `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${UF}/municipios`,
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setCities(data);
+        })
+        .catch((error) => {
+          console.error("Erro ao buscar cidades: ", error);
+        });
+    } else {
+      setCities([]);
+    }
+  }, [UF]);
+
+  const sendData = `
+        Nome: ${name}
+        E-mail: ${email}
+        Telefone: ${tel}
+        UF: ${UF}
+        Cidade: ${city}
+        Endereço: ${address}
+        Cep: ${cep}
+        Vaga: ${vaga}
+    `;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!lgpdAccepted) {
-      setLgpdError(true);
-      return;
-    }
-
     workWithUsEmailSended.value = true;
-
     await invoke.site.actions.sendEmail({
-      RecipientsEmailArr,
-      CopyToArr,
-      subject,
+      RecipientsEmailArr: RecipientsEmailArr,
+      CopyToArr: CopyToArr,
+      subject: subject,
       attachment: selectedFile,
       data: sendData,
     });
   };
 
-  /* =======================
-     JSX
-  ======================= */
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleFileChange = (e) => {
+    e.preventDefault();
+    const file = e.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        setSelectedFile({
+          name: file.name,
+          type: file.type,
+          content: reader.result.split(",")[1], // Pega o conteúdo base64
+        });
+      };
+    }
+  };
+
   const formComponent = (
-    <form className="flex flex-col gap-6">
-      <SiteInputText
-        label="Nome completo"
-        value={name}
-        onChange={(e) => setName(e)}
-        error={nameError}
-      />
+    <>
+      <div className="flex justify-center px-10 lg:px-0">
+        <div className="lg:max-w-[1400px] w-full pt-12 pb-16 lg:py-32 lg:px-32">
+          <div className="mb-14 flex flex-col px-8 gap-5 lg:gap-0 lg:flex-row lg:items-center justify-between lg:px-14 lg:pb-16 lg:border-b border-b-black border-opacity-15 ">
+            <span className="font-sora text-2xl text-orange1 font-bold">
+              Trabalhe <br /> Conosco
+            </span>
+            <div className="flex flex-col gap-4 lg:max-w-[500px] text-black text-opacity-50">
+              <span>
+                Nossa essência é estar sempre juntos, colaborando e apoiando uns
+                aos outros em nossa jornada pelo bem-estar e pela saúde.
+              </span>
+              <span>
+                Faça parte de nossa equipe, em que a empatia, dedicação e
+                excelência constroem um sistema de saúde eficaz. Se você é
+                apaixonado por cuidar dos outros, comprometido com a qualidade e
+                valoriza respeito, inovação e excelência, a Aurora Saúde é o
+                lugar ideal.
+              </span>
+              <span>
+                Estamos à procura de talentos comprometidos para fazer a
+                diferença na vida das pessoas. Junte-se a nós!
+              </span>
+            </div>
+          </div>
+          <form className="flex flex-col gap-4 lg:gap-11">
+            <div className="relative flex items-center gap-2 flex-grow">
+              <SiteInputText
+                id={"name"}
+                name={"name"}
+                label={"Nome"}
+                value={name}
+                inputValueSetter={setName}
+                placeholder={namePlaceholder}
+                wfull
+              />
+              {nameError && (
+                <Image
+                  src={"/Simulador/error-circle-icon.png"}
+                  alt="Error Icon"
+                  className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                  width=""
+                  height=""
+                />
+              )}
+            </div>
+            <div className="relative flex items-center gap-2 flex-grow">
+              <SiteInputText
+                id={"email"}
+                name={"email"}
+                label={"E-mail"}
+                value={email}
+                inputValueSetter={setEmail}
+                placeholder={emailPlaceholder}
+                wfull
+              />
+              {emailError && (
+                <Image
+                  src={"/Simulador/error-circle-icon.png"}
+                  alt="Error Icon"
+                  className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                  width=""
+                  height=""
+                />
+              )}
+            </div>
 
-      <SiteInputText
-        label="E-mail"
-        value={email}
-        onChange={(e) => setEmail(e)}
-        error={emailError}
-      />
+            <div className="flex lg:hidden">
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteInputText
+                  id={"tel"}
+                  name={"tel"}
+                  label={"Telefone"}
+                  value={tel}
+                  inputValueSetter={setTel}
+                  mask={PhoneMask}
+                  maxLength={16}
+                  placeholder={telPlaceholder}
+                  wfull
+                />
+                {telError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+            </div>
 
-      <SiteInputText
-        label="Telefone"
-        value={tel}
-        onChange={(e) => setTel(PhoneMask(e))}
-        error={telError}
-      />
+            <div className="hidden lg:flex gap-10">
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteInputText
+                  id={"tel"}
+                  name={"tel"}
+                  label={"Telefone"}
+                  value={tel}
+                  inputValueSetter={setTel}
+                  mask={PhoneMask}
+                  maxLength={16}
+                  placeholder={telPlaceholder}
+                  wfull
+                />
+                {telError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
 
-      <SiteUFSelect
-        value={UF}
-        onChange={(e) => setUF(e)}
-        error={UFError}
-        options={ufsOptions}
-      />
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteUFSelect
+                  id={"uf"}
+                  name={"uf"}
+                  label={"UF:"}
+                  value={UF}
+                  inputValueSetter={setUF}
+                  options={ufs}
+                  placeholder={UFPlaceholder}
+                  wfull
+                />
+                {UFError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 -right-6" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteCitiesSelect
+                  id={"city"}
+                  name={"city"}
+                  label={"Cidade:"}
+                  value={city}
+                  inputValueSetter={setCity}
+                  options={cities}
+                  placeholder={cities[0]?.nome}
+                  wfull
+                />
+                {cityError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 -right-6" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+            </div>
 
-      <SiteCitiesSelect
-        uf={UF}
-        value={city}
-        onChange={(e) => setCity(e)}
-        error={cityError}
-        options={citiesOptions}
-      />
+            <div className="flex gap-4 lg:gap-10 flex-col-reverse lg:flex-row">
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteInputText
+                  id={"address"}
+                  name={"address"}
+                  label={"Endereço"}
+                  value={address}
+                  inputValueSetter={setAddress}
+                  placeholder={addressPlaceholder}
+                  wfull
+                />
+                {addressError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteInputText
+                  id={"cep"}
+                  name={"cep"}
+                  label={"CEP"}
+                  value={cep}
+                  inputValueSetter={setCep}
+                  mask={cepMask}
+                  maxLength={10}
+                  placeholder={cepPlaceholder}
+                  wfull
+                />
+                {cepError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteInputText
+                  id={"vaga"}
+                  name={"vaga"}
+                  label={"Vaga"}
+                  value={vaga}
+                  inputValueSetter={setVaga}
+                  maxLength={100}
+                  placeholder={vagaPlaceholder}
+                  wfull
+                />
+                {vagaError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 right-4" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+            </div>
 
-      <SiteInputText
-        label="Endereço"
-        value={address}
-        onChange={(e) => setAddress(e)}
-        error={addressError}
-      />
-
-      <SiteInputText
-        label="CEP"
-        value={cep}
-        onChange={(e) => setCep(cepMask(e))}
-        error={cepError}
-      />
-
-      <SiteInputSelect
-        label="Vaga pretendida"
-        value={vaga}
-        onChange={(e) => setVaga(e)}
-        error={vagaError}
-        options={[
-          { label: "Administrativo", value: "Administrativo" },
-          { label: "Comercial", value: "Comercial" },
-          { label: "TI", value: "TI" },
-        ]}
-      />
-
-      {/* Upload currículo */}
-      <input
-        ref={fileInputRef}
-        type="file"
-        onChange={(e) => setSelectedFile(e.currentTarget.files?.[0] ?? null)}
-      />
-      {attachmentError && (
-        <span className="text-xs text-red">
-          Anexe seu currículo.
-        </span>
-      )}
-
-      {/* LGPD */}
-      <div className="flex flex-col gap-2 pt-4">
-        <label className="flex items-start gap-3 text-sm text-black text-opacity-70">
-          <input
-            type="checkbox"
-            checked={lgpdAccepted}
-            onChange={(e) => {
-              setLgpdAccepted(e.currentTarget.checked);
-              setLgpdError(false);
-            }}
-            className="mt-1"
-          />
-          <span>
-            Li e concordo com a{" "}
-            <a
-              href="/politica-de-privacidade-candidatos"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-orange4"
-            >
-              Política de Privacidade
-            </a>
-            .
-          </span>
-        </label>
-
-        {lgpdError && (
-          <span className="text-xs text-red">
-            É necessário aceitar a Política de Privacidade.
-          </span>
-        )}
-      </div>
-
-      <button
-        type="submit"
-        onClick={checkFields}
-        disabled={!lgpdAccepted}
-        className={`bg-orange4 text-white w-full lg:w-auto lg:px-24 py-3 rounded-full ${!lgpdAccepted ? "opacity-50 cursor-not-allowed" : ""
-          }`}
+            <div className="flex gap-4 lg:hidden pb-10 border-b border-b-black border-opacity-10 lg:border-none">
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteUFSelect
+                  id={"uf"}
+                  name={"uf"}
+                  label={"UF:"}
+                  value={UF}
+                  inputValueSetter={setUF}
+                  options={ufs}
+                  placeholder={UFPlaceholder}
+                  wfull
+                />
+                {UFError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 -right-6" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+              <div className="relative flex items-center gap-2 flex-grow">
+                <SiteCitiesSelect
+                  id={"city"}
+                  name={"city"}
+                  label={"Cidade:"}
+                  value={city}
+                  inputValueSetter={setCity}
+                  options={cities}
+                  placeholder={cities[0]?.nome}
+                  wfull
+                />
+                {cityError && (
+                  <Image
+                    src={"/Simulador/error-circle-icon.png"}
+                    alt="Error Icon"
+                    className="h-5 w-5 absolute top-50 -right-6" //lg:left-[615px]
+                    width=""
+                    height=""
+                  />
+                )}
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 pt-6 pb-6 border-t border-black border-opacity-10">
+  <label className="flex items-start gap-3 text-sm text-black text-opacity-70">
+    <input
+      type="checkbox"
+      checked={lgpdAccepted}
+      onChange={(e) => {
+        setLgpdAccepted(e.currentTarget.checked);
+        setLgpdError(false);
+      }}
+      className="mt-1"
+    />
+    <span>
+      Li e concordo com a{" "}
+      <a
+        href="/politica-de-privacidade-candidatos"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-orange4"
       >
-        Enviar
-      </button>
-    </form>
-  );
+        Política de Privacidade
+      </a>{" "}
+      e autorizo o tratamento dos meus dados pessoais para fins de recrutamento e
+      seleção.
+    </span>
+  </label>
 
+  {lgpdError && (
+    <span className="text-xs text-red">
+      É necessário aceitar a Política de Privacidade para continuar.
+    </span>
+  )}
+</div>
+
+            <div className="flex pt-10 lg:pt-0 flex-col lg:flex-row gap-4 lg:gap-0 justify-between w-full">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center">
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    style={{ display: "none" }}
+                    onChange={handleFileChange}
+                  />
+                  <button
+                    className="flex justify-center items-center gap-5 bg-transparent border border-orange4 text-orange4 w-full lg:w-auto lg:px-10 py-3 rounded-full"
+                    onClick={handleButtonClick}
+                  >
+                    <Image
+                      src={"/Site/clip-icon.svg"}
+                      alt="Clip Icon"
+                      className=""
+                    />
+                    Envie o seu currículo
+                  </button>
+                  {attachmentError && (
+                    <Image
+                      src={"/Simulador/error-circle-icon.png"}
+                      alt="Error Icon"
+                      className="h-5 w-5 absolute top-50 right-16 lg:-right-4 lg:relative" //lg:left-[615px]"
+                      width=""
+                      height=""
+                    />
+                  )}
+                </div>
+
+                {selectedFile && (
+                  <span className="text-xs text-red">
+                    {selectedFile.name}
+                  </span>
+                )}
+              </div>
+              <button
+  onClick={checkFields}
+  disabled={!lgpdAccepted}
+  className={`bg-orange4 text-white w-full lg:w-auto lg:px-24 py-3 rounded-full ${
+    !lgpdAccepted ? "opacity-50 cursor-not-allowed" : ""
+  }`}
+>
+  Enviar
+</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
+  );
 
   return workWithUsEmailSended.value
     ? <SendingConfirmation signalToChange={workWithUsEmailSended} />

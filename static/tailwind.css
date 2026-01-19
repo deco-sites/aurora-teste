@@ -2955,6 +2955,9 @@ input.tab:checked + .tab-content,
 .right-10 {
   right: 2.5rem;
 }
+.right-16 {
+  right: 4rem;
+}
 .right-2 {
   right: 0.5rem;
 }
@@ -4169,6 +4172,10 @@ input.tab:checked + .tab-content,
   --tw-border-opacity: 1;
   border-color: rgb(217 217 217 / var(--tw-border-opacity));
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -4191,6 +4198,10 @@ input.tab:checked + .tab-content,
 .border-orange1 {
   --tw-border-opacity: 1;
   border-color: rgb(255 132 97 / var(--tw-border-opacity));
+}
+.border-orange4 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 118 81 / var(--tw-border-opacity));
 }
 .border-pink1 {
   --tw-border-opacity: 1;
@@ -4247,6 +4258,9 @@ input.tab:checked + .tab-content,
 .border-t-white {
   --tw-border-opacity: 1;
   border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-opacity-10 {
+  --tw-border-opacity: 0.1;
 }
 .border-opacity-15 {
   --tw-border-opacity: 0.15;
@@ -4853,6 +4867,9 @@ input.tab:checked + .tab-content,
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -5879,8 +5896,16 @@ html {
     position: static;
   }
 
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:sticky {
     position: sticky;
+  }
+
+  .lg\:-right-4 {
+    right: -1rem;
   }
 
   .lg\:bottom-10 {
@@ -6744,6 +6769,10 @@ html {
 
   .lg\:pr-9 {
     padding-right: 2.25rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:pt-10 {
