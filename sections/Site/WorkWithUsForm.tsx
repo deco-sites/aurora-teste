@@ -19,9 +19,12 @@ export interface Props {
 export default function WorkWithUs(
   { RecipientsEmailArr, CopyToArr, subject }: Props,
 ) {
+  // 🔒 Garantia defensiva para o Island
+  const recipients = RecipientsEmailArr ?? [];
+
   return (
     <WorkWithUsIsland
-      RecipientsEmailArr={RecipientsEmailArr}
+      RecipientsEmailArr={recipients}
       CopyToArr={CopyToArr}
       subject={subject}
     />
