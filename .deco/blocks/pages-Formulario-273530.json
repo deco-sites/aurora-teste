@@ -1,0 +1,24 @@
+{
+  "name": "Política de Privacidade - Candidatos",
+  "path": "/politica-de-privacidade-candidatos",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Site/ColorfullWrapper.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Site/HeaderSite.tsx",
+          "type": "cliente"
+        },
+        {
+          "__resolveType": "site/sections/Site/RichTextSection.tsx",
+          "title": "Política de Privacidade – Candidatos",
+          "content": "<h3>Proteção de Dados Pessoais no Processo Seletivo</h3><p>A Aurora Saúde respeita sua privacidade...</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
