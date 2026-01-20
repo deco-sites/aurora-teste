@@ -13,8 +13,9 @@ import { signal } from "@preact/signals";
 import { PhoneMask } from "site/helpers/Simulador/phoneMask.ts";
 import CustomSelect from "site/components/Site/custom-select.tsx";
 import Image from "apps/website/components/Image.tsx";
-import { LeadModality } from "../../actions/saveLead.ts";
+import { LeadModality } from "../../commons/types/lead.ts";
 import { isAValidNumber } from "site/helpers/Simulador/numbers.ts";
+import { City } from "../../components/Site/site-cities-select.tsx";
 
 export interface RecipientsEmail {
   email: string;
@@ -53,7 +54,7 @@ export default function RequestQuoteIsland(
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
   const [UF, setUF] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<City | null>(null);
   const [whereMeetAurora, setWhereMeetAurora] = useState("");
   const [customWhereMeetAurora, setCustomWhereMeetAurora] = useState("");
 
@@ -136,7 +137,7 @@ export default function RequestQuoteIsland(
         E-mail: ${email}
         Telefone: ${tel}
         UF: ${UF}
-        Cidade: ${city}
+        Cidade: ${city?.nome}
         Por onde conheceu a Aurora: ${customWhereMeetAurora}
     `;
 
@@ -148,7 +149,7 @@ export default function RequestQuoteIsland(
     const emailErrorStatus = email === "";
     const telErrorStatus = tel === "";
     const UFErrorStatus = UF === "";
-    const cityErrorStatus = city === "";
+    const cityErrorStatus = !city?.id;
     const whereDidYouMeetAuroraErrorStatus = customWhereMeetAurora === "";
 
     setNameError(nameErrorStatus);
@@ -173,13 +174,13 @@ export default function RequestQuoteIsland(
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     await invoke.site.actions.saveLead({
       leadToSave: {
         nome: name.trim(),
         razao_social: null,
         cpf_cnpj: null,
-        cidade: +city,
+        cidade: city?.id,
         estado: UF.trim(),
         telefone: tel ? extractNumbers(tel) : '',
         email: email.trim(),
@@ -336,7 +337,7 @@ export default function RequestQuoteIsland(
                 id={"city"}
                 name={"city"}
                 label={"Cidade:"}
-                value={city}
+                value={city?.nome}
                 inputValueSetter={setCity}
                 options={cities}
                 placeholder={cities[0]?.nome}

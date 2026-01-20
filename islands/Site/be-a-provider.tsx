@@ -12,6 +12,7 @@ import { cepMask } from "site/helpers/Simulador/cepMask.ts";
 import SiteUFSelect from "site/components/Site/site-uf-select.tsx";
 import SiteCitiesSelect from "site/components/Site/site-cities-select.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { City } from "../../components/Site/site-cities-select.tsx";
 
 export interface RecipientsEmail {
   email: string;
@@ -92,7 +93,7 @@ export default function BeAProviderFormIsland(
   const [ufs, setUfs] = useState([]);
   const [cities, setCities] = useState([]);
   const [UF, setUF] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<City | null>(null);
   const [address, setAddress] = useState("");
   const [cep, setCep] = useState("");
 
@@ -116,7 +117,7 @@ export default function BeAProviderFormIsland(
     const cnpjErrorStatus = cnpj === "";
     const telErrorStatus = tel === "";
     const UFErrorStatus = UF === "";
-    const cityErrorStatus = city === "";
+    const cityErrorStatus = !city?.id;
     const addressErrorStatus = address === "";
     const cepErrorStatus = cep === "";
 
@@ -199,7 +200,7 @@ export default function BeAProviderFormIsland(
         CNPJ: ${cnpj}
         Telefone: ${tel}
         UF: ${UF}
-        Cidade: ${city}
+        Cidade: ${city?.nome}
         Endereço: ${address}
         Cep: ${cep}
     `;
@@ -378,7 +379,7 @@ export default function BeAProviderFormIsland(
                     id={"city"}
                     name={"city"}
                     label={"Cidade:"}
-                    value={city}
+                    value={city?.nome}
                     inputValueSetter={setCity}
                     options={cities}
                     placeholder={cities[0]?.nome}
@@ -468,7 +469,7 @@ export default function BeAProviderFormIsland(
                   id={"city"}
                   name={"city"}
                   label={"Cidade:"}
-                  value={city}
+                  value={city?.nome}
                   inputValueSetter={setCity}
                   options={cities}
                   placeholder={cities[0]?.nome}

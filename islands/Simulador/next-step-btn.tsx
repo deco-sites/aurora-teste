@@ -13,6 +13,7 @@ import { useStepThreeInputValues } from "site/sdk/Simulador/ThirdStep/useStepThr
 import { useEffect, useState } from "preact/hooks";
 import { useCdLead } from "site/sdk/Simulador/useCdLead.ts";
 import { useSelectPlan } from "site/sdk/Simulador/useSelectPlan.ts";
+import { Lead, LeadModality } from "../../commons/types/lead.ts";
 
 interface INextStep {
   executionFunc?: () => void;
@@ -20,7 +21,8 @@ interface INextStep {
 
 export const previousActiveOption = signal(1);
 
-export default function NextStepBtn({ options, executionFunc }: INextStep) { //Aqui era passado como primeira prop "options", mas não sei pq
+export default function NextStepBtn({ options, executionFunc }: INextStep) {
+  //Aqui era passado como primeira prop "options", mas não sei pq
   const { activeOption } = useUI();
   const { activeStep } = useFormSteps();
   //const { activeStep, changeStep } = useFormSteps();
@@ -46,9 +48,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
     email2Value,
   } = useStepTwoOption2InputValues();
 
-  const {
-    thirdStepSignal,
-  } = useStepThreeInputValues();
+  const { thirdStepSignal } = useStepThreeInputValues();
 
   const cd_cidade = signal(0);
   async function fetchCityCode(value: string) {
@@ -74,6 +74,15 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
   const rangesArr = useSignal<string[]>([]);
   const cd_tab_preco = useSignal(0);
 
+  function sumBeneficiaryCount() {
+    return Array.isArray(thirdStepSignal.value.beneficiariesValuesArr)
+      ? thirdStepSignal.value.beneficiariesValuesArr.reduce(
+          (acc, current) => acc + current.qty,
+          0,
+        )
+      : undefined;
+  }
+
   return (
     <button
       className="bg-orange1 lg:bg-transparent rounded-full flex items-center justify-center px-8 py-3 lg:p-0 gap-2 lg:gap-6"
@@ -96,7 +105,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
         //O if abaixo checa se estamos indo pro segundo passo e guarda o valor da opção escolhida na primeira tela em outra variável
         if (
           activeStep.value === 2 &&
-          (previousActiveOption.value !== activeOption.value)
+          previousActiveOption.value !== activeOption.value
         ) {
           previousActiveOption.value = activeOption.value;
           //console.log("Passou pro step2", previousActiveOption.value);
@@ -108,7 +117,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           await fetchCityCode(cityValue.value);
           await fetchAgeRangeCode(ageRangeValue.value);
 
-          const lead_data = {
+          const lead_data: Lead = {
             nome: nameValue.value,
             cpf_cnpj: extractNumbers(cpfValue.value),
             cidade: cd_cidade.value,
@@ -117,6 +126,7 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
             email: emailValue.value,
             possui_plano: alreadyHavePlanValue.value === "yes" ? true : false,
             cd_faixa: cd_range.value,
+            cd_modalidade: LeadModality.ForFormYouAndYourFamily,
           };
 
           if (cd_lead.value === 0) {
@@ -138,12 +148,12 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando informações da tela Sobre você nas opções 2 e 3 MEI
         if (
-          activeStep.value === 3 && (activeOption.value === 2 ||
-          activeOption.value === 3)
+          activeStep.value === 3 &&
+          (activeOption.value === 2 || activeOption.value === 3)
         ) {
           await fetchCityCode(cityValue2.value);
 
-          const lead_data = {
+          const lead_data: Lead = {
             razao_social: socialReasonValue.value,
             nome: name2Value.value,
             cpf_cnpj: extractNumbers(cnpjValue2.value),
@@ -151,6 +161,10 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
             cidade: cd_cidade.value,
             telefone: extractNumbers(tel2Value.value),
             email: email2Value.value,
+            cd_modalidade:
+              activeOption.value === 2
+                ? LeadModality.ForFormMEIOrEnterprisesWith1to29Lifes
+                : LeadModality.ForFormEnterprisesWith30to99Lifes,
           };
 
           //Se o usuário ainda não existe no banco
@@ -172,18 +186,22 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
         }
 
         //Salvando informações da tela Beneficiários na opção Você e sua família
-        if (
-          activeStep.value === 4 &&
-          activeOption.value === 1
-        ) {
-          const lead_data = {
+        if (activeStep.value === 4 && activeOption.value === 1) {
+          const lifeCount =
+            thirdStepSignal.value.whoUseThePlan === "somente_eu"
+              ? 1
+              : sumBeneficiaryCount();
+
+          const lead_data: Lead = {
+            qtd_vidas: lifeCount,
             somente_titular:
               thirdStepSignal.value.whoUseThePlan === "somente_eu"
                 ? true
                 : false,
-            outra_pessoa: thirdStepSignal.value.whoUseThePlan === "outra_pessoa"
-              ? true
-              : false,
+            outra_pessoa:
+              thirdStepSignal.value.whoUseThePlan === "outra_pessoa"
+                ? true
+                : false,
           };
 
           //Aqui eu atualizo a informação somente_eu e outra_pessoa para true ou false
@@ -242,13 +260,27 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando as informações da tela Beneficiários nas opções 2 e 3 MEI
         if (
-          activeStep.value === 4 && (activeOption.value === 2 ||
-          activeOption.value === 3)
+          activeStep.value === 4 &&
+          (activeOption.value === 2 || activeOption.value === 3)
         ) {
           /*console.log(
             "Array de Bene",
             thirdStepSignal.value.beneficiariesValuesArr,
           );*/
+
+          if (Number.isInteger(cd_lead.value)) {
+            const lifeCount = sumBeneficiaryCount();
+
+            const leadUpdates: Lead = {
+              cd_lead: cd_lead.value,
+              qtd_vidas: lifeCount,
+            };
+
+            await invoke.site.actions.updateLead({
+              dataToUpdate: leadUpdates,
+              leadId: cd_lead.value,
+            });
+          }
 
           const dependentsArr = await Promise.all(
             thirdStepSignal.value.beneficiariesValuesArr.map(
@@ -331,8 +363,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
           });
           console.log("Prices:", prices.data);
 
-          cd_tab_preco.value = prices.data.find((el) =>
-            el.faixa === ageRangeValue.value
+          cd_tab_preco.value = prices.data.find(
+            (el) => el.faixa === ageRangeValue.value,
           );
 
           //console.log("CD_TAB:", cd_tab_preco.value.cd_tab_preco);
@@ -365,8 +397,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               );
 
               // Filtra os valores undefined
-              const validPrice = correspondingPrice.find((price) =>
-                price !== undefined
+              const validPrice = correspondingPrice.find(
+                (price) => price !== undefined,
               );
 
               // Retorne o novo objeto com cd_lead_dep e cd_tab_preco
@@ -386,8 +418,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
 
         //Salvando as informações da tela de escolha do plano das opções 2 e 3 Mei
         if (
-          activeStep.value === 5 && (activeOption.value === 2 ||
-          activeOption.value === 3)
+          activeStep.value === 5 &&
+          (activeOption.value === 2 || activeOption.value === 3)
         ) {
           //console.log("Entrou nesse if aki Erick");
           //console.log("transformedArr", transformedArray.value);
@@ -454,8 +486,8 @@ export default function NextStepBtn({ options, executionFunc }: INextStep) { //A
               );
 
               // Filtra os valores undefined
-              const validPrice = correspondingPrice.find((price) =>
-                price !== undefined
+              const validPrice = correspondingPrice.find(
+                (price) => price !== undefined,
               );
 
               // Retorne o novo objeto com cd_lead_dep e cd_tab_preco

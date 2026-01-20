@@ -11,6 +11,7 @@ import { PhoneMask } from "site/helpers/Simulador/phoneMask.ts";
 import SiteUFSelect from "site/components/Site/site-uf-select.tsx";
 import SiteCitiesSelect from "site/components/Site/site-cities-select.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { City } from "../../components/Site/site-cities-select.tsx";
 
 export interface RecipientsEmail {
   email: string;
@@ -74,7 +75,7 @@ export default function TalkToUsIsland(
   const [ufs, setUfs] = useState([]);
   const [cities, setCities] = useState([]);
   const [UF, setUF] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<City | null>(null);
   const [message, setMessage] = useState("");
 
   const [nameError, setNameError] = useState(false);
@@ -92,7 +93,7 @@ export default function TalkToUsIsland(
     const emailErrorStatus = email === "";
     const telErrorStatus = tel === "";
     const UFErrorStatus = UF === "";
-    const cityErrorStatus = city === "";
+    const cityErrorStatus = !city?.id;
     const messageErrorStatus = message === "";
 
     setNameError(nameErrorStatus);
@@ -166,7 +167,7 @@ export default function TalkToUsIsland(
         E-mail: ${email}
         Telefone: ${tel}
         UF: ${UF}
-        Cidade: ${city}
+        Cidade: ${city?.nome}
         Mensagem: ${message}
     `;
 
@@ -300,7 +301,7 @@ export default function TalkToUsIsland(
                 id={"city"}
                 name={"city"}
                 label={"Cidade:"}
-                value={city}
+                value={city?.nome}
                 inputValueSetter={setCity}
                 options={cities}
                 placeholder={cities[0]?.nome}

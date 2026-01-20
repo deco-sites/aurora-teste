@@ -17,6 +17,7 @@ import { cepMask } from "site/helpers/Simulador/cepMask.ts";
 import SiteUFSelect from "site/components/Site/site-uf-select.tsx";
 import SiteCitiesSelect from "site/components/Site/site-cities-select.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { City } from "../../components/Site/site-cities-select.tsx";
 
 export interface RecipientsEmail {
   email: string;
@@ -107,7 +108,7 @@ export default function OmbudsmanIsland(
   const [ufs, setUfs] = useState([]);
   const [cities, setCities] = useState([]);
   const [UF, setUF] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<City | null>(null);
   const [address, setAddress] = useState("");
   const [cep, setCep] = useState("");
   const [message, setMessage] = useState("");
@@ -135,7 +136,7 @@ export default function OmbudsmanIsland(
     const cpfErrorStatus = cpf === "";
     const telErrorStatus = tel === "";
     const UFErrorStatus = UF === "";
-    const cityErrorStatus = city === "";
+    const cityErrorStatus = !city?.id;
     const addressErrorStatus = address === "";
     const cepErrorStatus = cep === "";
     const messageErrorStatus = message === "";
@@ -224,7 +225,7 @@ export default function OmbudsmanIsland(
         CPF: ${cpf}
         Telefone: ${tel}
         UF: ${UF}
-        Cidade: ${city}
+        Cidade: ${city?.nome}
         Endereço: ${address}
         Cep: ${cep}
         Mensagem: ${message}
@@ -495,7 +496,7 @@ export default function OmbudsmanIsland(
                   id={"city"}
                   name={"city"}
                   label={"Cidade:"}
-                  value={city}
+                  value={city?.nome}
                   inputValueSetter={setCity}
                   options={cities}
                   placeholder={cities[0]?.nome}

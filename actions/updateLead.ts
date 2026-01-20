@@ -1,22 +1,8 @@
 import { AppContext } from "site/apps/site.ts";
-
-export interface PossibleData {
-  somente_titular?: boolean;
-  outra_pessoa?: boolean;
-  nome?: string;
-  razao_social?: string;
-  cpf_cnpj?: string;
-  cidade?: number;
-  estado?: string;
-  telefone?: string;
-  email?: string;
-  cd_plano?: number;
-  possui_plano?: boolean;
-  cd_tab_preco?: number;
-}
+import { Lead } from "../commons/types/lead.ts";
 
 export interface Props {
-  dataToUpdate: PossibleData;
+  dataToUpdate: Partial<Omit<Lead, "cd_lead" | "data_lead" | "cd_modalidade">>;
   leadId: number;
 }
 
@@ -35,7 +21,7 @@ const UpdateLead = async (
   const { data, error } = await supabaseClient
     .from("leads")
     .update(props.dataToUpdate)
-    .eq("cd_lead", props.leadId)
+    .eq("cd_lead", props.leadId ?? props.dataToUpdate?.cd_lead)
     .select();
 
   if (error) {

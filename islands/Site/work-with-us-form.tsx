@@ -13,6 +13,7 @@ import { PhoneMask } from "site/helpers/Simulador/phoneMask.ts";
 import { cepMask } from "site/helpers/Simulador/cepMask.ts";
 import SiteCitiesSelect from "site/components/Site/site-cities-select.tsx";
 import SiteUFSelect from "site/components/Site/site-uf-select.tsx";
+import { City } from "../../components/Site/site-cities-select.tsx";
 
 export interface RecipientsEmail {
   email: string;
@@ -84,7 +85,7 @@ export default function WorkWithUsIsland(
   const [ufs, setUfs] = useState([]);
   const [cities, setCities] = useState([]);
   const [UF, setUF] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<City | null>(null);
   const [address, setAddress] = useState("");
   const [cep, setCep] = useState("");
   const [vaga, setVaga] = useState("");
@@ -109,7 +110,7 @@ export default function WorkWithUsIsland(
     const emailErrorStatus = email === "";
     const telErrorStatus = tel === "";
     const UFErrorStatus = UF === "";
-    const cityErrorStatus = city === "";
+    const cityErrorStatus = !city?.id;
     const addressErrorStatus = address === "";
     const cepErrorStatus = cep === "";
     const vagaErrorStatus = vaga === "";
@@ -192,7 +193,7 @@ export default function WorkWithUsIsland(
         E-mail: ${email}
         Telefone: ${tel}
         UF: ${UF}
-        Cidade: ${city}
+        Cidade: ${city?.nome}
         Endereço: ${address}
         Cep: ${cep}
         Vaga: ${vaga}
@@ -377,7 +378,7 @@ export default function WorkWithUsIsland(
                   id={"city"}
                   name={"city"}
                   label={"Cidade:"}
-                  value={city}
+                  value={city?.nome}
                   inputValueSetter={setCity}
                   options={cities}
                   placeholder={cities[0]?.nome}
@@ -488,7 +489,7 @@ export default function WorkWithUsIsland(
                   id={"city"}
                   name={"city"}
                   label={"Cidade:"}
-                  value={city}
+                  value={city?.nome}
                   inputValueSetter={setCity}
                   options={cities}
                   placeholder={cities[0]?.nome}

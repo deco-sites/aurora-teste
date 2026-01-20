@@ -26,7 +26,7 @@ import { titleCase } from "site/helpers/titleCase.ts";
 import { extractNumbers } from "site/helpers/Simulador/extractNumbers.ts";
 import { getCityCode } from "site/helpers/Simulador/getCityCode.ts";
 import { useSignal } from "@preact/signals";
-import { LeadModality } from "../../actions/saveLead.ts";
+import { LeadModality } from "../../commons/types/lead.ts";
 import { isAValidNumber } from "site/helpers/Simulador/numbers.ts";
 
 export default function FormStepTwoforFourthOption() {
